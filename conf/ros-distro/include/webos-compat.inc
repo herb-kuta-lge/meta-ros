@@ -10,6 +10,8 @@ VIRTUAL-RUNTIME_com.webos.service.rosbridge_ros1-distro = ""
 BUILDCFG_VARS_remove = "${@oe.utils.conditional('WEBOS_DISTRO_TOPDIR_REVISION', '<unknown>', 'WEBOS_DISTRO_TOPDIR_REVISION', '', d)}"
 BUILDCFG_VARS_remove = "${@oe.utils.conditional('WEBOS_DISTRO_TOPDIR_DESCRIBE', '<unknown>', 'WEBOS_DISTRO_TOPDIR_DESCRIBE', '', d)}"
 
+RDEPENDS_packagegroup-webos-extended_remove = "packagegroup-ros2-world"
+
 # Undo blacklisting
 PNBLACKLIST[graphviz] ?= ""
 PNBLACKLIST[librsvg] ?= ""
