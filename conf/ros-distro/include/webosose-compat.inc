@@ -7,6 +7,9 @@ RDEPENDS_packagegroup-webos-extended_remove = "packagegroup-ros2-world"
 # XXX Temp until it's fixed to work with "crystal".
 RDEPENDS_packagegroup-webos-extended_remove = "${VIRTUAL-RUNTIME_com.webos.service.rosbridge}"
 
+# Ignore metadata that requires meta-webos if it's not present.
+BBMASK += "${@bb.utils.contains('BBFILE_COLLECTIONS', 'meta-webos', '', 'recipes-core/images/webos-.*', d)}"
+
 # Undo blacklisting
 PNBLACKLIST[libfreenect] ?= ""
 PNBLACKLIST[freenect-camera] ?= ""
