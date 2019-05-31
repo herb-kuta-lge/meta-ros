@@ -10,3 +10,7 @@ MAINTAINER = "Open Source Robotics Foundation, Inc. <info@openrobotics.org>"
 # Use systemd, but keep SysVinit present (see https://www.yoctoproject.org/docs/2.6.2/mega-manual/mega-manual.html#selecting-an-initialization-manager).
 DISTRO_FEATURES_append = " systemd"
 VIRTUAL-RUNTIME_init_manager = "systemd"
+
+# XXX Perhaps these belong elsewhere?
+PNBLACKLIST[webos-image-ros-roscore] ?= "Not buildable when DISTRO is '${DISTRO}'"
+PNBLACKLIST[webos-image-ros-world] ?= "Not buildable when DISTRO is '${DISTRO}'"
