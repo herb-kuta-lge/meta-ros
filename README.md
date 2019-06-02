@@ -1,3 +1,8 @@
+# Rebaseable Branch `morty-draft`
+
+**NOTICE:** This branch may be rebased without warning. You are advised to
+specify the `--rebase` option when pulling.
+
 # Under Construction!
 
 This repo has been forked from the original implementation of `meta-ros` for
