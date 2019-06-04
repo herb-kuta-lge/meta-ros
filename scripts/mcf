@@ -451,7 +451,7 @@ def write_bblayers_conf(sourcedir):
     bblayers = ""
     priorities = ""
     for layer in sorted(LAYERS.values(), key=lambda l: l["priority"], reverse=True):
-        if layer["priority"] < 0:
+        if layer["priority"] == -1:
             # Layer is not metadata layer, skip it
             continue
 
@@ -489,9 +489,7 @@ def update_layers(sourcedir):
     logger.info('MCF-%s: Updating build directory' % __version__)
     layers_sanity = list()
     update_location = list()
-    # Use the absolute value of "priority" to determine the update order (so that bitbake can be placed in a subdirectory of
-    # openembedded-core if necessary).
-    for layer in sorted(LAYERS.values(), key=lambda l: abs(l["priority"])):
+    for layer in sorted(LAYERS.values(), key=lambda l: l["priority"]):
         if layer["fetch"] and layer["location"] not in update_location:
             update_location.append(layer["location"])
             if not os.path.exists(os.path.abspath(layer["location"])):
