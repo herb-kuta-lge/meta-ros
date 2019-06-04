@@ -56,31 +56,33 @@ McfFileVersion = 2
 
 # Note that the github.com/openembedded repositories are read-only mirrors of
 # the authoritative repositories on git.openembedded.org .
+
+# From http://gpro.lge.com/#/c/207964/233/build-settings.bash,cm (meta-webos) +
+# http://gpro.lge.com/#/c/207963/126/weboslayers.py,cm (other layers)
+# (https://jira2.lgsvl.com/browse/PLAT-78507).
 Layers = [
-('bitbake',                   -1, 'git://github.com/openembedded/bitbake.git',              'branch=1.32,commit=0193e1f', ''),
+('bitbake',                   -1, 'git://github.com/openembedded/bitbake.git',              'branch=1.40,commit=7c1eb51d', ''),
 
-('meta',                       5, 'git://github.com/openembedded/openembedded-core.git',    'branch=morty,commit=4b32784', ''),
+('meta-gplv2',                 1, 'git://git.yoctoproject.org/meta-gplv2',                  'branch=thud,commit=aabc30f', ''),
+('meta',                       5, 'git://github.com/openembedded/openembedded-core.git',    'branch=thud,commit=f162d5bfe6', ''),
 
-('meta-oe',                   10, 'git://github.com/openembedded/meta-openembedded.git',    'branch=morty,commit=997caf9', ''),
+('meta-oe',                   10, 'git://github.com/openembedded/meta-openembedded.git',    'branch=thud,commit=9b3b907f30', ''),
 ('meta-multimedia',           11, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
 ('meta-networking',           12, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
 ('meta-python',               13, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
 ('meta-filesystems',          14, 'git://github.com/openembedded/meta-openembedded.git',    '', ''),
 
+('meta-qt5-compat',           19, 'ssh://gpro.lgsvl.com/webosose/meta-webosose',            '', ''),
 ('meta-qt5',                  20, 'git://github.com/meta-qt5/meta-qt5.git',                 'branch=krogoth,commit=dcfcb58', ''),
 
-('meta-webos-backports-2.3',  30, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-('meta-webos-backports-2.4',  31, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-('meta-webos-backports-2.5',  32, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-('meta-webos-backports-2.6',  33, 'git://github.com/webosose/meta-webosose.git',            '', ''),
+('meta-ros',                  38, 'git://github.com/ros/meta-ros.git',                      'branch=thud-draft',''),
 
-('meta-ros',                  38, 'git://github.com/ros/meta-ros.git',                      'branch=morty-draft',''),
-('meta-webos',                40, 'git://github.com/webosose/meta-webosose.git',            'branch=master,tag=builds/webosose/master/69', ''),
+# Use [jansa/thud] until actual [thud] exists upstream.
+('meta-webos',                40, 'ssh://gpro.lge.com/webosose/meta-webosose',              'branch=jansa/thud,commit=refs/changes/63/237563/56', ''),
 
-('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi',            'branch=morty,commit=2a19226', ''),
-('meta-webos-raspberrypi',    51, 'git://github.com/webosose/meta-webosose.git',            '', ''),
-
-('meta-webos-ros2',           52, 'git://github.com/webosose/meta-webosose.git',            '', ''),
+('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi',            'branch=thud,commit=c71d79e', ''),
+('meta-webos-raspberrypi',    51, 'ssh://gpro.lge.com/webosose/meta-webosose',              '', ''),
+('meta-webos-ros2',           52, 'ssh://gpro.lge.com/webosose/meta-webosose',              '', ''),
 ]
 
 # BblayersConfExtraLines is a list of strings to be appended to the generated
