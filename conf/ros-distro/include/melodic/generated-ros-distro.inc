@@ -15,10 +15,6 @@ ROS_VERSION = "1"
 # DO NOT OVERRIDE ROS_PYTHON_VERSION
 ROS_PYTHON_VERSION = "2"
 
-# The last-modified timestamp in UTC of the upstream ROS_DISTRO-cache.yaml from which superflore generated the recipes. The date
-# portion is used as the second version field of DISTRO_VERSION prior to the first release of a ROS_DISTRO.
-ROS_SUPERFLORE_GENERATION_DATETIME = "20190607234604"
-
 ROS_SUPERFLORE_GENERATION_SKIP_LIST = " \
     catkin-virtualenv \
     flatbuffers \
