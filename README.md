@@ -1,4 +1,4 @@
-# Rebaseable Branch `morty-draft`
+# Rebaseable Branch `thud-draft`
 
 **NOTICE:** This branch may be rebased without warning. You are advised to
 specify the `--rebase` option when pulling.
