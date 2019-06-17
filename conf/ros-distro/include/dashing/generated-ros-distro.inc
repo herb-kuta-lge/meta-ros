@@ -18,11 +18,13 @@ ROS_PYTHON_VERSION = "3"
 ROS_SUPERFLORE_GENERATION_SKIP_LIST = ""
 
 # Superflore was unable to generate recipes for these packages, eg, because their repositories are not on GitHub.
-ROS_SUPERFLORE_GENERATION_NOT_POSSIBLE = ""
+ROS_SUPERFLORE_GENERATION_NOT_POSSIBLE = " \
+    rqt_gui_py \
+"
 
 # Number of commits that will be returned by "git log files/ROS_DISTRO-cache.yaml" when the generated files are committed. This is
 # used for the third version field of DISTRO_VERSION.
-ROS_NUM_CACHE_YAML_COMMITS = "1"
+ROS_NUM_CACHE_YAML_COMMITS = "2"
 
 # Iterated values of ROS_DISTRO-cache.distribution_file.release_platforms.<LINUX-DISTRO>.[ <NAME> ... ] .
 ROS_DISTRO_RELEASE_PLATFORMS = " \
@@ -105,6 +107,42 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
     dummy-map-server \
     dummy-robot-bringup \
     dummy-sensors \
+    ecl-build \
+    ecl-command-line \
+    ecl-concepts \
+    ecl-config \
+    ecl-console \
+    ecl-containers \
+    ecl-converters \
+    ecl-converters-lite \
+    ecl-core \
+    ecl-core-apps \
+    ecl-devices \
+    ecl-eigen \
+    ecl-errors \
+    ecl-exceptions \
+    ecl-filesystem \
+    ecl-formatters \
+    ecl-geometry \
+    ecl-io \
+    ecl-ipc \
+    ecl-license \
+    ecl-linear-algebra \
+    ecl-lite \
+    ecl-manipulators \
+    ecl-math \
+    ecl-mobile-robot \
+    ecl-mpl \
+    ecl-sigslots \
+    ecl-sigslots-lite \
+    ecl-statistics \
+    ecl-streams \
+    ecl-threads \
+    ecl-time \
+    ecl-time-lite \
+    ecl-tools \
+    ecl-type-traits \
+    ecl-utilities \
     example-interfaces \
     examples-rclcpp-minimal-action-client \
     examples-rclcpp-minimal-action-server \
@@ -170,6 +208,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
     pendulum-msgs \
     pluginlib \
     poco-vendor \
+    py-trees \
     python-cmake-module \
     python-qt-binding \
     qt-dotgraph \
@@ -266,7 +305,6 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
     rqt-graph \
     rqt-gui \
     rqt-gui-cpp \
-    rqt-gui-py \
     rqt-image-view \
     rqt-msg \
     rqt-plot \
@@ -290,6 +328,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
     sensor-msgs \
     shape-msgs \
     shared-queues-vendor \
+    sophus \
     sqlite3-vendor \
     sros2 \
     sros2-cmake \
@@ -306,6 +345,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
     tf2 \
     tf2-eigen \
     tf2-geometry-msgs \
+    tf2-kdl \
     tf2-msgs \
     tf2-ros \
     tf2-sensor-msgs \
@@ -328,7 +368,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
 
 ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                    rcl-interfaces/action-msgs_0.7.4-1 \
-                            demos/action-tutorials_0.7.6-1 \
+                            demos/action-tutorials_0.7.8-1 \
                 common-interfaces/actionlib-msgs_0.7.0-1 \
                        ament-lint/ament-clang-format_0.7.3-1 \
                       ament-cmake/ament-cmake_0.7.3-1 \
@@ -388,20 +428,56 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                      cartographer/cartographer_1.0.0-1 \
                      class-loader/class-loader_1.3.1-1 \
                 common-interfaces/common-interfaces_0.7.0-1 \
-                            demos/composition_0.7.6-1 \
+                            demos/composition_0.7.8-1 \
                    rcl-interfaces/composition-interfaces_0.7.4-1 \
        rosidl-typesupport-connext/connext-cmake-module_0.7.2-1 \
             console-bridge-vendor/console-bridge-vendor_1.2.0-1 \
                     vision-opencv/cv-bridge_2.1.2-1 \
-                            demos/demo-nodes-cpp_0.7.6-1 \
-                            demos/demo-nodes-cpp-rosnative_0.7.6-1 \
-                            demos/demo-nodes-py_0.7.6-1 \
+                            demos/demo-nodes-cpp_0.7.8-1 \
+                            demos/demo-nodes-cpp-rosnative_0.7.8-1 \
+                            demos/demo-nodes-py_0.7.8-1 \
           depthimage-to-laserscan/depthimage-to-laserscan_2.2.1-1 \
-                         variants/desktop_0.7.0-1 \
+                         variants/desktop_0.7.2-1 \
                 common-interfaces/diagnostic-msgs_0.7.0-1 \
-                            demos/dummy-map-server_0.7.6-1 \
-                            demos/dummy-robot-bringup_0.7.6-1 \
-                            demos/dummy-sensors_0.7.6-1 \
+                            demos/dummy-map-server_0.7.8-1 \
+                            demos/dummy-robot-bringup_0.7.8-1 \
+                            demos/dummy-sensors_0.7.8-1 \
+                        ecl-tools/ecl-build_1.0.1-2 \
+                         ecl-core/ecl-command-line_1.0.1-1 \
+                         ecl-core/ecl-concepts_1.0.1-1 \
+                         ecl-lite/ecl-config_1.0.1-1 \
+                         ecl-lite/ecl-console_1.0.1-1 \
+                         ecl-core/ecl-containers_1.0.1-1 \
+                         ecl-core/ecl-converters_1.0.1-1 \
+                         ecl-lite/ecl-converters-lite_1.0.1-1 \
+                         ecl-core/ecl-core_1.0.1-1 \
+                         ecl-core/ecl-core-apps_1.0.1-1 \
+                         ecl-core/ecl-devices_1.0.1-1 \
+                         ecl-core/ecl-eigen_1.0.1-1 \
+                         ecl-lite/ecl-errors_1.0.1-1 \
+                         ecl-core/ecl-exceptions_1.0.1-1 \
+                         ecl-core/ecl-filesystem_1.0.1-1 \
+                         ecl-core/ecl-formatters_1.0.1-1 \
+                         ecl-core/ecl-geometry_1.0.1-1 \
+                         ecl-lite/ecl-io_1.0.1-1 \
+                         ecl-core/ecl-ipc_1.0.1-1 \
+                        ecl-tools/ecl-license_1.0.1-2 \
+                         ecl-core/ecl-linear-algebra_1.0.1-1 \
+                         ecl-lite/ecl-lite_1.0.1-1 \
+                         ecl-core/ecl-manipulators_1.0.1-1 \
+                         ecl-core/ecl-math_1.0.1-1 \
+                         ecl-core/ecl-mobile-robot_1.0.1-1 \
+                         ecl-core/ecl-mpl_1.0.1-1 \
+                         ecl-core/ecl-sigslots_1.0.1-1 \
+                         ecl-lite/ecl-sigslots-lite_1.0.1-1 \
+                         ecl-core/ecl-statistics_1.0.1-1 \
+                         ecl-core/ecl-streams_1.0.1-1 \
+                         ecl-core/ecl-threads_1.0.1-1 \
+                         ecl-core/ecl-time_1.0.1-1 \
+                         ecl-lite/ecl-time-lite_1.0.1-1 \
+                        ecl-tools/ecl-tools_1.0.1-2 \
+                         ecl-core/ecl-type-traits_1.0.1-1 \
+                         ecl-core/ecl-utilities_1.0.1-1 \
                example-interfaces/example-interfaces_0.7.1-1 \
                          examples/examples-rclcpp-minimal-action-client_0.7.3-1 \
                          examples/examples-rclcpp-minimal-action-server_0.7.3-1 \
@@ -432,23 +508,23 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                        googletest/gmock-vendor_1.8.9000-1 \
                        googletest/gtest-vendor_1.8.9000-1 \
                     vision-opencv/image-geometry_2.1.2-1 \
-                            demos/image-tools_0.7.6-1 \
+                            demos/image-tools_0.7.8-1 \
                      image-common/image-transport_2.1.1-1 \
-                            demos/intra-process-demo_0.7.6-1 \
+                            demos/intra-process-demo_0.7.8-1 \
                  joystick-drivers/joy_2.3.2-1 \
                        kdl-parser/kdl-parser_2.2.0-1 \
                    laser-geometry/laser-geometry_2.0.0 \
-                           launch/launch_0.8.3-1 \
+                           launch/launch_0.8.4-1 \
                        launch-ros/launch-ros_0.8.4-1 \
-                           launch/launch-testing_0.8.3-1 \
-                           launch/launch-testing-ament-cmake_0.8.3-1 \
+                           launch/launch-testing_0.8.4-1 \
+                           launch/launch-testing-ament-cmake_0.8.4-1 \
                        launch-ros/launch-testing-ros_0.8.4-1 \
                resource-retriever/libcurl-vendor_2.1.0-2 \
                      librealsense/librealsense2_2.16.5-1 \
                    libyaml-vendor/libyaml-vendor_1.0.0-1 \
-                            demos/lifecycle_0.7.6-1 \
+                            demos/lifecycle_0.7.8-1 \
                    rcl-interfaces/lifecycle-msgs_0.7.4-1 \
-                            demos/logging-demo_0.7.6-1 \
+                            demos/logging-demo_0.7.8-1 \
                   navigation-msgs/map-msgs_2.0.1 \
                   message-filters/message-filters_3.1.2-1 \
                 common-interfaces/nav-msgs_0.7.0-1 \
@@ -463,56 +539,57 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                     osrf-pycommon/osrf-pycommon_0.1.7-1 \
            osrf-testing-tools-cpp/osrf-testing-tools-cpp_1.2.1-1 \
                   pcl-conversions/pcl-conversions_2.0.0-1 \
-                            demos/pendulum-control_0.7.6-1 \
-                            demos/pendulum-msgs_0.7.6-1 \
+                            demos/pendulum-control_0.7.8-1 \
+                            demos/pendulum-msgs_0.7.8-1 \
                         pluginlib/pluginlib_2.3.1-1 \
                       poco-vendor/poco-vendor_1.2.0-1 \
-                    rosidl-python/python-cmake-module_0.7.6-1 \
+                         py-trees/py-trees_1.2.1-1 \
+                    rosidl-python/python-cmake-module_0.7.7-1 \
                 python-qt-binding/python-qt-binding_1.0.1-1 \
-                      qt-gui-core/qt-dotgraph_1.0.5-1 \
-                      qt-gui-core/qt-gui_1.0.5-1 \
-                      qt-gui-core/qt-gui-app_1.0.5-1 \
-                      qt-gui-core/qt-gui-core_1.0.5-1 \
-                      qt-gui-core/qt-gui-cpp_1.0.5-1 \
-                      qt-gui-core/qt-gui-py-common_1.0.5-1 \
-                            demos/quality-of-service-demo-cpp_0.7.6-1 \
-                            demos/quality-of-service-demo-py_0.7.6-1 \
-                              rcl/rcl_0.7.4-1 \
-                              rcl/rcl-action_0.7.4-1 \
+                      qt-gui-core/qt-dotgraph_1.0.6-1 \
+                      qt-gui-core/qt-gui_1.0.6-1 \
+                      qt-gui-core/qt-gui-app_1.0.6-1 \
+                      qt-gui-core/qt-gui-core_1.0.6-1 \
+                      qt-gui-core/qt-gui-cpp_1.0.6-1 \
+                      qt-gui-core/qt-gui-py-common_1.0.6-1 \
+                            demos/quality-of-service-demo-cpp_0.7.8-1 \
+                            demos/quality-of-service-demo-py_0.7.8-1 \
+                              rcl/rcl_0.7.5-1 \
+                              rcl/rcl-action_0.7.5-1 \
                    rcl-interfaces/rcl-interfaces_0.7.4-1 \
-                              rcl/rcl-lifecycle_0.7.4-1 \
+                              rcl/rcl-lifecycle_0.7.5-1 \
                       rcl-logging/rcl-logging-log4cxx_0.2.1-1 \
                       rcl-logging/rcl-logging-noop_0.2.1-1 \
-                              rcl/rcl-yaml-param-parser_0.7.4-1 \
-                           rclcpp/rclcpp_0.7.5-1 \
-                           rclcpp/rclcpp-action_0.7.5-1 \
-                           rclcpp/rclcpp-components_0.7.5-1 \
-                           rclcpp/rclcpp-lifecycle_0.7.5-1 \
-                            rclpy/rclpy_0.7.3-1 \
+                              rcl/rcl-yaml-param-parser_0.7.5-1 \
+                           rclcpp/rclcpp_0.7.6-1 \
+                           rclcpp/rclcpp-action_0.7.6-1 \
+                           rclcpp/rclcpp-components_0.7.6-1 \
+                           rclcpp/rclcpp-lifecycle_0.7.6-1 \
+                            rclpy/rclpy_0.7.4-1 \
                         rcpputils/rcpputils_0.1.0-1 \
                           rcutils/rcutils_0.7.3-1 \
              ros2-intel-realsense/realsense-camera-msgs_2.0.4-2 \
              ros2-intel-realsense/realsense-ros2-camera_2.0.4-2 \
                resource-retriever/resource-retriever_2.1.0-2 \
-                              rmw/rmw_0.7.1-1 \
-                      rmw-connext/rmw-connext-cpp_0.7.2-1 \
-                      rmw-connext/rmw-connext-shared-cpp_0.7.2-1 \
-                     rmw-fastrtps/rmw-fastrtps-cpp_0.7.3-1 \
-                     rmw-fastrtps/rmw-fastrtps-dynamic-cpp_0.7.3-1 \
-                     rmw-fastrtps/rmw-fastrtps-shared-cpp_0.7.3-1 \
+                              rmw/rmw_0.7.2-1 \
+                      rmw-connext/rmw-connext-cpp_0.7.3-1 \
+                      rmw-connext/rmw-connext-shared-cpp_0.7.3-1 \
+                     rmw-fastrtps/rmw-fastrtps-cpp_0.7.4-1 \
+                     rmw-fastrtps/rmw-fastrtps-dynamic-cpp_0.7.4-1 \
+                     rmw-fastrtps/rmw-fastrtps-shared-cpp_0.7.4-1 \
                rmw-implementation/rmw-implementation_0.7.1-2 \
-                              rmw/rmw-implementation-cmake_0.7.1-1 \
-                   rmw-opensplice/rmw-opensplice-cpp_0.7.1-1 \
-            robot-state-publisher/robot-state-publisher_2.2.2-1 \
-                         variants/ros-base_0.7.0-1 \
-                         variants/ros-core_0.7.0-1 \
+                              rmw/rmw-implementation-cmake_0.7.2-1 \
+                   rmw-opensplice/rmw-opensplice-cpp_0.7.2-1 \
+            robot-state-publisher/robot-state-publisher_2.2.3-1 \
+                         variants/ros-base_0.7.2-1 \
+                         variants/ros-core_0.7.2-1 \
                   ros-environment/ros-environment_2.3.0-1 \
                       ros-testing/ros-testing_0.1.0-1 \
                     ros-workspace/ros-workspace_0.7.1-1 \
-                      ros1-bridge/ros1-bridge_0.7.2-3 \
+                      ros1-bridge/ros1-bridge_0.7.2-4 \
                    rosbag2-bag-v2/ros1-rosbag-storage-vendor_0.0.6-2 \
                           ros2cli/ros2action_0.7.4-1 \
-                          rosbag2/ros2bag_0.1.2-1 \
+                          rosbag2/ros2bag_0.1.3-1 \
                           ros2cli/ros2cli_0.7.4-1 \
                           ros2cli/ros2component_0.7.4-1 \
                        launch-ros/ros2launch_0.8.4-1 \
@@ -527,34 +604,34 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                           ros2cli/ros2srv_0.7.4-1 \
                       ros-testing/ros2test_0.1.0-1 \
                           ros2cli/ros2topic_0.7.4-1 \
-                          rosbag2/rosbag2_0.1.2-1 \
+                          rosbag2/rosbag2_0.1.3-1 \
                    rosbag2-bag-v2/rosbag2-bag-v2-plugins_0.0.6-2 \
-                          rosbag2/rosbag2-converter-default-plugins_0.1.2-1 \
-                          rosbag2/rosbag2-storage_0.1.2-1 \
-                          rosbag2/rosbag2-storage-default-plugins_0.1.2-1 \
-                          rosbag2/rosbag2-test-common_0.1.2-1 \
-                          rosbag2/rosbag2-tests_0.1.2-1 \
-                          rosbag2/rosbag2-transport_0.1.2-1 \
+                          rosbag2/rosbag2-converter-default-plugins_0.1.3-1 \
+                          rosbag2/rosbag2-storage_0.1.3-1 \
+                          rosbag2/rosbag2-storage-default-plugins_0.1.3-1 \
+                          rosbag2/rosbag2-test-common_0.1.3-1 \
+                          rosbag2/rosbag2-tests_0.1.3-1 \
+                          rosbag2/rosbag2-transport_0.1.3-1 \
                    rcl-interfaces/rosgraph-msgs_0.7.4-1 \
-                           rosidl/rosidl-adapter_0.7.3-1 \
-                           rosidl/rosidl-cmake_0.7.3-1 \
+                           rosidl/rosidl-adapter_0.7.4-1 \
+                           rosidl/rosidl-cmake_0.7.4-1 \
                   rosidl-defaults/rosidl-default-generators_0.7.0-1 \
                   rosidl-defaults/rosidl-default-runtime_0.7.0-1 \
-                           rosidl/rosidl-generator-c_0.7.3-1 \
-                           rosidl/rosidl-generator-cpp_0.7.3-1 \
+                           rosidl/rosidl-generator-c_0.7.4-1 \
+                           rosidl/rosidl-generator-cpp_0.7.4-1 \
                        rosidl-dds/rosidl-generator-dds-idl_0.7.1-1 \
-                    rosidl-python/rosidl-generator-py_0.7.6-1 \
-                           rosidl/rosidl-parser_0.7.3-1 \
-                    rosidl-python/rosidl-runtime-py_0.7.6-1 \
+                    rosidl-python/rosidl-generator-py_0.7.7-1 \
+                           rosidl/rosidl-parser_0.7.4-1 \
+                    rosidl-python/rosidl-runtime-py_0.7.7-1 \
                rosidl-typesupport/rosidl-typesupport-c_0.7.1-1 \
        rosidl-typesupport-connext/rosidl-typesupport-connext-c_0.7.2-1 \
        rosidl-typesupport-connext/rosidl-typesupport-connext-cpp_0.7.2-1 \
                rosidl-typesupport/rosidl-typesupport-cpp_0.7.1-1 \
       rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-c_0.7.1-1 \
       rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-cpp_0.7.1-1 \
-                           rosidl/rosidl-typesupport-interface_0.7.3-1 \
-                           rosidl/rosidl-typesupport-introspection-c_0.7.3-1 \
-                           rosidl/rosidl-typesupport-introspection-cpp_0.7.3-1 \
+                           rosidl/rosidl-typesupport-interface_0.7.4-1 \
+                           rosidl/rosidl-typesupport-introspection-c_0.7.4-1 \
+                           rosidl/rosidl-typesupport-introspection-cpp_0.7.4-1 \
     rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-c_0.7.1-1 \
     rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-cpp_0.7.1-1 \
                               rqt/rqt_1.0.4-1 \
@@ -563,10 +640,9 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                         rqt-graph/rqt-graph_1.0.1-1 \
                               rqt/rqt-gui_1.0.4-1 \
                               rqt/rqt-gui-cpp_1.0.4-1 \
-                              rqt/rqt-gui-py_1.0.4-1 \
                    rqt-image-view/rqt-image-view_1.0.2-1 \
                           rqt-msg/rqt-msg_1.0.2-1 \
-                         rqt-plot/rqt-plot_1.0.5-1 \
+                         rqt-plot/rqt-plot_1.0.6-1 \
                     rqt-publisher/rqt-publisher_1.0.5-1 \
                               rqt/rqt-py-common_1.0.4-1 \
                    rqt-py-console/rqt-py-console_1.0.0-1 \
@@ -576,20 +652,21 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
                           rqt-top/rqt-top_1.0.0-1 \
                         rqt-topic/rqt-topic_1.0.0-1 \
                  realtime-support/rttest_0.7.1-1 \
-                             rviz/rviz-assimp-vendor_6.1.1-1 \
-                             rviz/rviz-common_6.1.1-1 \
-                             rviz/rviz-default-plugins_6.1.1-1 \
-                             rviz/rviz-ogre-vendor_6.1.1-1 \
-                             rviz/rviz-rendering_6.1.1-1 \
-                             rviz/rviz-rendering-tests_6.1.1-1 \
-                             rviz/rviz-visual-testing-framework_6.1.1-1 \
-                             rviz/rviz2_6.1.1-1 \
+                             rviz/rviz-assimp-vendor_6.1.2-1 \
+                             rviz/rviz-common_6.1.2-1 \
+                             rviz/rviz-default-plugins_6.1.2-1 \
+                             rviz/rviz-ogre-vendor_6.1.2-1 \
+                             rviz/rviz-rendering_6.1.2-1 \
+                             rviz/rviz-rendering-tests_6.1.2-1 \
+                             rviz/rviz-visual-testing-framework_6.1.2-1 \
+                             rviz/rviz2_6.1.2-1 \
                 common-interfaces/sensor-msgs_0.7.0-1 \
                 common-interfaces/shape-msgs_0.7.0-1 \
-                          rosbag2/shared-queues-vendor_0.1.2-1 \
-                          rosbag2/sqlite3-vendor_0.1.2-1 \
-                            sros2/sros2_0.7.0-1 \
-                            sros2/sros2-cmake_0.7.0-1 \
+                          rosbag2/shared-queues-vendor_0.1.3-1 \
+                           sophus/sophus_1.0.2 \
+                          rosbag2/sqlite3-vendor_0.1.3-1 \
+                            sros2/sros2_0.7.1-1 \
+                            sros2/sros2-cmake_0.7.1-1 \
                 common-interfaces/std-msgs_0.7.0-1 \
                 common-interfaces/std-srvs_0.7.0-1 \
                 common-interfaces/stereo-msgs_0.7.0-1 \
@@ -600,18 +677,19 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
              test-interface-files/test-interface-files_0.7.1-1 \
                    rcl-interfaces/test-msgs_0.7.4-1 \
            osrf-testing-tools-cpp/test-osrf-testing-tools-cpp_1.2.1-1 \
-                        geometry2/tf2_0.11.3-1 \
-                        geometry2/tf2-eigen_0.11.3-1 \
-                        geometry2/tf2-geometry-msgs_0.11.3-1 \
-                        geometry2/tf2-msgs_0.11.3-1 \
-                        geometry2/tf2-ros_0.11.3-1 \
-                        geometry2/tf2-sensor-msgs_0.11.3-1 \
+                        geometry2/tf2_0.11.3-2 \
+                        geometry2/tf2-eigen_0.11.3-2 \
+                        geometry2/tf2-geometry-msgs_0.11.3-2 \
+                        geometry2/tf2-kdl_0.11.3-2 \
+                        geometry2/tf2-msgs_0.11.3-2 \
+                        geometry2/tf2-ros_0.11.3-2 \
+                        geometry2/tf2-sensor-msgs_0.11.3-2 \
                    tinydir-vendor/tinydir-vendor_1.1.0-1 \
                    tinyxml-vendor/tinyxml-vendor_0.7.0-1 \
                   tinyxml2-vendor/tinyxml2-vendor_0.6.1-1 \
                              tlsf/tlsf_0.5.0-1 \
                  realtime-support/tlsf-cpp_0.7.1-1 \
-                            demos/topic-monitor_0.7.6-1 \
+                            demos/topic-monitor_0.7.8-1 \
                 common-interfaces/trajectory-msgs_0.7.0-1 \
                 uncrustify-vendor/uncrustify-vendor_1.2.0-1 \
            unique-identifier-msgs/unique-identifier-msgs_2.1.0-1 \
@@ -696,6 +774,42 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
     dummy-map-server \
     dummy-robot-bringup \
     dummy-sensors \
+    ecl-build \
+    ecl-command-line \
+    ecl-concepts \
+    ecl-config \
+    ecl-console \
+    ecl-containers \
+    ecl-converters \
+    ecl-converters-lite \
+    ecl-core \
+    ecl-core-apps \
+    ecl-devices \
+    ecl-eigen \
+    ecl-errors \
+    ecl-exceptions \
+    ecl-filesystem \
+    ecl-formatters \
+    ecl-geometry \
+    ecl-io \
+    ecl-ipc \
+    ecl-license \
+    ecl-linear-algebra \
+    ecl-lite \
+    ecl-manipulators \
+    ecl-math \
+    ecl-mobile-robot \
+    ecl-mpl \
+    ecl-sigslots \
+    ecl-sigslots-lite \
+    ecl-statistics \
+    ecl-streams \
+    ecl-threads \
+    ecl-time \
+    ecl-time-lite \
+    ecl-tools \
+    ecl-type-traits \
+    ecl-utilities \
     example-interfaces \
     examples-rclcpp-minimal-action-client \
     examples-rclcpp-minimal-action-server \
@@ -760,6 +874,7 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
     pendulum-msgs \
     pluginlib \
     poco-vendor \
+    py-trees \
     python-qt-binding \
     qt-dotgraph \
     qt-gui \
@@ -850,7 +965,6 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
     rqt-graph \
     rqt-gui \
     rqt-gui-cpp \
-    rqt-gui-py \
     rqt-image-view \
     rqt-msg \
     rqt-plot \
@@ -872,6 +986,7 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
     sensor-msgs \
     shape-msgs \
     shared-queues-vendor \
+    sophus \
     sqlite3-vendor \
     sros2 \
     sros2-cmake \
@@ -887,6 +1002,7 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
     tf2 \
     tf2-eigen \
     tf2-geometry-msgs \
+    tf2-kdl \
     tf2-msgs \
     tf2-ros \
     tf2-sensor-msgs \
@@ -1035,6 +1151,7 @@ ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
     python3-matplotlib \
     python3-mock \
     python3-nose \
+    python3-nose-yanc \
     python3-numpy \
     python3-pep8 \
     python3-psutil \
@@ -1065,6 +1182,8 @@ ROS_SUPERFLORE_GENERATED_TESTS = " \
     cppunit \
     osrf-testing-tools-cpp \
     python-cmake-module \
+    python3-nose \
+    python3-nose-yanc \
     python3-pygraphviz \
     python3-pytest \
     ros-testing \
@@ -1093,6 +1212,9 @@ ROS_SUPERFLORE_GENERATED_RECIPES_FOR_COMPONENTS = " \
     console-bridge-vendor \
     demos \
     depthimage-to-laserscan \
+    ecl-core \
+    ecl-lite \
+    ecl-tools \
     example-interfaces \
     examples \
     fastcdr \
@@ -1120,6 +1242,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES_FOR_COMPONENTS = " \
     pcl-conversions \
     pluginlib \
     poco-vendor \
+    py-trees \
     python-qt-binding \
     qt-gui-core \
     rcl \
@@ -1169,6 +1292,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES_FOR_COMPONENTS = " \
     rqt-top \
     rqt-topic \
     rviz \
+    sophus \
     sros2 \
     system-modes \
     teleop-twist-joy \
