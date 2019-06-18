@@ -128,6 +128,8 @@ python3-mock:
 - python3-mock@meta-ros
 python3-nose:
 - python3-nose@openembedded-core
+python3-nose-yanc:
+- python3-nose-yanc@meta-ros
 python3-numpy:
 - python3-numpy@openembedded-core
 python3-opencv:
