@@ -276,7 +276,7 @@ common_interfaces: {
 doc: {
 type: git,
 url: 'https://github.com/ros2/common_interfaces.git',
-version: crystal
+version: dashing
 },
 release: {
 packages: [actionlib_msgs,
@@ -350,7 +350,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/demos-release.git',
-version: 0.7.6-1
+version: 0.7.8-1
 },
 source: {
 test_pull_requests: true,
@@ -379,6 +379,105 @@ test_pull_requests: true,
 type: git,
 url: 'https://github.com/ros-perception/depthimage_to_laserscan.git',
 version: ros2
+},
+status: maintained
+}
+-----
+ecl_core: {
+doc: {
+type: git,
+url: 'https://github.com/stonier/ecl_core.git',
+version: release/1.0.x
+},
+release: {
+packages: [ecl_command_line,
+ecl_concepts,
+ecl_containers,
+ecl_converters,
+ecl_core,
+ecl_core_apps,
+ecl_devices,
+ecl_eigen,
+ecl_exceptions,
+ecl_filesystem,
+ecl_formatters,
+ecl_geometry,
+ecl_ipc,
+ecl_linear_algebra,
+ecl_manipulators,
+ecl_math,
+ecl_mobile_robot,
+ecl_mpl,
+ecl_sigslots,
+ecl_statistics,
+ecl_streams,
+ecl_threads,
+ecl_time,
+ecl_type_traits,
+ecl_utilities],
+tags: {
+release: 'release/dashing/{package}/{version}'
+},
+url: 'https://github.com/yujinrobot-release/ecl_core-release.git',
+version: 1.0.1-1
+},
+source: {
+type: git,
+url: 'https://github.com/stonier/ecl_core.git',
+version: release/1.0.x
+},
+status: maintained
+}
+-----
+ecl_lite: {
+doc: {
+type: git,
+url: 'https://github.com/stonier/ecl_lite.git',
+version: release/1.0.x
+},
+release: {
+packages: [ecl_config,
+ecl_console,
+ecl_converters_lite,
+ecl_errors,
+ecl_io,
+ecl_lite,
+ecl_sigslots_lite,
+ecl_time_lite],
+tags: {
+release: 'release/dashing/{package}/{version}'
+},
+url: 'https://github.com/yujinrobot-release/ecl_lite-release.git',
+version: 1.0.1-1
+},
+source: {
+type: git,
+url: 'https://github.com/stonier/ecl_lite.git',
+version: release/1.0.x
+},
+status: maintained
+}
+-----
+ecl_tools: {
+doc: {
+type: git,
+url: 'https://github.com/stonier/ecl_tools.git',
+version: release/1.0.x
+},
+release: {
+packages: [ecl_build,
+ecl_license,
+ecl_tools],
+tags: {
+release: 'release/dashing/{package}/{version}'
+},
+url: 'https://github.com/yujinrobot-release/ecl_tools-release.git',
+version: 1.0.1-2
+},
+source: {
+type: git,
+url: 'https://github.com/stonier/ecl_tools.git',
+version: release/1.0.x
 },
 status: maintained
 }
@@ -538,6 +637,7 @@ release: {
 packages: [tf2,
 tf2_eigen,
 tf2_geometry_msgs,
+tf2_kdl,
 tf2_msgs,
 tf2_ros,
 tf2_sensor_msgs],
@@ -545,7 +645,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/geometry2-release.git',
-version: 0.11.3-1
+version: 0.11.3-2
 },
 source: {
 test_pull_requests: true,
@@ -674,7 +774,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/launch-release.git',
-version: 0.8.3-1
+version: 0.8.4-1
 },
 source: {
 test_pull_requests: true,
@@ -974,6 +1074,27 @@ version: dashing
 status: maintained
 }
 -----
+py_trees: {
+doc: {
+type: git,
+url: 'https://github.com/splintered-reality/py_trees.git',
+version: release/1.2.x
+},
+release: {
+tags: {
+release: 'release/dashing/{package}/{version}'
+},
+url: 'https://github.com/stonier/py_trees-release.git',
+version: 1.2.1-1
+},
+source: {
+type: git,
+url: 'https://github.com/splintered-reality/py_trees.git',
+version: release/1.2.x
+},
+status: maintained
+}
+-----
 python_qt_binding: {
 doc: {
 type: git,
@@ -1013,7 +1134,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/qt_gui_core-release.git',
-version: 1.0.5-1
+version: 1.0.6-1
 },
 source: {
 test_pull_requests: true,
@@ -1039,7 +1160,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rcl-release.git',
-version: 0.7.4-1
+version: 0.7.5-1
 },
 source: {
 test_pull_requests: true,
@@ -1118,7 +1239,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rclcpp-release.git',
-version: 0.7.5-1
+version: 0.7.6-1
 },
 source: {
 test_pull_requests: true,
@@ -1140,7 +1261,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rclpy-release.git',
-version: 0.7.3-1
+version: 0.7.4-1
 },
 source: {
 test_pull_requests: true,
@@ -1256,7 +1377,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rmw-release.git',
-version: 0.7.1-1
+version: 0.7.2-1
 },
 source: {
 test_pull_requests: true,
@@ -1280,7 +1401,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rmw_connext-release.git',
-version: 0.7.2-1
+version: 0.7.3-1
 },
 source: {
 test_pull_requests: true,
@@ -1305,7 +1426,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rmw_fastrtps-release.git',
-version: 0.7.3-1
+version: 0.7.4-1
 },
 source: {
 test_pull_requests: true,
@@ -1350,7 +1471,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rmw_opensplice-release.git',
-version: 0.7.1-1
+version: 0.7.2-1
 },
 source: {
 test_pull_requests: true,
@@ -1372,7 +1493,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/robot_state_publisher-release.git',
-version: 2.2.2-1
+version: 2.2.3-1
 },
 source: {
 test_pull_requests: true,
@@ -1394,7 +1515,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/ros1_bridge-release.git',
-version: 0.7.2-3
+version: 0.7.2-4
 },
 source: {
 test_commits: false,
@@ -1559,7 +1680,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rosbag2-release.git',
-version: 0.1.2-1
+version: 0.1.3-1
 },
 source: {
 test_pull_requests: true,
@@ -1613,7 +1734,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rosidl-release.git',
-version: 0.7.3-1
+version: 0.7.4-1
 },
 source: {
 test_pull_requests: true,
@@ -1685,7 +1806,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rosidl_python-release.git',
-version: 0.7.6-1
+version: 0.7.7-1
 },
 source: {
 test_pull_requests: true,
@@ -1938,7 +2059,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rqt_plot-release.git',
-version: 1.0.5-1
+version: 1.0.6-1
 },
 source: {
 type: git,
@@ -2114,13 +2235,24 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/rviz-release.git',
-version: 6.1.1-1
+version: 6.1.2-1
 },
 source: {
 test_pull_requests: true,
 type: git,
 url: 'https://github.com/ros2/rviz.git',
 version: dashing
+},
+status: maintained
+}
+-----
+sophus: {
+release: {
+tags: {
+release: 'release/dashing/{package}/{version}'
+},
+url: 'https://github.com/yujinrobot-release/sophus-release.git',
+version: 1.0.2-0
 },
 status: maintained
 }
@@ -2138,7 +2270,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/sros2-release.git',
-version: 0.7.0-1
+version: 0.7.1-1
 },
 source: {
 test_pull_requests: true,
@@ -2415,7 +2547,7 @@ variants: {
 doc: {
 type: git,
 url: 'https://github.com/ros2/variants.git',
-version: crystal
+version: dashing
 },
 release: {
 packages: [desktop,
@@ -2425,7 +2557,7 @@ tags: {
 release: 'release/dashing/{package}/{version}'
 },
 url: 'https://github.com/ros2-gbp/variants-release.git',
-version: 0.7.0-1
+version: 0.7.2-1
 },
 source: {
 test_pull_requests: true,
@@ -3888,6 +4020,997 @@ dummy_sensors: <?xml version="1.0" ?>
 <build_depend>sensor_msgs</build_depend>
 <exec_depend>rclcpp</exec_depend>
 <exec_depend>sensor_msgs</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_build: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_build</name>
+<description>Collection of cmake/make build tools primarily for ecl development itself,
+but also contains a few cmake modules useful outside of the ecl.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_build</url>
+<url type="repository">https://github.com/stonier/ecl_tools</url>
+<url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
+<buildtool_depend>ament_cmake</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_command_line: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_command_line</name>
+<description>Embeds the TCLAP library inside the ecl. This is a very convenient command line parser in templatised c++.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_command_line</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_concepts: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_concepts</name>
+<description>Introduces a compile time concept checking mechanism that can be used most commonly to check for required functionality when passing template arguments.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_concepts</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_config: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_config</name>
+<description>These tools inspect and describe your system with macros,
+types and functions.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_config</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_license</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_console: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_console</name>
+<description>Color codes for ansii consoles.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_console</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_containers: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_containers</name>
+<description>The containers included here are intended to extend the stl containers. In all cases,
+these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_containers</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_formatters</build_depend>
+<build_depend>ecl_converters</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<build_depend>ecl_utilities</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<exec_depend>ecl_converters</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<exec_depend>ecl_utilities</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_converters: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_converters</name>
+<description>Some fast/convenient type converters,
+mostly for char strings or strings. These are not really fully fleshed out,
+alot of them could use the addition for the whole range of fundamental types (e.g. all integers,
+not just int,
+unsigned int). They will come as the need arises.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_converters</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<build_depend>ecl_concepts</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_concepts</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_converters_lite: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_converters_lite</name>
+<description>These are a very simple version of some of the functions in ecl_converters suitable for firmware development. That is,
+there is no use of new,
+templates or exceptions.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_converters_lite</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_config</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_core: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_core</name>
+<description>A set of tools and interfaces extending the capabilities of c++ to provide a lightweight,
+consistent interface with a focus for control programming.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://www.ros.org/wiki/ecl_core</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<exec_depend>ecl_command_line</exec_depend>
+<exec_depend>ecl_concepts</exec_depend>
+<exec_depend>ecl_containers</exec_depend>
+<exec_depend>ecl_converters</exec_depend>
+<exec_depend>ecl_core_apps</exec_depend>
+<exec_depend>ecl_devices</exec_depend>
+<exec_depend>ecl_eigen</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<exec_depend>ecl_geometry</exec_depend>
+<exec_depend>ecl_ipc</exec_depend>
+<exec_depend>ecl_linear_algebra</exec_depend>
+<exec_depend>ecl_math</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_sigslots</exec_depend>
+<exec_depend>ecl_statistics</exec_depend>
+<exec_depend>ecl_streams</exec_depend>
+<exec_depend>ecl_threads</exec_depend>
+<exec_depend>ecl_time</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<exec_depend>ecl_utilities</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_core_apps: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_core_apps</name>
+<description>This includes a suite of programs demo'ing various aspects of the ecl_core. It also includes various benchmarking and utility programs for use primarily with embedded systems.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_core_apps</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_linear_algebra</build_depend>
+<build_depend>ecl_command_line</build_depend>
+<build_depend>ecl_converters</build_depend>
+<build_depend>ecl_containers</build_depend>
+<build_depend>ecl_devices</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_formatters</build_depend>
+<build_depend>ecl_geometry</build_depend>
+<build_depend>ecl_ipc</build_depend>
+<build_depend>ecl_sigslots</build_depend>
+<build_depend>ecl_streams</build_depend>
+<build_depend>ecl_threads</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<build_depend>ecl_time_lite</build_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_linear_algebra</exec_depend>
+<exec_depend>ecl_command_line</exec_depend>
+<exec_depend>ecl_converters</exec_depend>
+<exec_depend>ecl_containers</exec_depend>
+<exec_depend>ecl_devices</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<exec_depend>ecl_geometry</exec_depend>
+<exec_depend>ecl_ipc</exec_depend>
+<exec_depend>ecl_sigslots</exec_depend>
+<exec_depend>ecl_streams</exec_depend>
+<exec_depend>ecl_threads</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<exec_depend>ecl_time_lite</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_devices: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_devices</name>
+<description>Provides an extensible and standardised framework for input-output devices.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_devices</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_containers</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<build_depend>ecl_threads</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<build_depend>ecl_utilities</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_containers</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_threads</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<exec_depend>ecl_utilities</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_eigen: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_eigen</name>
+<description>This provides an Eigen implementation for ecl's linear algebra.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_eigen</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>eigen</build_depend>
+<exec_depend>eigen</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_errors: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_errors</name>
+<description>This library provides lean and mean error mechanisms. It includes c style error functions as well as a few useful macros. For higher level mechanisms,
+refer to ecl_exceptions.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_errors</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_exceptions: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_exceptions</name>
+<description>Template based exceptions - these are simple and practical and avoid the proliferation of exception types. Although not syntatactically ideal,
+it is convenient and eminently practical.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_exceptions</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_filesystem: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_filesystem</name>
+<description>Cross platform filesystem utilities (until c++11 makes its way in).</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_filesystem</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_formatters: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_formatters</name>
+<description>The formatters here simply format various input types to a specified text format. They can be used with most streaming types (including both ecl and stl streams).</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_formatters</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_converters</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_converters</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_geometry: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_geometry</name>
+<description>Any tools relating to mathematical geometry. Primarily featuring polynomials and interpolations.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_geometry</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_containers</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_formatters</build_depend>
+<build_depend>ecl_linear_algebra</build_depend>
+<build_depend>ecl_math</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_containers</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<exec_depend>ecl_linear_algebra</exec_depend>
+<exec_depend>ecl_math</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_io: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_io</name>
+<description>Most implementations (windows,
+posix,
+...) have slightly different api for low level input-output functions. These are gathered here and re-represented with a cross platform set of functions.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_io</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_ipc: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_ipc</name>
+<description>Interprocess mechanisms vary greatly across platforms - sysv,
+posix,
+win32,
+there are more than a few. This package provides an infrastructure to allow for developing cross platform c++ wrappers around the lower level c api's that handle these mechanisms. These make it not only easier to utilise such mechanisms,
+but allow it to be done consistently across platforms.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_ipc</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_threads</build_depend>
+<build_depend>ecl_time_lite</build_depend>
+<build_depend>ecl_time</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_threads</exec_depend>
+<exec_depend>ecl_time_lite</exec_depend>
+<exec_depend>ecl_time</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_license: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_license</name>
+<description>Maintains the ecl licenses and also provides an install target for deploying licenses with the ecl libraries.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_license</url>
+<url type="repository">https://github.com/stonier/ecl_tools</url>
+<url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
+<buildtool_depend>ament_cmake</buildtool_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_linear_algebra: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_linear_algebra</name>
+<description>Ecl frontend to a linear matrix package (currently eigen).</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_linear_algebra</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_converters</build_depend>
+<build_depend>ecl_eigen</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_formatters</build_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_math</build_depend>
+<build_depend>sophus</build_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_converters</exec_depend>
+<exec_depend>ecl_eigen</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_math</exec_depend>
+<exec_depend>sophus</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_lite: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_lite</name>
+<description>Libraries and utilities for embedded and low-level linux development.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://www.ros.org/wiki/ecl_lite</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_converters_lite</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_io</exec_depend>
+<exec_depend>ecl_sigslots_lite</exec_depend>
+<exec_depend>ecl_time_lite</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_manipulators: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_manipulators</name>
+<description>Deploys various manipulation algorithms,
+currently just feedforward filters (interpolations).</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_manipulators</url>
+<url type="repository">https://github.com/stonier/ecl_manipulation</url>
+<url type="bugtracker">https://github.com/stonier/ecl_manipulation/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_geometry</build_depend>
+<build_depend>ecl_formatters</build_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_geometry</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_math: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_math</name>
+<description>This package provides simple support to cmath,
+filling in holes or redefining in a c++ formulation where desirable.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_math</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_mobile_robot: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_mobile_robot</name>
+<description>Contains transforms (e.g. differential drive inverse kinematics) for the various types of mobile robot platforms.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_mobile_robot</url>
+<url type="repository">https://github.com/stonier/ecl_navigation</url>
+<url type="bugtracker">https://github.com/stonier/ecl_navigation/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_geometry</build_depend>
+<build_depend>ecl_math</build_depend>
+<build_depend>ecl_formatters</build_depend>
+<build_depend>ecl_linear_algebra</build_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_geometry</exec_depend>
+<exec_depend>ecl_math</exec_depend>
+<exec_depend>ecl_formatters</exec_depend>
+<exec_depend>ecl_linear_algebra</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_mpl: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_mpl</name>
+<description>Metaprogramming tools move alot of runtime calculations to be shifted to compile time. This has only very elementary structures at this stage.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_mpl</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_sigslots: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_sigslots</name>
+<description>Provides a signal/slot mechanism (in the same vein as qt sigslots,
+boost::signals etc for intra-process communication. These include some improvements - they do not need a preprocessor,
+are fully type safe,
+allow for simple connections via a posix style string identifier and are multithread-safe.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://ros.org/wiki/ecl_sigslots</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_threads</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_threads</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_sigslots_lite: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_sigslots_lite</name>
+<description>This avoids use of dynamic storage (malloc/new) and thread safety (mutexes) to provide a very simple sigslots implementation that can be used for *very* embedded development.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_sigslots_lite</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_statistics: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_statistics</name>
+<description>Common statistical structures and algorithms for control systems.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_statistics</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_linear_algebra</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_linear_algebra</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_streams: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_streams</name>
+<description>These are lightweight text streaming classes that connect to standardised ecl type devices.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_streams</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_concepts</build_depend>
+<build_depend>ecl_devices</build_depend>
+<build_depend>ecl_time</build_depend>
+<build_depend>ecl_converters</build_depend>
+<build_depend>ecl_type_traits</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_concepts</exec_depend>
+<exec_depend>ecl_devices</exec_depend>
+<exec_depend>ecl_time</exec_depend>
+<exec_depend>ecl_converters</exec_depend>
+<exec_depend>ecl_type_traits</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_threads: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_threads</name>
+<description>This package provides the c++ extensions for a variety of threaded programming tools. These are usually different on different platforms,
+so the architecture for a cross-platform framework is also implemented.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_threads</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_concepts</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_time</build_depend>
+<build_depend>ecl_utilities</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_concepts</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_time</exec_depend>
+<exec_depend>ecl_utilities</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_time: '<?xml version="1.0" ?>
+<package format="2">
+<name>ecl_time</name>
+<description>Timing utilities are very dependent on the system api provided for their use. This package provides a means for handling different timing models. Current support - posix rt : complete. - macosx : posix timers only,
+missing absolute timers. - win : none.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_time</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<build_depend>ecl_exceptions</build_depend>
+<build_depend>ecl_time_lite</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<exec_depend>ecl_exceptions</exec_depend>
+<exec_depend>ecl_time_lite</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>'
+-----
+ecl_time_lite: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_time_lite</name>
+<description>Provides a portable set of time functions that are especially useful for porting other code or being wrapped by higher level c++ classes.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_time_lite</url>
+<url type="repository">https://github.com/stonier/ecl_lite</url>
+<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_errors</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<exec_depend>ecl_errors</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_tools: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_tools</name>
+<description>Tools and utilities for ecl development.</description>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://www.ros.org/wiki/ecl_tools</url>
+<url type="repository">https://github.com/stonier/ecl_tools</url>
+<url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
+<buildtool_depend>ament_cmake</buildtool_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_build</exec_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_type_traits: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_type_traits</name>
+<description>Extends c++ type traits and implements a few more to boot.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_type_traits</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_config</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_config</exec_depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>ament_lint_auto</test_depend>
+<test_depend>ament_lint_common</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+ecl_utilities: <?xml version="1.0" ?>
+<package format="2">
+<name>ecl_utilities</name>
+<description>Includes various supporting tools and utilities for c++ programming.</description>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://wiki.ros.org/ecl_utilities</url>
+<url type="repository">https://github.com/stonier/ecl_core</url>
+<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
+<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
+<build_depend>ecl_license</build_depend>
+<build_depend>ecl_build</build_depend>
+<build_depend>ecl_mpl</build_depend>
+<build_depend>ecl_concepts</build_depend>
+<exec_depend>ecl_license</exec_depend>
+<exec_depend>ecl_mpl</exec_depend>
+<exec_depend>ecl_concepts</exec_depend>
 <test_depend>ament_cmake_gtest</test_depend>
 <test_depend>ament_lint_auto</test_depend>
 <test_depend>ament_lint_common</test_depend>
@@ -5362,6 +6485,32 @@ poco_vendor: "<?xml version=\"1.0\" ?>
 </export>
 </package>"
 -----
+py_trees: <?xml version="1.0" ?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+<name>py_trees</name>
+<description>Pythonic implementation of behaviour trees.</description>
+<author>Daniel Stonier</author>
+<author>Michal Staniaszek</author>
+<author>Naveed Usmani</author>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<license>BSD</license>
+<url type="website">http://py-trees.readthedocs.io</url>
+<url type="repository">https://github.com/stonier/py_trees</url>
+<url type="bugtracker">https://github.com/stonier/py_trees/issues</url>
+<build_depend>python3-setuptools</build_depend>
+<doc_depend>python3-sphinx</doc_depend>
+<doc_depend>python3-sphinx-argparse</doc_depend>
+<doc_depend>python3-sphinx-rtd-theme</doc_depend>
+<doc_depend>python3-pydot</doc_depend>
+<exec_depend>python3-pydot</exec_depend>
+<test_depend>python3-nose</test_depend>
+<test_depend>python3-nose-yanc</test_depend>
+<export>
+<build_type>ament_python</build_type>
+</export>
+</package>
+-----
 python_cmake_module: <?xml version="1.0" ?>
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
@@ -6381,6 +7530,34 @@ ros1_bridge: <?xml version="1.0" ?>
 <test_depend>launch_testing_ament_cmake</test_depend>
 <test_depend>launch_testing_ros</test_depend>
 <test_depend>ros2run</test_depend>
+<build_depend>action_msgs</build_depend>
+<exec_depend>action_msgs</exec_depend>
+<build_depend>actionlib_msgs</build_depend>
+<exec_depend>actionlib_msgs</exec_depend>
+<build_depend>diagnostic_msgs</build_depend>
+<exec_depend>diagnostic_msgs</exec_depend>
+<build_depend>example_interfaces</build_depend>
+<exec_depend>example_interfaces</exec_depend>
+<build_depend>gazebo_msgs</build_depend>
+<exec_depend>gazebo_msgs</exec_depend>
+<build_depend>geometry_msgs</build_depend>
+<exec_depend>geometry_msgs</exec_depend>
+<build_depend>nav_msgs</build_depend>
+<exec_depend>nav_msgs</exec_depend>
+<build_depend>sensor_msgs</build_depend>
+<exec_depend>sensor_msgs</exec_depend>
+<build_depend>shape_msgs</build_depend>
+<exec_depend>shape_msgs</exec_depend>
+<build_depend>std_srvs</build_depend>
+<exec_depend>std_srvs</exec_depend>
+<build_depend>stereo_msgs</build_depend>
+<exec_depend>stereo_msgs</exec_depend>
+<build_depend>tf2_msgs</build_depend>
+<exec_depend>tf2_msgs</exec_depend>
+<build_depend>trajectory_msgs</build_depend>
+<exec_depend>trajectory_msgs</exec_depend>
+<build_depend>visualization_msgs</build_depend>
+<exec_depend>visualization_msgs</exec_depend>
 <group_depend>rosidl_interface_packages</group_depend>
 <export>
 <build_type>ament_cmake</build_type>
@@ -6761,6 +7938,7 @@ ros_base: <?xml version="1.0" ?>
 <exec_depend>tf2</exec_depend>
 <exec_depend>tf2_eigen</exec_depend>
 <exec_depend>tf2_geometry_msgs</exec_depend>
+<exec_depend>tf2_kdl</exec_depend>
 <exec_depend>tf2_ros</exec_depend>
 <exec_depend>kdl_parser</exec_depend>
 <exec_depend>urdf</exec_depend>
@@ -6798,6 +7976,8 @@ generate messages and other core ROS concepts.</description>
 <exec_depend>rosidl_default_runtime</exec_depend>
 <exec_depend>ros_environment</exec_depend>
 <exec_depend>common_interfaces</exec_depend>
+<exec_depend>ros2action</exec_depend>
+<exec_depend>ros2component</exec_depend>
 <exec_depend>ros2launch</exec_depend>
 <exec_depend>ros2lifecycle</exec_depend>
 <exec_depend>ros2msg</exec_depend>
@@ -6810,6 +7990,7 @@ generate messages and other core ROS concepts.</description>
 <exec_depend>ros2srv</exec_depend>
 <exec_depend>ros2topic</exec_depend>
 <exec_depend>sros2</exec_depend>
+<exec_depend>sros2_cmake</exec_depend>
 <exec_depend>class_loader</exec_depend>
 <exec_depend>pluginlib</exec_depend>
 <export>
@@ -8402,6 +9583,23 @@ shared_queues_vendor: <?xml version="1.0" ?>
 </export>
 </package>
 -----
+sophus: <?xml version="1.0" ?>
+<package format="2">
+<name>sophus</name>
+<description>C++ implementation of Lie Groups using Eigen.</description>
+<url type="repository">https://github.com/strasdat/sophus</url>
+<url type="bugtracker">https://github.com/strasdat/sophus/issues</url>
+<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+<author>Hauke Strasdat</author>
+<license>MIT</license>
+<buildtool_depend>cmake</buildtool_depend>
+<build_depend>eigen</build_depend>
+<build_export_depend>eigen</build_export_depend>
+<export>
+<build_type>cmake</build_type>
+</export>
+</package>
+-----
 sqlite3_vendor: <?xml version="1.0" ?>
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
@@ -8425,6 +9623,7 @@ sros2: <?xml version="1.0" ?>
 <license>Apache License 2.0</license>
 <author email="morgan@osrfoundation.org">Morgan Quigley</author>
 <author>Mikael Arguedas</author>
+<depend>rclpy</depend>
 <depend>ros2cli</depend>
 <exec_depend>openssl</exec_depend>
 <exec_depend>python3-lxml</exec_depend>
@@ -8704,6 +9903,29 @@ tf2_geometry_msgs: <?xml version="1.0" ?>
 <depend>tf2</depend>
 <depend>tf2_ros</depend>
 <test_depend>ament_cmake_gtest</test_depend>
+<export>
+<build_type>ament_cmake</build_type>
+</export>
+</package>
+-----
+tf2_kdl: <?xml version="1.0" ?>
+<package format="2">
+<name>tf2_kdl</name>
+<description>KDL binding for tf2</description>
+<maintainer email="tfoote@osrfoundation.org">Tully Foote</maintainer>
+<author>Wim Meeussen</author>
+<license>BSD</license>
+<url type="website">http://ros.org/wiki/tf2</url>
+<buildtool_depend>ament_cmake</buildtool_depend>
+<depend>builtin_interfaces</depend>
+<depend>eigen</depend>
+<depend>geometry_msgs</depend>
+<depend>orocos_kdl</depend>
+<depend>tf2</depend>
+<depend>tf2_ros</depend>
+<test_depend>ament_cmake_gtest</test_depend>
+<test_depend>rclcpp</test_depend>
+<test_depend>tf2_msgs</test_depend>
 <export>
 <build_type>ament_cmake</build_type>
 </export>
