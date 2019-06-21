@@ -1,311 +1,3411 @@
 dashing/superflore-change-summary.txt
 -----
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	new file:   generated-recipes-dashing/ament-cmake-ros/ament-cmake-ros_0.7.0-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-auto_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-core_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-export-definitions_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-export-dependencies_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-export-include-directories_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-export-interfaces_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-export-libraries_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-export-link-flags_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-gmock_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-gtest_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-include-directories_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-libraries_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-nose_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-pytest_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-python_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-target-dependencies_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake-test_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-cmake/ament-cmake_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-index/ament-index-cpp_0.7.0-1.bb
-	new file:   generated-recipes-dashing/ament-index/ament-index-python_0.7.0-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-clang-format_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-clang-format_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-copyright_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-cppcheck_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-cpplint_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-flake8_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-lint-cmake_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-pclint_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-pep257_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-pep8_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-pyflakes_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-uncrustify_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cmake-xmllint_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-copyright_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cppcheck_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-cpplint_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-flake8_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-lint-auto_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-lint-cmake_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-lint-common_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-pclint_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-pep257_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-pep8_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-pyflakes_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-uncrustify_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-lint/ament-xmllint_0.7.3-1.bb
-	new file:   generated-recipes-dashing/ament-package/ament-package_0.7.0.bb
-	new file:   generated-recipes-dashing/angles/angles_1.12.1-1.bb
-	new file:   generated-recipes-dashing/apriltag/apriltag_3.1.0-2.bb
-	new file:   generated-recipes-dashing/behaviortree-cpp-v3/behaviortree-cpp-v3_3.0.9-1.bb
-	new file:   generated-recipes-dashing/behaviortree-cpp/behaviortree-cpp_2.5.2-1.bb
-	new file:   generated-recipes-dashing/cartographer/cartographer_1.0.0-1.bb
-	new file:   generated-recipes-dashing/class-loader/class-loader_1.3.1-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/actionlib-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/common-interfaces_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/diagnostic-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/geometry-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/nav-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/sensor-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/shape-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/std-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/std-srvs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/stereo-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/trajectory-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/common-interfaces/visualization-msgs_0.7.0-1.bb
-	new file:   generated-recipes-dashing/console-bridge-vendor/console-bridge-vendor_1.2.0-1.bb
-	new file:   generated-recipes-dashing/demos/action-tutorials_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/composition_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/demo-nodes-cpp-rosnative_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/demo-nodes-cpp_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/demo-nodes-py_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/dummy-map-server_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/dummy-robot-bringup_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/dummy-sensors_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/image-tools_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/intra-process-demo_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/lifecycle_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/logging-demo_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/pendulum-control_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/pendulum-msgs_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/quality-of-service-demo-cpp_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/quality-of-service-demo-py_0.7.6-1.bb
-	new file:   generated-recipes-dashing/demos/topic-monitor_0.7.6-1.bb
-	new file:   generated-recipes-dashing/depthimage-to-laserscan/depthimage-to-laserscan_2.2.1-1.bb
-	new file:   generated-recipes-dashing/example-interfaces/example-interfaces_0.7.1-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-action-client_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-action-server_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-client_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-composition_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-publisher_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-service_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-subscriber_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclcpp-minimal-timer_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-executors_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-minimal-action-client_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-minimal-action-server_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-minimal-client_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-minimal-publisher_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-minimal-service_0.7.3-1.bb
-	new file:   generated-recipes-dashing/examples/examples-rclpy-minimal-subscriber_0.7.3-1.bb
-	new file:   generated-recipes-dashing/fastcdr/fastcdr_1.0.9-2.bb
-	new file:   generated-recipes-dashing/fastrtps/fastrtps_1.8.0-2.bb
-	new file:   generated-recipes-dashing/fmi-adapter-ros2/fmi-adapter-examples_0.1.5-1.bb
-	new file:   generated-recipes-dashing/fmi-adapter-ros2/fmi-adapter_0.1.5-1.bb
-	new file:   generated-recipes-dashing/gazebo-ros-pkgs/gazebo-msgs_3.3.1-1.bb
-	new file:   generated-recipes-dashing/gazebo-ros-pkgs/gazebo-plugins_3.3.1-1.bb
-	new file:   generated-recipes-dashing/gazebo-ros-pkgs/gazebo-ros-pkgs_3.3.1-1.bb
-	new file:   generated-recipes-dashing/gazebo-ros-pkgs/gazebo-ros_3.3.1-1.bb
-	new file:   generated-recipes-dashing/gazebo-ros-pkgs/gazebo-rosdev_3.3.1-1.bb
-	new file:   generated-recipes-dashing/geometry2/tf2-eigen_0.11.3-1.bb
-	new file:   generated-recipes-dashing/geometry2/tf2-geometry-msgs_0.11.3-1.bb
-	new file:   generated-recipes-dashing/geometry2/tf2-msgs_0.11.3-1.bb
-	new file:   generated-recipes-dashing/geometry2/tf2-ros_0.11.3-1.bb
-	new file:   generated-recipes-dashing/geometry2/tf2-sensor-msgs_0.11.3-1.bb
-	new file:   generated-recipes-dashing/geometry2/tf2_0.11.3-1.bb
-	new file:   generated-recipes-dashing/googletest/gmock-vendor_1.8.9000-1.bb
-	new file:   generated-recipes-dashing/googletest/gtest-vendor_1.8.9000-1.bb
-	new file:   generated-recipes-dashing/image-common/camera-calibration-parsers_2.1.1-1.bb
-	new file:   generated-recipes-dashing/image-common/camera-info-manager_2.1.1-1.bb
-	new file:   generated-recipes-dashing/image-common/image-transport_2.1.1-1.bb
-	new file:   generated-recipes-dashing/joystick-drivers/joy_2.3.2-1.bb
-	new file:   generated-recipes-dashing/kdl-parser/kdl-parser_2.2.0-1.bb
-	new file:   generated-recipes-dashing/laser-geometry/laser-geometry_2.0.0.bb
-	new file:   generated-recipes-dashing/launch-ros/launch-ros_0.8.4-1.bb
-	new file:   generated-recipes-dashing/launch-ros/launch-testing-ros_0.8.4-1.bb
-	new file:   generated-recipes-dashing/launch-ros/ros2launch_0.8.4-1.bb
-	new file:   generated-recipes-dashing/launch/launch-testing-ament-cmake_0.8.3-1.bb
-	new file:   generated-recipes-dashing/launch/launch-testing_0.8.3-1.bb
-	new file:   generated-recipes-dashing/launch/launch_0.8.3-1.bb
-	new file:   generated-recipes-dashing/librealsense/librealsense2_2.16.5-1.bb
-	new file:   generated-recipes-dashing/libyaml-vendor/libyaml-vendor_1.0.0-1.bb
-	new file:   generated-recipes-dashing/message-filters/message-filters_3.1.2-1.bb
-	new file:   generated-recipes-dashing/navigation-msgs/map-msgs_2.0.1.bb
-	new file:   generated-recipes-dashing/nmea-msgs/nmea-msgs_2.0.0-1.bb
-	new file:   generated-recipes-dashing/object-msgs/object-msgs_0.4.0-1.bb
-	new file:   generated-recipes-dashing/ompl/ompl_1.4.2-1.bb
-	new file:   generated-recipes-dashing/orocos-kinematics-dynamics/orocos-kdl_3.2.0-1.bb
-	new file:   generated-recipes-dashing/osrf-pycommon/osrf-pycommon_0.1.7-1.bb
-	new file:   generated-recipes-dashing/osrf-testing-tools-cpp/osrf-testing-tools-cpp_1.2.1-1.bb
-	new file:   generated-recipes-dashing/osrf-testing-tools-cpp/test-osrf-testing-tools-cpp_1.2.1-1.bb
-	new file:   generated-recipes-dashing/pcl-conversions/pcl-conversions_2.0.0-1.bb
-	new file:   generated-recipes-dashing/pluginlib/pluginlib_2.3.1-1.bb
-	new file:   generated-recipes-dashing/poco-vendor/poco-vendor_1.2.0-1.bb
-	new file:   generated-recipes-dashing/python-qt-binding/python-qt-binding_1.0.1-1.bb
-	new file:   generated-recipes-dashing/qt-gui-core/qt-dotgraph_1.0.5-1.bb
-	new file:   generated-recipes-dashing/qt-gui-core/qt-gui-app_1.0.5-1.bb
-	new file:   generated-recipes-dashing/qt-gui-core/qt-gui-core_1.0.5-1.bb
-	new file:   generated-recipes-dashing/qt-gui-core/qt-gui-cpp_1.0.5-1.bb
-	new file:   generated-recipes-dashing/qt-gui-core/qt-gui-py-common_1.0.5-1.bb
-	new file:   generated-recipes-dashing/qt-gui-core/qt-gui_1.0.5-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/action-msgs_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/builtin-interfaces_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/composition-interfaces_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/lifecycle-msgs_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/rcl-interfaces_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/rosgraph-msgs_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-interfaces/test-msgs_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl-logging/rcl-logging-log4cxx_0.2.1-1.bb
-	new file:   generated-recipes-dashing/rcl-logging/rcl-logging-noop_0.2.1-1.bb
-	new file:   generated-recipes-dashing/rcl/rcl-action_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl/rcl-lifecycle_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl/rcl-yaml-param-parser_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rcl/rcl_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rclcpp/rclcpp-action_0.7.5-1.bb
-	new file:   generated-recipes-dashing/rclcpp/rclcpp-components_0.7.5-1.bb
-	new file:   generated-recipes-dashing/rclcpp/rclcpp-lifecycle_0.7.5-1.bb
-	new file:   generated-recipes-dashing/rclcpp/rclcpp_0.7.5-1.bb
-	new file:   generated-recipes-dashing/rclpy/rclpy_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rcpputils/rcpputils_0.1.0-1.bb
-	new file:   generated-recipes-dashing/rcutils/rcutils_0.7.3-1.bb
-	new file:   generated-recipes-dashing/realtime-support/rttest_0.7.1-1.bb
-	new file:   generated-recipes-dashing/realtime-support/tlsf-cpp_0.7.1-1.bb
-	new file:   generated-recipes-dashing/resource-retriever/libcurl-vendor_2.1.0-2.bb
-	new file:   generated-recipes-dashing/resource-retriever/resource-retriever_2.1.0-2.bb
-	new file:   generated-recipes-dashing/rmw-connext/rmw-connext-cpp_0.7.2-1.bb
-	new file:   generated-recipes-dashing/rmw-connext/rmw-connext-shared-cpp_0.7.2-1.bb
-	new file:   generated-recipes-dashing/rmw-fastrtps/rmw-fastrtps-cpp_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rmw-fastrtps/rmw-fastrtps-dynamic-cpp_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rmw-fastrtps/rmw-fastrtps-shared-cpp_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rmw-implementation/rmw-implementation_0.7.1-2.bb
-	new file:   generated-recipes-dashing/rmw-opensplice/rmw-opensplice-cpp_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rmw/rmw-implementation-cmake_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rmw/rmw_0.7.1-1.bb
-	new file:   generated-recipes-dashing/robot-state-publisher/robot-state-publisher_2.2.2-1.bb
-	new file:   generated-recipes-dashing/ros-environment/ros-environment_2.3.0-1.bb
-	new file:   generated-recipes-dashing/ros-testing/ros-testing_0.1.0-1.bb
-	new file:   generated-recipes-dashing/ros-testing/ros2test_0.1.0-1.bb
-	new file:   generated-recipes-dashing/ros-workspace/ros-workspace_0.7.1-1.bb
-	new file:   generated-recipes-dashing/ros1-bridge/ros1-bridge_0.7.2-3.bb
-	new file:   generated-recipes-dashing/ros2-intel-realsense/realsense-camera-msgs_2.0.4-2.bb
-	new file:   generated-recipes-dashing/ros2-intel-realsense/realsense-ros2-camera_2.0.4-2.bb
-	new file:   generated-recipes-dashing/ros2-object-analytics/object-analytics-msgs_0.5.4-2.bb
-	new file:   generated-recipes-dashing/ros2-object-analytics/object-analytics-node_0.5.4-2.bb
-	new file:   generated-recipes-dashing/ros2-object-analytics/object-analytics-rviz_0.5.4-2.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2action_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2cli_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2component_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2lifecycle_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2msg_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2multicast_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2node_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2param_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2pkg_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2run_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2service_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2srv_0.7.4-1.bb
-	new file:   generated-recipes-dashing/ros2cli/ros2topic_0.7.4-1.bb
-	new file:   generated-recipes-dashing/rosbag2-bag-v2/ros1-rosbag-storage-vendor_0.0.6-2.bb
-	new file:   generated-recipes-dashing/rosbag2-bag-v2/rosbag2-bag-v2-plugins_0.0.6-2.bb
-	new file:   generated-recipes-dashing/rosbag2/ros2bag_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2-converter-default-plugins_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2-storage-default-plugins_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2-storage_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2-test-common_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2-tests_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2-transport_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/rosbag2_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/shared-queues-vendor_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosbag2/sqlite3-vendor_0.1.2-1.bb
-	new file:   generated-recipes-dashing/rosidl-dds/rosidl-generator-dds-idl_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-defaults/rosidl-default-generators_0.7.0-1.bb
-	new file:   generated-recipes-dashing/rosidl-defaults/rosidl-default-runtime_0.7.0-1.bb
-	new file:   generated-recipes-dashing/rosidl-python/python-cmake-module_0.7.6-1.bb
-	new file:   generated-recipes-dashing/rosidl-python/rosidl-generator-py_0.7.6-1.bb
-	new file:   generated-recipes-dashing/rosidl-python/rosidl-runtime-py_0.7.6-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-connext/connext-cmake-module_0.7.2-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-connext/rosidl-typesupport-connext-c_0.7.2-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-connext/rosidl-typesupport-connext-cpp_0.7.2-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-fastrtps/fastrtps-cmake-module_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-c_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-cpp_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-opensplice/opensplice-cmake-module_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-c_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-cpp_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport/rosidl-typesupport-c_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl-typesupport/rosidl-typesupport-cpp_0.7.1-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-adapter_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-cmake_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-generator-c_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-generator-cpp_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-parser_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-typesupport-interface_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-typesupport-introspection-c_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rosidl/rosidl-typesupport-introspection-cpp_0.7.3-1.bb
-	new file:   generated-recipes-dashing/rqt-action/rqt-action_1.0.1-1.bb
-	new file:   generated-recipes-dashing/rqt-console/rqt-console_1.0.1-1.bb
-	new file:   generated-recipes-dashing/rqt-graph/rqt-graph_1.0.1-1.bb
-	new file:   generated-recipes-dashing/rqt-image-view/rqt-image-view_1.0.2-1.bb
-	new file:   generated-recipes-dashing/rqt-msg/rqt-msg_1.0.2-1.bb
-	new file:   generated-recipes-dashing/rqt-plot/rqt-plot_1.0.5-1.bb
-	new file:   generated-recipes-dashing/rqt-publisher/rqt-publisher_1.0.5-1.bb
-	new file:   generated-recipes-dashing/rqt-py-console/rqt-py-console_1.0.0-1.bb
-	new file:   generated-recipes-dashing/rqt-service-caller/rqt-service-caller_1.0.3-1.bb
-	new file:   generated-recipes-dashing/rqt-shell/rqt-shell_1.0.0-1.bb
-	new file:   generated-recipes-dashing/rqt-srv/rqt-srv_1.0.1-1.bb
-	new file:   generated-recipes-dashing/rqt-top/rqt-top_1.0.0-1.bb
-	new file:   generated-recipes-dashing/rqt-topic/rqt-topic_1.0.0-1.bb
-	new file:   generated-recipes-dashing/rqt/rqt-gui-cpp_1.0.4-1.bb
-	new file:   generated-recipes-dashing/rqt/rqt-gui-py_1.0.4-1.bb
-	new file:   generated-recipes-dashing/rqt/rqt-gui_1.0.4-1.bb
-	new file:   generated-recipes-dashing/rqt/rqt-py-common_1.0.4-1.bb
-	new file:   generated-recipes-dashing/rqt/rqt_1.0.4-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-assimp-vendor_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-common_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-default-plugins_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-ogre-vendor_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-rendering-tests_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-rendering_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz-visual-testing-framework_6.1.1-1.bb
-	new file:   generated-recipes-dashing/rviz/rviz2_6.1.1-1.bb
-	new file:   generated-recipes-dashing/sros2/sros2-cmake_0.7.0-1.bb
-	new file:   generated-recipes-dashing/sros2/sros2_0.7.0-1.bb
-	new file:   generated-recipes-dashing/system-modes/system-modes-examples_0.1.4-1.bb
-	new file:   generated-recipes-dashing/system-modes/system-modes_0.1.4-1.bb
-	new file:   generated-recipes-dashing/teleop-twist-joy/teleop-twist-joy_2.2.0-1.bb
-	new file:   generated-recipes-dashing/teleop-twist-keyboard/teleop-twist-keyboard_2.3.0-1.bb
-	new file:   generated-recipes-dashing/test-interface-files/test-interface-files_0.7.1-1.bb
-	new file:   generated-recipes-dashing/tinydir-vendor/tinydir-vendor_1.1.0-1.bb
-	new file:   generated-recipes-dashing/tinyxml-vendor/tinyxml-vendor_0.7.0-1.bb
-	new file:   generated-recipes-dashing/tinyxml2-vendor/tinyxml2-vendor_0.6.1-1.bb
-	new file:   generated-recipes-dashing/tlsf/tlsf_0.5.0-1.bb
-	new file:   generated-recipes-dashing/uncrustify-vendor/uncrustify-vendor_1.2.0-1.bb
-	new file:   generated-recipes-dashing/unique-identifier-msgs/unique-identifier-msgs_2.1.0-1.bb
-	new file:   generated-recipes-dashing/urdf/urdf_2.2.0-1.bb
-	new file:   generated-recipes-dashing/urdfdom-headers/urdfdom-headers_1.0.4-1.bb
-	new file:   generated-recipes-dashing/urdfdom/urdfdom_2.2.0-1.bb
-	new file:   generated-recipes-dashing/variants/desktop_0.7.0-1.bb
-	new file:   generated-recipes-dashing/variants/ros-base_0.7.0-1.bb
-	new file:   generated-recipes-dashing/variants/ros-core_0.7.0-1.bb
-	new file:   generated-recipes-dashing/vision-opencv/cv-bridge_2.1.2-1.bb
-	new file:   generated-recipes-dashing/vision-opencv/image-geometry_2.1.2-1.bb
-	new file:   generated-recipes-dashing/vision-opencv/vision-opencv_2.1.2-1.bb
-	new file:   generated-recipes-dashing/yaml-cpp-vendor/yaml-cpp-vendor_6.0.1-1.bb
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	conf/ros-distro/
-	files/
-
-no changes added to commit (use "git add" and/or "git commit -a")
+ M conf/ros-distro/include/dashing/generated-ros-distro.inc
+ M conf/ros-distro/include/dashing/generated-superflore-datetime.inc
+ M files/dashing/cache.diffme
+ M files/dashing/cache.yaml
+ M files/dashing/newer-platform-components.list
+ M files/dashing/rosdep-resolve.yaml
+A  generated-recipes-dashing/apriltag-msgs/apriltag-msgs_2.0.0-1.bb
 -----
-
+diff --git a/conf/ros-distro/include/dashing/generated-ros-distro.inc b/conf/ros-distro/include/dashing/generated-ros-distro.inc
+index 51eb6bed..b1dcf5f9 100644
+--- a/conf/ros-distro/include/dashing/generated-ros-distro.inc
++++ b/conf/ros-distro/include/dashing/generated-ros-distro.inc
+@@ -21,8 +21,8 @@ ROS_SUPERFLORE_GENERATION_SKIP_LIST = ""
+ ROS_SUPERFLORE_GENERATION_NOT_POSSIBLE = ""
+ 
+ # Number of commits that will be returned by "git log files/ROS_DISTRO-cache.yaml" when the generated files are committed. This is
+-# used for the third version field of DISTRO_VERSION.
+-ROS_NUM_CACHE_YAML_COMMITS = "1"
++# used for the fourth version field of DISTRO_VERSION.
++ROS_NUM_CACHE_YAML_COMMITS = "2"
+ 
+ # Iterated values of ROS_DISTRO-cache.distribution_file.release_platforms.<LINUX-DISTRO>.[ <NAME> ... ] .
+ ROS_DISTRO_RELEASE_PLATFORMS = " \
+@@ -30,1160 +30,31 @@ ROS_DISTRO_RELEASE_PLATFORMS = " \
+ "
+ 
+ ROS_SUPERFLORE_GENERATED_RECIPES = " \
+-    action-msgs \
+-    action-tutorials \
+-    actionlib-msgs \
+-    ament-clang-format \
+-    ament-cmake \
+-    ament-cmake-auto \
+-    ament-cmake-clang-format \
+-    ament-cmake-copyright \
+-    ament-cmake-core \
+-    ament-cmake-cppcheck \
+-    ament-cmake-cpplint \
+-    ament-cmake-export-definitions \
+-    ament-cmake-export-dependencies \
+-    ament-cmake-export-include-directories \
+-    ament-cmake-export-interfaces \
+-    ament-cmake-export-libraries \
+-    ament-cmake-export-link-flags \
+-    ament-cmake-flake8 \
+-    ament-cmake-gmock \
+-    ament-cmake-gtest \
+-    ament-cmake-include-directories \
+-    ament-cmake-libraries \
+-    ament-cmake-lint-cmake \
+-    ament-cmake-nose \
+-    ament-cmake-pclint \
+-    ament-cmake-pep257 \
+-    ament-cmake-pep8 \
+-    ament-cmake-pyflakes \
+-    ament-cmake-pytest \
+-    ament-cmake-python \
+-    ament-cmake-ros \
+-    ament-cmake-target-dependencies \
+-    ament-cmake-test \
+-    ament-cmake-uncrustify \
+-    ament-cmake-xmllint \
+-    ament-copyright \
+-    ament-cppcheck \
+-    ament-cpplint \
+-    ament-flake8 \
+-    ament-index-cpp \
+-    ament-index-python \
+-    ament-lint-auto \
+-    ament-lint-cmake \
+-    ament-lint-common \
+-    ament-package \
+-    ament-pclint \
+-    ament-pep257 \
+-    ament-pep8 \
+-    ament-pyflakes \
+-    ament-uncrustify \
+-    ament-xmllint \
+-    angles \
+-    apriltag \
+-    behaviortree-cpp \
+-    behaviortree-cpp-v3 \
+-    builtin-interfaces \
+-    camera-calibration-parsers \
+-    camera-info-manager \
+-    cartographer \
+-    class-loader \
+-    common-interfaces \
+-    composition \
+-    composition-interfaces \
+-    connext-cmake-module \
+-    console-bridge-vendor \
+-    cv-bridge \
+-    demo-nodes-cpp \
+-    demo-nodes-cpp-rosnative \
+-    demo-nodes-py \
+-    depthimage-to-laserscan \
+-    desktop \
+-    diagnostic-msgs \
+-    dummy-map-server \
+-    dummy-robot-bringup \
+-    dummy-sensors \
+-    example-interfaces \
+-    examples-rclcpp-minimal-action-client \
+-    examples-rclcpp-minimal-action-server \
+-    examples-rclcpp-minimal-client \
+-    examples-rclcpp-minimal-composition \
+-    examples-rclcpp-minimal-publisher \
+-    examples-rclcpp-minimal-service \
+-    examples-rclcpp-minimal-subscriber \
+-    examples-rclcpp-minimal-timer \
+-    examples-rclpy-executors \
+-    examples-rclpy-minimal-action-client \
+-    examples-rclpy-minimal-action-server \
+-    examples-rclpy-minimal-client \
+-    examples-rclpy-minimal-publisher \
+-    examples-rclpy-minimal-service \
+-    examples-rclpy-minimal-subscriber \
+-    fastcdr \
+-    fastrtps \
+-    fastrtps-cmake-module \
+-    fmi-adapter \
+-    fmi-adapter-examples \
+-    gazebo-msgs \
+-    gazebo-plugins \
+-    gazebo-ros \
+-    gazebo-ros-pkgs \
+-    gazebo-rosdev \
+-    geometry-msgs \
+-    gmock-vendor \
+-    gtest-vendor \
+-    image-geometry \
+-    image-tools \
+-    image-transport \
+-    intra-process-demo \
+-    joy \
+-    kdl-parser \
+-    laser-geometry \
+-    launch \
+-    launch-ros \
+-    launch-testing \
+-    launch-testing-ament-cmake \
+-    launch-testing-ros \
+-    libcurl-vendor \
+-    librealsense2 \
+-    libyaml-vendor \
+-    lifecycle \
+-    lifecycle-msgs \
+-    logging-demo \
+-    map-msgs \
+-    message-filters \
+-    nav-msgs \
+-    nmea-msgs \
+-    object-analytics-msgs \
+-    object-analytics-node \
+-    object-analytics-rviz \
+-    object-msgs \
+-    ompl \
+-    opensplice-cmake-module \
+-    orocos-kdl \
+-    osrf-pycommon \
+-    osrf-testing-tools-cpp \
+-    pcl-conversions \
+-    pendulum-control \
+-    pendulum-msgs \
+-    pluginlib \
+-    poco-vendor \
+-    python-cmake-module \
+-    python-qt-binding \
+-    qt-dotgraph \
+-    qt-gui \
+-    qt-gui-app \
+-    qt-gui-core \
+-    qt-gui-cpp \
+-    qt-gui-py-common \
+-    quality-of-service-demo-cpp \
+-    quality-of-service-demo-py \
+-    rcl \
+-    rcl-action \
+-    rcl-interfaces \
+-    rcl-lifecycle \
+-    rcl-logging-log4cxx \
+-    rcl-logging-noop \
+-    rcl-yaml-param-parser \
+-    rclcpp \
+-    rclcpp-action \
+-    rclcpp-components \
+-    rclcpp-lifecycle \
+-    rclpy \
+-    rcpputils \
+-    rcutils \
+-    realsense-camera-msgs \
+-    realsense-ros2-camera \
+-    resource-retriever \
+-    rmw \
+-    rmw-connext-cpp \
+-    rmw-connext-shared-cpp \
+-    rmw-fastrtps-cpp \
+-    rmw-fastrtps-dynamic-cpp \
+-    rmw-fastrtps-shared-cpp \
+-    rmw-implementation \
+-    rmw-implementation-cmake \
+-    rmw-opensplice-cpp \
+-    robot-state-publisher \
+-    ros-base \
+-    ros-core \
+-    ros-environment \
+-    ros-testing \
+-    ros-workspace \
+-    ros1-bridge \
+-    ros1-rosbag-storage-vendor \
+-    ros2action \
+-    ros2bag \
+-    ros2cli \
+-    ros2component \
+-    ros2launch \
+-    ros2lifecycle \
+-    ros2msg \
+-    ros2multicast \
+-    ros2node \
+-    ros2param \
+-    ros2pkg \
+-    ros2run \
+-    ros2service \
+-    ros2srv \
+-    ros2test \
+-    ros2topic \
+-    rosbag2 \
+-    rosbag2-bag-v2-plugins \
+-    rosbag2-converter-default-plugins \
+-    rosbag2-storage \
+-    rosbag2-storage-default-plugins \
+-    rosbag2-test-common \
+-    rosbag2-tests \
+-    rosbag2-transport \
+-    rosgraph-msgs \
+-    rosidl-adapter \
+-    rosidl-cmake \
+-    rosidl-default-generators \
+-    rosidl-default-runtime \
+-    rosidl-generator-c \
+-    rosidl-generator-cpp \
+-    rosidl-generator-dds-idl \
+-    rosidl-generator-py \
+-    rosidl-parser \
+-    rosidl-runtime-py \
+-    rosidl-typesupport-c \
+-    rosidl-typesupport-connext-c \
+-    rosidl-typesupport-connext-cpp \
+-    rosidl-typesupport-cpp \
+-    rosidl-typesupport-fastrtps-c \
+-    rosidl-typesupport-fastrtps-cpp \
+-    rosidl-typesupport-interface \
+-    rosidl-typesupport-introspection-c \
+-    rosidl-typesupport-introspection-cpp \
+-    rosidl-typesupport-opensplice-c \
+-    rosidl-typesupport-opensplice-cpp \
+-    rqt \
+-    rqt-action \
+-    rqt-console \
+-    rqt-graph \
+-    rqt-gui \
+-    rqt-gui-cpp \
+-    rqt-gui-py \
+-    rqt-image-view \
+-    rqt-msg \
+-    rqt-plot \
+-    rqt-publisher \
+-    rqt-py-common \
+-    rqt-py-console \
+-    rqt-service-caller \
+-    rqt-shell \
+-    rqt-srv \
+-    rqt-top \
+-    rqt-topic \
+-    rttest \
+-    rviz-assimp-vendor \
+-    rviz-common \
+-    rviz-default-plugins \
+-    rviz-ogre-vendor \
+-    rviz-rendering \
+-    rviz-rendering-tests \
+-    rviz-visual-testing-framework \
+-    rviz2 \
+-    sensor-msgs \
+-    shape-msgs \
+-    shared-queues-vendor \
+-    sqlite3-vendor \
+-    sros2 \
+-    sros2-cmake \
+-    std-msgs \
+-    std-srvs \
+-    stereo-msgs \
+-    system-modes \
+-    system-modes-examples \
+-    teleop-twist-joy \
+-    teleop-twist-keyboard \
+-    test-interface-files \
+-    test-msgs \
+-    test-osrf-testing-tools-cpp \
+-    tf2 \
+-    tf2-eigen \
+-    tf2-geometry-msgs \
+-    tf2-msgs \
+-    tf2-ros \
+-    tf2-sensor-msgs \
+-    tinydir-vendor \
+-    tinyxml-vendor \
+-    tinyxml2-vendor \
+-    tlsf \
+-    tlsf-cpp \
+-    topic-monitor \
+-    trajectory-msgs \
+-    uncrustify-vendor \
+-    unique-identifier-msgs \
+-    urdf \
+-    urdfdom \
+-    urdfdom-headers \
+-    vision-opencv \
+-    visualization-msgs \
+-    yaml-cpp-vendor \
++    apriltag-msgs \
+ "
+ 
+ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
+-                   rcl-interfaces/action-msgs_0.7.4-1 \
+-                            demos/action-tutorials_0.7.6-1 \
+-                common-interfaces/actionlib-msgs_0.7.0-1 \
+-                       ament-lint/ament-clang-format_0.7.3-1 \
+-                      ament-cmake/ament-cmake_0.7.3-1 \
+-                      ament-cmake/ament-cmake-auto_0.7.3-1 \
+-                       ament-lint/ament-cmake-clang-format_0.7.3-1 \
+-                       ament-lint/ament-cmake-copyright_0.7.3-1 \
+-                      ament-cmake/ament-cmake-core_0.7.3-1 \
+-                       ament-lint/ament-cmake-cppcheck_0.7.3-1 \
+-                       ament-lint/ament-cmake-cpplint_0.7.3-1 \
+-                      ament-cmake/ament-cmake-export-definitions_0.7.3-1 \
+-                      ament-cmake/ament-cmake-export-dependencies_0.7.3-1 \
+-                      ament-cmake/ament-cmake-export-include-directories_0.7.3-1 \
+-                      ament-cmake/ament-cmake-export-interfaces_0.7.3-1 \
+-                      ament-cmake/ament-cmake-export-libraries_0.7.3-1 \
+-                      ament-cmake/ament-cmake-export-link-flags_0.7.3-1 \
+-                       ament-lint/ament-cmake-flake8_0.7.3-1 \
+-                      ament-cmake/ament-cmake-gmock_0.7.3-1 \
+-                      ament-cmake/ament-cmake-gtest_0.7.3-1 \
+-                      ament-cmake/ament-cmake-include-directories_0.7.3-1 \
+-                      ament-cmake/ament-cmake-libraries_0.7.3-1 \
+-                       ament-lint/ament-cmake-lint-cmake_0.7.3-1 \
+-                      ament-cmake/ament-cmake-nose_0.7.3-1 \
+-                       ament-lint/ament-cmake-pclint_0.7.3-1 \
+-                       ament-lint/ament-cmake-pep257_0.7.3-1 \
+-                       ament-lint/ament-cmake-pep8_0.7.3-1 \
+-                       ament-lint/ament-cmake-pyflakes_0.7.3-1 \
+-                      ament-cmake/ament-cmake-pytest_0.7.3-1 \
+-                      ament-cmake/ament-cmake-python_0.7.3-1 \
+-                  ament-cmake-ros/ament-cmake-ros_0.7.0-1 \
+-                      ament-cmake/ament-cmake-target-dependencies_0.7.3-1 \
+-                      ament-cmake/ament-cmake-test_0.7.3-1 \
+-                       ament-lint/ament-cmake-uncrustify_0.7.3-1 \
+-                       ament-lint/ament-cmake-xmllint_0.7.3-1 \
+-                       ament-lint/ament-copyright_0.7.3-1 \
+-                       ament-lint/ament-cppcheck_0.7.3-1 \
+-                       ament-lint/ament-cpplint_0.7.3-1 \
+-                       ament-lint/ament-flake8_0.7.3-1 \
+-                      ament-index/ament-index-cpp_0.7.0-1 \
+-                      ament-index/ament-index-python_0.7.0-1 \
+-                       ament-lint/ament-lint-auto_0.7.3-1 \
+-                       ament-lint/ament-lint-cmake_0.7.3-1 \
+-                       ament-lint/ament-lint-common_0.7.3-1 \
+-                    ament-package/ament-package_0.7.0 \
+-                       ament-lint/ament-pclint_0.7.3-1 \
+-                       ament-lint/ament-pep257_0.7.3-1 \
+-                       ament-lint/ament-pep8_0.7.3-1 \
+-                       ament-lint/ament-pyflakes_0.7.3-1 \
+-                       ament-lint/ament-uncrustify_0.7.3-1 \
+-                       ament-lint/ament-xmllint_0.7.3-1 \
+-                           angles/angles_1.12.1-1 \
+-                         apriltag/apriltag_3.1.0-2 \
+-                 behaviortree-cpp/behaviortree-cpp_2.5.2-1 \
+-              behaviortree-cpp-v3/behaviortree-cpp-v3_3.0.9-1 \
+-                   rcl-interfaces/builtin-interfaces_0.7.4-1 \
+-                     image-common/camera-calibration-parsers_2.1.1-1 \
+-                     image-common/camera-info-manager_2.1.1-1 \
+-                     cartographer/cartographer_1.0.0-1 \
+-                     class-loader/class-loader_1.3.1-1 \
+-                common-interfaces/common-interfaces_0.7.0-1 \
+-                            demos/composition_0.7.6-1 \
+-                   rcl-interfaces/composition-interfaces_0.7.4-1 \
+-       rosidl-typesupport-connext/connext-cmake-module_0.7.2-1 \
+-            console-bridge-vendor/console-bridge-vendor_1.2.0-1 \
+-                    vision-opencv/cv-bridge_2.1.2-1 \
+-                            demos/demo-nodes-cpp_0.7.6-1 \
+-                            demos/demo-nodes-cpp-rosnative_0.7.6-1 \
+-                            demos/demo-nodes-py_0.7.6-1 \
+-          depthimage-to-laserscan/depthimage-to-laserscan_2.2.1-1 \
+-                         variants/desktop_0.7.0-1 \
+-                common-interfaces/diagnostic-msgs_0.7.0-1 \
+-                            demos/dummy-map-server_0.7.6-1 \
+-                            demos/dummy-robot-bringup_0.7.6-1 \
+-                            demos/dummy-sensors_0.7.6-1 \
+-               example-interfaces/example-interfaces_0.7.1-1 \
+-                         examples/examples-rclcpp-minimal-action-client_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-action-server_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-client_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-composition_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-publisher_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-service_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-subscriber_0.7.3-1 \
+-                         examples/examples-rclcpp-minimal-timer_0.7.3-1 \
+-                         examples/examples-rclpy-executors_0.7.3-1 \
+-                         examples/examples-rclpy-minimal-action-client_0.7.3-1 \
+-                         examples/examples-rclpy-minimal-action-server_0.7.3-1 \
+-                         examples/examples-rclpy-minimal-client_0.7.3-1 \
+-                         examples/examples-rclpy-minimal-publisher_0.7.3-1 \
+-                         examples/examples-rclpy-minimal-service_0.7.3-1 \
+-                         examples/examples-rclpy-minimal-subscriber_0.7.3-1 \
+-                          fastcdr/fastcdr_1.0.9-2 \
+-                         fastrtps/fastrtps_1.8.0-2 \
+-      rosidl-typesupport-fastrtps/fastrtps-cmake-module_0.7.1-1 \
+-                 fmi-adapter-ros2/fmi-adapter_0.1.5-1 \
+-                 fmi-adapter-ros2/fmi-adapter-examples_0.1.5-1 \
+-                  gazebo-ros-pkgs/gazebo-msgs_3.3.1-1 \
+-                  gazebo-ros-pkgs/gazebo-plugins_3.3.1-1 \
+-                  gazebo-ros-pkgs/gazebo-ros_3.3.1-1 \
+-                  gazebo-ros-pkgs/gazebo-ros-pkgs_3.3.1-1 \
+-                  gazebo-ros-pkgs/gazebo-rosdev_3.3.1-1 \
+-                common-interfaces/geometry-msgs_0.7.0-1 \
+-                       googletest/gmock-vendor_1.8.9000-1 \
+-                       googletest/gtest-vendor_1.8.9000-1 \
+-                    vision-opencv/image-geometry_2.1.2-1 \
+-                            demos/image-tools_0.7.6-1 \
+-                     image-common/image-transport_2.1.1-1 \
+-                            demos/intra-process-demo_0.7.6-1 \
+-                 joystick-drivers/joy_2.3.2-1 \
+-                       kdl-parser/kdl-parser_2.2.0-1 \
+-                   laser-geometry/laser-geometry_2.0.0 \
+-                           launch/launch_0.8.3-1 \
+-                       launch-ros/launch-ros_0.8.4-1 \
+-                           launch/launch-testing_0.8.3-1 \
+-                           launch/launch-testing-ament-cmake_0.8.3-1 \
+-                       launch-ros/launch-testing-ros_0.8.4-1 \
+-               resource-retriever/libcurl-vendor_2.1.0-2 \
+-                     librealsense/librealsense2_2.16.5-1 \
+-                   libyaml-vendor/libyaml-vendor_1.0.0-1 \
+-                            demos/lifecycle_0.7.6-1 \
+-                   rcl-interfaces/lifecycle-msgs_0.7.4-1 \
+-                            demos/logging-demo_0.7.6-1 \
+-                  navigation-msgs/map-msgs_2.0.1 \
+-                  message-filters/message-filters_3.1.2-1 \
+-                common-interfaces/nav-msgs_0.7.0-1 \
+-                        nmea-msgs/nmea-msgs_2.0.0-1 \
+-            ros2-object-analytics/object-analytics-msgs_0.5.4-2 \
+-            ros2-object-analytics/object-analytics-node_0.5.4-2 \
+-            ros2-object-analytics/object-analytics-rviz_0.5.4-2 \
+-                      object-msgs/object-msgs_0.4.0-1 \
+-                             ompl/ompl_1.4.2-1 \
+-    rosidl-typesupport-opensplice/opensplice-cmake-module_0.7.1-1 \
+-       orocos-kinematics-dynamics/orocos-kdl_3.2.0-1 \
+-                    osrf-pycommon/osrf-pycommon_0.1.7-1 \
+-           osrf-testing-tools-cpp/osrf-testing-tools-cpp_1.2.1-1 \
+-                  pcl-conversions/pcl-conversions_2.0.0-1 \
+-                            demos/pendulum-control_0.7.6-1 \
+-                            demos/pendulum-msgs_0.7.6-1 \
+-                        pluginlib/pluginlib_2.3.1-1 \
+-                      poco-vendor/poco-vendor_1.2.0-1 \
+-                    rosidl-python/python-cmake-module_0.7.6-1 \
+-                python-qt-binding/python-qt-binding_1.0.1-1 \
+-                      qt-gui-core/qt-dotgraph_1.0.5-1 \
+-                      qt-gui-core/qt-gui_1.0.5-1 \
+-                      qt-gui-core/qt-gui-app_1.0.5-1 \
+-                      qt-gui-core/qt-gui-core_1.0.5-1 \
+-                      qt-gui-core/qt-gui-cpp_1.0.5-1 \
+-                      qt-gui-core/qt-gui-py-common_1.0.5-1 \
+-                            demos/quality-of-service-demo-cpp_0.7.6-1 \
+-                            demos/quality-of-service-demo-py_0.7.6-1 \
+-                              rcl/rcl_0.7.4-1 \
+-                              rcl/rcl-action_0.7.4-1 \
+-                   rcl-interfaces/rcl-interfaces_0.7.4-1 \
+-                              rcl/rcl-lifecycle_0.7.4-1 \
+-                      rcl-logging/rcl-logging-log4cxx_0.2.1-1 \
+-                      rcl-logging/rcl-logging-noop_0.2.1-1 \
+-                              rcl/rcl-yaml-param-parser_0.7.4-1 \
+-                           rclcpp/rclcpp_0.7.5-1 \
+-                           rclcpp/rclcpp-action_0.7.5-1 \
+-                           rclcpp/rclcpp-components_0.7.5-1 \
+-                           rclcpp/rclcpp-lifecycle_0.7.5-1 \
+-                            rclpy/rclpy_0.7.3-1 \
+-                        rcpputils/rcpputils_0.1.0-1 \
+-                          rcutils/rcutils_0.7.3-1 \
+-             ros2-intel-realsense/realsense-camera-msgs_2.0.4-2 \
+-             ros2-intel-realsense/realsense-ros2-camera_2.0.4-2 \
+-               resource-retriever/resource-retriever_2.1.0-2 \
+-                              rmw/rmw_0.7.1-1 \
+-                      rmw-connext/rmw-connext-cpp_0.7.2-1 \
+-                      rmw-connext/rmw-connext-shared-cpp_0.7.2-1 \
+-                     rmw-fastrtps/rmw-fastrtps-cpp_0.7.3-1 \
+-                     rmw-fastrtps/rmw-fastrtps-dynamic-cpp_0.7.3-1 \
+-                     rmw-fastrtps/rmw-fastrtps-shared-cpp_0.7.3-1 \
+-               rmw-implementation/rmw-implementation_0.7.1-2 \
+-                              rmw/rmw-implementation-cmake_0.7.1-1 \
+-                   rmw-opensplice/rmw-opensplice-cpp_0.7.1-1 \
+-            robot-state-publisher/robot-state-publisher_2.2.2-1 \
+-                         variants/ros-base_0.7.0-1 \
+-                         variants/ros-core_0.7.0-1 \
+-                  ros-environment/ros-environment_2.3.0-1 \
+-                      ros-testing/ros-testing_0.1.0-1 \
+-                    ros-workspace/ros-workspace_0.7.1-1 \
+-                      ros1-bridge/ros1-bridge_0.7.2-3 \
+-                   rosbag2-bag-v2/ros1-rosbag-storage-vendor_0.0.6-2 \
+-                          ros2cli/ros2action_0.7.4-1 \
+-                          rosbag2/ros2bag_0.1.2-1 \
+-                          ros2cli/ros2cli_0.7.4-1 \
+-                          ros2cli/ros2component_0.7.4-1 \
+-                       launch-ros/ros2launch_0.8.4-1 \
+-                          ros2cli/ros2lifecycle_0.7.4-1 \
+-                          ros2cli/ros2msg_0.7.4-1 \
+-                          ros2cli/ros2multicast_0.7.4-1 \
+-                          ros2cli/ros2node_0.7.4-1 \
+-                          ros2cli/ros2param_0.7.4-1 \
+-                          ros2cli/ros2pkg_0.7.4-1 \
+-                          ros2cli/ros2run_0.7.4-1 \
+-                          ros2cli/ros2service_0.7.4-1 \
+-                          ros2cli/ros2srv_0.7.4-1 \
+-                      ros-testing/ros2test_0.1.0-1 \
+-                          ros2cli/ros2topic_0.7.4-1 \
+-                          rosbag2/rosbag2_0.1.2-1 \
+-                   rosbag2-bag-v2/rosbag2-bag-v2-plugins_0.0.6-2 \
+-                          rosbag2/rosbag2-converter-default-plugins_0.1.2-1 \
+-                          rosbag2/rosbag2-storage_0.1.2-1 \
+-                          rosbag2/rosbag2-storage-default-plugins_0.1.2-1 \
+-                          rosbag2/rosbag2-test-common_0.1.2-1 \
+-                          rosbag2/rosbag2-tests_0.1.2-1 \
+-                          rosbag2/rosbag2-transport_0.1.2-1 \
+-                   rcl-interfaces/rosgraph-msgs_0.7.4-1 \
+-                           rosidl/rosidl-adapter_0.7.3-1 \
+-                           rosidl/rosidl-cmake_0.7.3-1 \
+-                  rosidl-defaults/rosidl-default-generators_0.7.0-1 \
+-                  rosidl-defaults/rosidl-default-runtime_0.7.0-1 \
+-                           rosidl/rosidl-generator-c_0.7.3-1 \
+-                           rosidl/rosidl-generator-cpp_0.7.3-1 \
+-                       rosidl-dds/rosidl-generator-dds-idl_0.7.1-1 \
+-                    rosidl-python/rosidl-generator-py_0.7.6-1 \
+-                           rosidl/rosidl-parser_0.7.3-1 \
+-                    rosidl-python/rosidl-runtime-py_0.7.6-1 \
+-               rosidl-typesupport/rosidl-typesupport-c_0.7.1-1 \
+-       rosidl-typesupport-connext/rosidl-typesupport-connext-c_0.7.2-1 \
+-       rosidl-typesupport-connext/rosidl-typesupport-connext-cpp_0.7.2-1 \
+-               rosidl-typesupport/rosidl-typesupport-cpp_0.7.1-1 \
+-      rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-c_0.7.1-1 \
+-      rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-cpp_0.7.1-1 \
+-                           rosidl/rosidl-typesupport-interface_0.7.3-1 \
+-                           rosidl/rosidl-typesupport-introspection-c_0.7.3-1 \
+-                           rosidl/rosidl-typesupport-introspection-cpp_0.7.3-1 \
+-    rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-c_0.7.1-1 \
+-    rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-cpp_0.7.1-1 \
+-                              rqt/rqt_1.0.4-1 \
+-                       rqt-action/rqt-action_1.0.1-1 \
+-                      rqt-console/rqt-console_1.0.1-1 \
+-                        rqt-graph/rqt-graph_1.0.1-1 \
+-                              rqt/rqt-gui_1.0.4-1 \
+-                              rqt/rqt-gui-cpp_1.0.4-1 \
+-                              rqt/rqt-gui-py_1.0.4-1 \
+-                   rqt-image-view/rqt-image-view_1.0.2-1 \
+-                          rqt-msg/rqt-msg_1.0.2-1 \
+-                         rqt-plot/rqt-plot_1.0.5-1 \
+-                    rqt-publisher/rqt-publisher_1.0.5-1 \
+-                              rqt/rqt-py-common_1.0.4-1 \
+-                   rqt-py-console/rqt-py-console_1.0.0-1 \
+-               rqt-service-caller/rqt-service-caller_1.0.3-1 \
+-                        rqt-shell/rqt-shell_1.0.0-1 \
+-                          rqt-srv/rqt-srv_1.0.1-1 \
+-                          rqt-top/rqt-top_1.0.0-1 \
+-                        rqt-topic/rqt-topic_1.0.0-1 \
+-                 realtime-support/rttest_0.7.1-1 \
+-                             rviz/rviz-assimp-vendor_6.1.1-1 \
+-                             rviz/rviz-common_6.1.1-1 \
+-                             rviz/rviz-default-plugins_6.1.1-1 \
+-                             rviz/rviz-ogre-vendor_6.1.1-1 \
+-                             rviz/rviz-rendering_6.1.1-1 \
+-                             rviz/rviz-rendering-tests_6.1.1-1 \
+-                             rviz/rviz-visual-testing-framework_6.1.1-1 \
+-                             rviz/rviz2_6.1.1-1 \
+-                common-interfaces/sensor-msgs_0.7.0-1 \
+-                common-interfaces/shape-msgs_0.7.0-1 \
+-                          rosbag2/shared-queues-vendor_0.1.2-1 \
+-                          rosbag2/sqlite3-vendor_0.1.2-1 \
+-                            sros2/sros2_0.7.0-1 \
+-                            sros2/sros2-cmake_0.7.0-1 \
+-                common-interfaces/std-msgs_0.7.0-1 \
+-                common-interfaces/std-srvs_0.7.0-1 \
+-                common-interfaces/stereo-msgs_0.7.0-1 \
+-                     system-modes/system-modes_0.1.4-1 \
+-                     system-modes/system-modes-examples_0.1.4-1 \
+-                 teleop-twist-joy/teleop-twist-joy_2.2.0-1 \
+-            teleop-twist-keyboard/teleop-twist-keyboard_2.3.0-1 \
+-             test-interface-files/test-interface-files_0.7.1-1 \
+-                   rcl-interfaces/test-msgs_0.7.4-1 \
+-           osrf-testing-tools-cpp/test-osrf-testing-tools-cpp_1.2.1-1 \
+-                        geometry2/tf2_0.11.3-1 \
+-                        geometry2/tf2-eigen_0.11.3-1 \
+-                        geometry2/tf2-geometry-msgs_0.11.3-1 \
+-                        geometry2/tf2-msgs_0.11.3-1 \
+-                        geometry2/tf2-ros_0.11.3-1 \
+-                        geometry2/tf2-sensor-msgs_0.11.3-1 \
+-                   tinydir-vendor/tinydir-vendor_1.1.0-1 \
+-                   tinyxml-vendor/tinyxml-vendor_0.7.0-1 \
+-                  tinyxml2-vendor/tinyxml2-vendor_0.6.1-1 \
+-                             tlsf/tlsf_0.5.0-1 \
+-                 realtime-support/tlsf-cpp_0.7.1-1 \
+-                            demos/topic-monitor_0.7.6-1 \
+-                common-interfaces/trajectory-msgs_0.7.0-1 \
+-                uncrustify-vendor/uncrustify-vendor_1.2.0-1 \
+-           unique-identifier-msgs/unique-identifier-msgs_2.1.0-1 \
+-                             urdf/urdf_2.2.0-1 \
+-                          urdfdom/urdfdom_2.2.0-1 \
+-                  urdfdom-headers/urdfdom-headers_1.0.4-1 \
+-                    vision-opencv/vision-opencv_2.1.2-1 \
+-                common-interfaces/visualization-msgs_0.7.0-1 \
+-                  yaml-cpp-vendor/yaml-cpp-vendor_6.0.1-1 \
++    apriltag-msgs/apriltag-msgs_2.0.0-1 \
+ "
+ 
+ # What's built by packagegroup-ros-world. Does not include packages that appear solely in ROS_SUPERFLORE_GENERATED_BUILDTOOLS
+ # (with a -native suffix) or ROS_SUPERFLORE_GENERATED_TESTS.
+ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
+-    action-msgs \
+-    action-tutorials \
+-    actionlib-msgs \
+-    ament-clang-format \
+-    ament-cmake \
+-    ament-cmake-auto \
+-    ament-cmake-clang-format \
+-    ament-cmake-copyright \
+-    ament-cmake-core \
+-    ament-cmake-cppcheck \
+-    ament-cmake-cpplint \
+-    ament-cmake-export-definitions \
+-    ament-cmake-export-dependencies \
+-    ament-cmake-export-include-directories \
+-    ament-cmake-export-interfaces \
+-    ament-cmake-export-libraries \
+-    ament-cmake-export-link-flags \
+-    ament-cmake-flake8 \
+-    ament-cmake-gmock \
+-    ament-cmake-gtest \
+-    ament-cmake-include-directories \
+-    ament-cmake-libraries \
+-    ament-cmake-lint-cmake \
+-    ament-cmake-nose \
+-    ament-cmake-pclint \
+-    ament-cmake-pep257 \
+-    ament-cmake-pep8 \
+-    ament-cmake-pyflakes \
+-    ament-cmake-pytest \
+-    ament-cmake-python \
+-    ament-cmake-ros \
+-    ament-cmake-target-dependencies \
+-    ament-cmake-test \
+-    ament-cmake-uncrustify \
+-    ament-cmake-xmllint \
+-    ament-cppcheck \
+-    ament-cpplint \
+-    ament-index-cpp \
+-    ament-index-python \
+-    ament-lint-auto \
+-    ament-lint-cmake \
+-    ament-lint-common \
+-    ament-package \
+-    ament-pclint \
+-    ament-pyflakes \
+-    ament-uncrustify \
+-    angles \
+-    apriltag \
+-    behaviortree-cpp \
+-    behaviortree-cpp-v3 \
+-    builtin-interfaces \
+-    camera-calibration-parsers \
+-    camera-info-manager \
+-    cartographer \
+-    class-loader \
+-    common-interfaces \
+-    composition \
+-    composition-interfaces \
+-    connext-cmake-module \
+-    console-bridge-vendor \
+-    cv-bridge \
+-    demo-nodes-cpp \
+-    demo-nodes-cpp-rosnative \
+-    demo-nodes-py \
+-    depthimage-to-laserscan \
+-    desktop \
+-    diagnostic-msgs \
+-    dummy-map-server \
+-    dummy-robot-bringup \
+-    dummy-sensors \
+-    example-interfaces \
+-    examples-rclcpp-minimal-action-client \
+-    examples-rclcpp-minimal-action-server \
+-    examples-rclcpp-minimal-client \
+-    examples-rclcpp-minimal-composition \
+-    examples-rclcpp-minimal-publisher \
+-    examples-rclcpp-minimal-service \
+-    examples-rclcpp-minimal-subscriber \
+-    examples-rclcpp-minimal-timer \
+-    examples-rclpy-executors \
+-    examples-rclpy-minimal-action-client \
+-    examples-rclpy-minimal-action-server \
+-    examples-rclpy-minimal-client \
+-    examples-rclpy-minimal-publisher \
+-    examples-rclpy-minimal-service \
+-    examples-rclpy-minimal-subscriber \
+-    fastcdr \
+-    fastrtps \
+-    fastrtps-cmake-module \
+-    fmi-adapter \
+-    fmi-adapter-examples \
+-    gazebo-msgs \
+-    gazebo-plugins \
+-    gazebo-ros \
+-    gazebo-ros-pkgs \
+-    gazebo-rosdev \
+-    geometry-msgs \
+-    gmock-vendor \
+-    gtest-vendor \
+-    image-geometry \
+-    image-tools \
+-    image-transport \
+-    intra-process-demo \
+-    joy \
+-    kdl-parser \
+-    laser-geometry \
+-    launch \
+-    launch-ros \
+-    launch-testing \
+-    launch-testing-ament-cmake \
+-    launch-testing-ros \
+-    libcurl-vendor \
+-    librealsense2 \
+-    libyaml-vendor \
+-    lifecycle \
+-    lifecycle-msgs \
+-    logging-demo \
+-    map-msgs \
+-    message-filters \
+-    nav-msgs \
+-    nmea-msgs \
+-    object-analytics-msgs \
+-    object-analytics-node \
+-    object-analytics-rviz \
+-    object-msgs \
+-    ompl \
+-    opensplice-cmake-module \
+-    orocos-kdl \
+-    osrf-pycommon \
+-    pcl-conversions \
+-    pendulum-control \
+-    pendulum-msgs \
+-    pluginlib \
+-    poco-vendor \
+-    python-qt-binding \
+-    qt-dotgraph \
+-    qt-gui \
+-    qt-gui-app \
+-    qt-gui-core \
+-    qt-gui-cpp \
+-    qt-gui-py-common \
+-    quality-of-service-demo-cpp \
+-    quality-of-service-demo-py \
+-    rcl \
+-    rcl-action \
+-    rcl-interfaces \
+-    rcl-lifecycle \
+-    rcl-logging-log4cxx \
+-    rcl-logging-noop \
+-    rcl-yaml-param-parser \
+-    rclcpp \
+-    rclcpp-action \
+-    rclcpp-components \
+-    rclcpp-lifecycle \
+-    rclpy \
+-    rcpputils \
+-    rcutils \
+-    realsense-camera-msgs \
+-    realsense-ros2-camera \
+-    resource-retriever \
+-    rmw \
+-    rmw-connext-cpp \
+-    rmw-connext-shared-cpp \
+-    rmw-fastrtps-cpp \
+-    rmw-fastrtps-dynamic-cpp \
+-    rmw-fastrtps-shared-cpp \
+-    rmw-implementation \
+-    rmw-implementation-cmake \
+-    rmw-opensplice-cpp \
+-    robot-state-publisher \
+-    ros-base \
+-    ros-core \
+-    ros-environment \
+-    ros-workspace \
+-    ros1-bridge \
+-    ros1-rosbag-storage-vendor \
+-    ros2action \
+-    ros2cli \
+-    ros2component \
+-    ros2launch \
+-    ros2lifecycle \
+-    ros2msg \
+-    ros2multicast \
+-    ros2node \
+-    ros2param \
+-    ros2pkg \
+-    ros2run \
+-    ros2service \
+-    ros2srv \
+-    ros2test \
+-    ros2topic \
+-    rosbag2 \
+-    rosbag2-bag-v2-plugins \
+-    rosbag2-storage \
+-    rosbag2-tests \
+-    rosbag2-transport \
+-    rosgraph-msgs \
+-    rosidl-adapter \
+-    rosidl-cmake \
+-    rosidl-default-generators \
+-    rosidl-default-runtime \
+-    rosidl-generator-c \
+-    rosidl-generator-cpp \
+-    rosidl-generator-dds-idl \
+-    rosidl-generator-py \
+-    rosidl-parser \
+-    rosidl-runtime-py \
+-    rosidl-typesupport-c \
+-    rosidl-typesupport-connext-c \
+-    rosidl-typesupport-connext-cpp \
+-    rosidl-typesupport-cpp \
+-    rosidl-typesupport-fastrtps-c \
+-    rosidl-typesupport-fastrtps-cpp \
+-    rosidl-typesupport-interface \
+-    rosidl-typesupport-introspection-c \
+-    rosidl-typesupport-introspection-cpp \
+-    rosidl-typesupport-opensplice-c \
+-    rosidl-typesupport-opensplice-cpp \
+-    rqt \
+-    rqt-action \
+-    rqt-console \
+-    rqt-graph \
+-    rqt-gui \
+-    rqt-gui-cpp \
+-    rqt-gui-py \
+-    rqt-image-view \
+-    rqt-msg \
+-    rqt-plot \
+-    rqt-publisher \
+-    rqt-py-common \
+-    rqt-py-console \
+-    rqt-service-caller \
+-    rqt-shell \
+-    rqt-srv \
+-    rqt-top \
+-    rqt-topic \
+-    rttest \
+-    rviz-assimp-vendor \
+-    rviz-common \
+-    rviz-default-plugins \
+-    rviz-ogre-vendor \
+-    rviz-rendering \
+-    rviz2 \
+-    sensor-msgs \
+-    shape-msgs \
+-    shared-queues-vendor \
+-    sqlite3-vendor \
+-    sros2 \
+-    sros2-cmake \
+-    std-msgs \
+-    std-srvs \
+-    stereo-msgs \
+-    system-modes \
+-    system-modes-examples \
+-    teleop-twist-joy \
+-    teleop-twist-keyboard \
+-    test-interface-files \
+-    test-osrf-testing-tools-cpp \
+-    tf2 \
+-    tf2-eigen \
+-    tf2-geometry-msgs \
+-    tf2-msgs \
+-    tf2-ros \
+-    tf2-sensor-msgs \
+-    tinydir-vendor \
+-    tinyxml-vendor \
+-    tinyxml2-vendor \
+-    tlsf \
+-    tlsf-cpp \
+-    topic-monitor \
+-    trajectory-msgs \
+-    uncrustify-vendor \
+-    unique-identifier-msgs \
+-    urdf \
+-    urdfdom \
+-    urdfdom-headers \
+-    vision-opencv \
+-    visualization-msgs \
+-    yaml-cpp-vendor \
++    apriltag-msgs \
+ "
+ 
+ # Packages found in the <buildtool_depend> and <buildtool_export_depend> items, ie, ones for which a -native is built. Does not
+ # include those found in the ROS_EXEC_DEPENDS values in the recipes of build tools.
+ ROS_SUPERFLORE_GENERATED_BUILDTOOLS = " \
+-    ament-clang-format-native \
+-    ament-cmake-auto-native \
+-    ament-cmake-core-native \
+-    ament-cmake-export-definitions-native \
+-    ament-cmake-export-dependencies-native \
+-    ament-cmake-export-include-directories-native \
+-    ament-cmake-export-interfaces-native \
+-    ament-cmake-export-libraries-native \
+-    ament-cmake-export-link-flags-native \
+-    ament-cmake-gtest-native \
+-    ament-cmake-include-directories-native \
+-    ament-cmake-libraries-native \
+     ament-cmake-native \
+-    ament-cmake-python-native \
+-    ament-cmake-ros-native \
+-    ament-cmake-target-dependencies-native \
+-    ament-cmake-test-native \
+-    ament-copyright-native \
+-    ament-cppcheck-native \
+-    ament-cpplint-native \
+-    ament-flake8-native \
+-    ament-index-python-native \
+-    ament-lint-cmake-native \
+-    ament-package-native \
+-    ament-pclint-native \
+-    ament-pep257-native \
+-    ament-pep8-native \
+-    ament-pyflakes-native \
+-    ament-uncrustify-native \
+-    ament-xmllint-native \
+-    cmake-native \
+-    connext-cmake-module-native \
+-    fastcdr-native \
+-    fastrtps-cmake-module-native \
+-    fastrtps-native \
+-    git-native \
+-    gmock-vendor-native \
+-    gtest-native \
+-    gtest-vendor-native \
+-    launch-testing-ament-cmake-native \
+-    launch-testing-native \
+-    libopensplice69-native \
+-    opensplice-cmake-module-native \
+-    pkgconfig-native \
+-    python-cmake-module-native \
+-    python3-catkin-pkg-native \
+-    python3-empy-native \
+-    python3-native \
+-    python3-nose-native \
+-    python3-pytest-native \
+-    rcutils-native \
+-    ros2test-native \
+-    rosidl-cmake-native \
+     rosidl-default-generators-native \
+-    rosidl-generator-c-native \
+-    rosidl-generator-cpp-native \
+-    rosidl-generator-dds-idl-native \
+-    rosidl-generator-py-native \
+-    rosidl-parser-native \
+-    rosidl-typesupport-c-native \
+-    rosidl-typesupport-connext-cpp-native \
+-    rosidl-typesupport-cpp-native \
+-    rosidl-typesupport-fastrtps-cpp-native \
+-    rosidl-typesupport-interface-native \
+-    rosidl-typesupport-introspection-c-native \
+-    rosidl-typesupport-introspection-cpp-native \
+-    rosidl-typesupport-opensplice-cpp-native \
+-    rti-connext-dds-5.3.1-native \
+ "
+ 
+-ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
+-    ${PYTHON_PN}-pydocstyle \
+-    ${PYTHON_PN}-pyflakes \
+-    ${PYTHON_PN}-sphinx \
+-    asio \
+-    assimp \
+-    boost \
+-    bzip2 \
+-    cairo \
+-    ceres-solver \
+-    clang-format \
+-    cmake \
+-    console-bridge \
+-    cppcheck \
+-    cppunit \
+-    curl \
+-    freetype \
+-    gflags \
+-    git \
+-    glfw \
+-    glog \
+-    gpgme \
+-    gtest \
+-    gtk+3 \
+-    libeigen \
+-    libgazebo9 \
+-    libopensplice69 \
+-    libpcre \
+-    libtinyxml \
+-    libtinyxml2 \
+-    libusb1 \
+-    libx11 \
+-    libxaw \
+-    libxml2 \
+-    libxrandr \
+-    libyaml \
+-    log4cxx \
+-    lua \
+-    lz4 \
+-    mesa \
+-    opencv \
+-    openssl \
+-    pcl \
+-    pkgconfig \
+-    poco \
+-    protobuf \
+-    python3 \
+-    python3-catkin-pkg \
+-    python3-empy \
+-    python3-flake8 \
+-    python3-lark-parser \
+-    python3-lxml \
+-    python3-matplotlib \
+-    python3-mock \
+-    python3-nose \
+-    python3-numpy \
+-    python3-pep8 \
+-    python3-psutil \
+-    python3-pydot \
+-    python3-pygraphviz \
+-    python3-pyqt5 \
+-    python3-pytest \
+-    python3-pyyaml \
+-    python3-setuptools \
+-    qtbase \
+-    rti-connext-dds-5.3.1 \
+-    sqlite3 \
+-    tango-icon-theme \
+-    udev \
+-    uncrustify \
+-    virtual/kernel \
+-    zeromq \
+-    zlib \
+-"
++ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = ""
+ 
+ # Packages found only in <test_depend> items. Does not include those found only in the ROS_*_DEPENDS of recipes of tests.
+-ROS_SUPERFLORE_GENERATED_TESTS = " \
+-    ament-copyright \
+-    ament-flake8 \
+-    ament-pep257 \
+-    ament-pep8 \
+-    ament-xmllint \
+-    cppunit \
+-    osrf-testing-tools-cpp \
+-    python-cmake-module \
+-    python3-pygraphviz \
+-    python3-pytest \
+-    ros-testing \
+-    ros2bag \
+-    rosbag2-converter-default-plugins \
+-    rosbag2-storage-default-plugins \
+-    rosbag2-test-common \
+-    rviz-rendering-tests \
+-    rviz-visual-testing-framework \
+-    test-msgs \
+-"
++ROS_SUPERFLORE_GENERATED_TESTS = ""
+ 
+ ROS_SUPERFLORE_GENERATED_RECIPES_FOR_COMPONENTS = " \
+-    ament-cmake \
+-    ament-cmake-ros \
+-    ament-index \
+-    ament-lint \
+-    ament-package \
+-    angles \
+-    apriltag \
+-    behaviortree-cpp \
+-    behaviortree-cpp-v3 \
+-    cartographer \
+-    class-loader \
+-    common-interfaces \
+-    console-bridge-vendor \
+-    demos \
+-    depthimage-to-laserscan \
+-    example-interfaces \
+-    examples \
+-    fastcdr \
+-    fastrtps \
+-    fmi-adapter-ros2 \
+-    gazebo-ros-pkgs \
+-    geometry2 \
+-    googletest \
+-    image-common \
+-    joystick-drivers \
+-    kdl-parser \
+-    laser-geometry \
+-    launch \
+-    launch-ros \
+-    librealsense \
+-    libyaml-vendor \
+-    message-filters \
+-    navigation-msgs \
+-    nmea-msgs \
+-    object-msgs \
+-    ompl \
+-    orocos-kinematics-dynamics \
+-    osrf-pycommon \
+-    osrf-testing-tools-cpp \
+-    pcl-conversions \
+-    pluginlib \
+-    poco-vendor \
+-    python-qt-binding \
+-    qt-gui-core \
+-    rcl \
+-    rcl-interfaces \
+-    rcl-logging \
+-    rclcpp \
+-    rclpy \
+-    rcpputils \
+-    rcutils \
+-    realtime-support \
+-    resource-retriever \
+-    rmw \
+-    rmw-connext \
+-    rmw-fastrtps \
+-    rmw-implementation \
+-    rmw-opensplice \
+-    robot-state-publisher \
+-    ros-environment \
+-    ros-testing \
+-    ros-workspace \
+-    ros1-bridge \
+-    ros2-intel-realsense \
+-    ros2-object-analytics \
+-    ros2cli \
+-    rosbag2 \
+-    rosbag2-bag-v2 \
+-    rosidl \
+-    rosidl-dds \
+-    rosidl-defaults \
+-    rosidl-python \
+-    rosidl-typesupport \
+-    rosidl-typesupport-connext \
+-    rosidl-typesupport-fastrtps \
+-    rosidl-typesupport-opensplice \
+-    rqt \
+-    rqt-action \
+-    rqt-console \
+-    rqt-graph \
+-    rqt-image-view \
+-    rqt-msg \
+-    rqt-plot \
+-    rqt-publisher \
+-    rqt-py-console \
+-    rqt-service-caller \
+-    rqt-shell \
+-    rqt-srv \
+-    rqt-top \
+-    rqt-topic \
+-    rviz \
+-    sros2 \
+-    system-modes \
+-    teleop-twist-joy \
+-    teleop-twist-keyboard \
+-    test-interface-files \
+-    tinydir-vendor \
+-    tinyxml-vendor \
+-    tinyxml2-vendor \
+-    tlsf \
+-    uncrustify-vendor \
+-    unique-identifier-msgs \
+-    urdf \
+-    urdfdom \
+-    urdfdom-headers \
+-    variants \
+-    vision-opencv \
+-    yaml-cpp-vendor \
++    apriltag-msgs \
+ "
+diff --git a/conf/ros-distro/include/dashing/generated-superflore-datetime.inc b/conf/ros-distro/include/dashing/generated-superflore-datetime.inc
+index 70e08ba6..e84c4f26 100644
+--- a/conf/ros-distro/include/dashing/generated-superflore-datetime.inc
++++ b/conf/ros-distro/include/dashing/generated-superflore-datetime.inc
+@@ -4,5 +4,5 @@
+ # Copyright 2019 Open Source Robotics Foundation
+ 
+ # The start time, in UTC, of the last superflore run that resulted in a change to the generated files. The date portion is used as
+-# the second version field of ROS_DISTRO_METADATA_VERSION prior to the first release of a ROS_DISTRO.
+-ROS_SUPERFLORE_GENERATION_DATETIME = "20190607222522"
++# the third version field of ROS_DISTRO_METADATA_VERSION prior to the first release of a ROS_DISTRO.
++ROS_SUPERFLORE_GENERATION_DATETIME = "20190621013938"
 -----
+diff --git a/files/dashing/cache.diffme b/files/dashing/cache.diffme
+index a88aa201..1ea6181a 100644
+--- a/files/dashing/cache.diffme
++++ b/files/dashing/cache.diffme
+@@ -188,7 +188,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/AprilRobotics/apriltag-release.git',
+-version: 3.1.0-2
++version: 3.1.1-1
+ },
+ source: {
+ type: git,
+@@ -198,6 +198,29 @@ version: master
+ status: maintained
+ }
+ -----
++apriltag_msgs: {
++doc: {
++type: git,
++url: 'https://github.com/christianrauch/apriltag_ros.git',
++version: master
++},
++release: {
++packages: [apriltag_msgs,
++apriltag_ros],
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/christianrauch/apriltag_ros-release.git',
++version: 2.0.0-1
++},
++source: {
++type: git,
++url: 'https://github.com/christianrauch/apriltag_ros.git',
++version: master
++},
++status: developed
++}
++-----
+ behaviortree_cpp: {
+ release: {
+ tags: {
+@@ -276,7 +299,7 @@ common_interfaces: {
+ doc: {
+ type: git,
+ url: 'https://github.com/ros2/common_interfaces.git',
+-version: crystal
++version: dashing
+ },
+ release: {
+ packages: [actionlib_msgs,
+@@ -350,7 +373,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/demos-release.git',
+-version: 0.7.6-1
++version: 0.7.8-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -383,6 +406,105 @@ version: ros2
+ status: maintained
+ }
+ -----
++ecl_core: {
++doc: {
++type: git,
++url: 'https://github.com/stonier/ecl_core.git',
++version: release/1.0.x
++},
++release: {
++packages: [ecl_command_line,
++ecl_concepts,
++ecl_containers,
++ecl_converters,
++ecl_core,
++ecl_core_apps,
++ecl_devices,
++ecl_eigen,
++ecl_exceptions,
++ecl_filesystem,
++ecl_formatters,
++ecl_geometry,
++ecl_ipc,
++ecl_linear_algebra,
++ecl_manipulators,
++ecl_math,
++ecl_mobile_robot,
++ecl_mpl,
++ecl_sigslots,
++ecl_statistics,
++ecl_streams,
++ecl_threads,
++ecl_time,
++ecl_type_traits,
++ecl_utilities],
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/yujinrobot-release/ecl_core-release.git',
++version: 1.0.1-1
++},
++source: {
++type: git,
++url: 'https://github.com/stonier/ecl_core.git',
++version: release/1.0.x
++},
++status: maintained
++}
++-----
++ecl_lite: {
++doc: {
++type: git,
++url: 'https://github.com/stonier/ecl_lite.git',
++version: release/1.0.x
++},
++release: {
++packages: [ecl_config,
++ecl_console,
++ecl_converters_lite,
++ecl_errors,
++ecl_io,
++ecl_lite,
++ecl_sigslots_lite,
++ecl_time_lite],
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/yujinrobot-release/ecl_lite-release.git',
++version: 1.0.1-1
++},
++source: {
++type: git,
++url: 'https://github.com/stonier/ecl_lite.git',
++version: release/1.0.x
++},
++status: maintained
++}
++-----
++ecl_tools: {
++doc: {
++type: git,
++url: 'https://github.com/stonier/ecl_tools.git',
++version: release/1.0.x
++},
++release: {
++packages: [ecl_build,
++ecl_license,
++ecl_tools],
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/yujinrobot-release/ecl_tools-release.git',
++version: 1.0.1-2
++},
++source: {
++type: git,
++url: 'https://github.com/stonier/ecl_tools.git',
++version: release/1.0.x
++},
++status: maintained
++}
++-----
+ example_interfaces: {
+ doc: {
+ type: git,
+@@ -538,6 +660,7 @@ release: {
+ packages: [tf2,
+ tf2_eigen,
+ tf2_geometry_msgs,
++tf2_kdl,
+ tf2_msgs,
+ tf2_ros,
+ tf2_sensor_msgs],
+@@ -545,7 +668,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/geometry2-release.git',
+-version: 0.11.3-1
++version: 0.11.3-2
+ },
+ source: {
+ test_pull_requests: true,
+@@ -674,7 +797,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/launch-release.git',
+-version: 0.8.3-1
++version: 0.8.4-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -974,6 +1097,49 @@ version: dashing
+ status: maintained
+ }
+ -----
++py_trees: {
++doc: {
++type: git,
++url: 'https://github.com/splintered-reality/py_trees.git',
++version: release/1.2.x
++},
++release: {
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/stonier/py_trees-release.git',
++version: 1.2.1-1
++},
++source: {
++type: git,
++url: 'https://github.com/splintered-reality/py_trees.git',
++version: release/1.2.x
++},
++status: maintained
++}
++-----
++py_trees_ros_interfaces: {
++doc: {
++type: git,
++url: 'https://github.com/splintered-reality/py_trees_ros_interfaces.git',
++version: release/1.1.x
++},
++release: {
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/stonier/py_trees_ros_interfaces-release.git',
++version: 1.1.2-1
++},
++source: {
++test_pull_requests: true,
++type: git,
++url: 'https://github.com/splintered-reality/py_trees_ros_interfaces.git',
++version: devel
++},
++status: developed
++}
++-----
+ python_qt_binding: {
+ doc: {
+ type: git,
+@@ -1013,7 +1179,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/qt_gui_core-release.git',
+-version: 1.0.5-1
++version: 1.0.6-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1039,7 +1205,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rcl-release.git',
+-version: 0.7.4-1
++version: 0.7.5-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1118,7 +1284,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rclcpp-release.git',
+-version: 0.7.5-1
++version: 0.7.6-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1140,7 +1306,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rclpy-release.git',
+-version: 0.7.3-1
++version: 0.7.4-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1256,7 +1422,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rmw-release.git',
+-version: 0.7.1-1
++version: 0.7.2-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1280,7 +1446,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rmw_connext-release.git',
+-version: 0.7.2-1
++version: 0.7.3-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1305,7 +1471,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rmw_fastrtps-release.git',
+-version: 0.7.3-1
++version: 0.7.4-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1350,7 +1516,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rmw_opensplice-release.git',
+-version: 0.7.1-1
++version: 0.7.2-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1372,7 +1538,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/robot_state_publisher-release.git',
+-version: 2.2.2-1
++version: 2.2.3-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1394,7 +1560,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/ros1_bridge-release.git',
+-version: 0.7.2-3
++version: 0.7.2-4
+ },
+ source: {
+ test_commits: false,
+@@ -1559,7 +1725,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rosbag2-release.git',
+-version: 0.1.2-1
++version: 0.1.3-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1613,7 +1779,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rosidl-release.git',
+-version: 0.7.3-1
++version: 0.7.4-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1685,7 +1851,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rosidl_python-release.git',
+-version: 0.7.6-1
++version: 0.7.7-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -1938,7 +2104,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rqt_plot-release.git',
+-version: 1.0.5-1
++version: 1.0.6-1
+ },
+ source: {
+ type: git,
+@@ -2114,7 +2280,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/rviz-release.git',
+-version: 6.1.1-1
++version: 6.1.2-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -2125,6 +2291,17 @@ version: dashing
+ status: maintained
+ }
+ -----
++sophus: {
++release: {
++tags: {
++release: 'release/dashing/{package}/{version}'
++},
++url: 'https://github.com/yujinrobot-release/sophus-release.git',
++version: 1.0.2-0
++},
++status: maintained
++}
++-----
+ sros2: {
+ doc: {
+ type: git,
+@@ -2138,7 +2315,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/sros2-release.git',
+-version: 0.7.0-1
++version: 0.7.1-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -2415,7 +2592,7 @@ variants: {
+ doc: {
+ type: git,
+ url: 'https://github.com/ros2/variants.git',
+-version: crystal
++version: dashing
+ },
+ release: {
+ packages: [desktop,
+@@ -2425,7 +2602,7 @@ tags: {
+ release: 'release/dashing/{package}/{version}'
+ },
+ url: 'https://github.com/ros2-gbp/variants-release.git',
+-version: 0.7.0-1
++version: 0.7.2-1
+ },
+ source: {
+ test_pull_requests: true,
+@@ -3361,6 +3538,45 @@ apriltag: <?xml version="1.0" ?>
+ </export>
+ </package>
+ -----
++apriltag_msgs: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="3">
++<name>apriltag_msgs</name>
++<description>AprilTag message definitions</description>
++<maintainer email="Rauch.Christian@gmx.de">Christian Rauch</maintainer>
++<license>MIT</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<buildtool_depend>rosidl_default_generators</buildtool_depend>
++<build_depend>std_msgs</build_depend>
++<exec_depend>rosidl_default_runtime</exec_depend>
++<exec_depend>std_msgs</exec_depend>
++<member_of_group>rosidl_interface_packages</member_of_group>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++apriltag_ros: <?xml version="1.0" ?>
++<package format="2">
++<name>apriltag_ros</name>
++<description>AprilTag detection node</description>
++<maintainer email="Rauch.Christian@gmx.de"/>
++<license>MIT</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<build_depend>eigen</build_depend>
++<depend>rclcpp</depend>
++<depend>rclcpp_components</depend>
++<depend>sensor_msgs</depend>
++<depend>tf2_msgs</depend>
++<depend>apriltag_msgs</depend>
++<depend>apriltag</depend>
++<depend>image_transport</depend>
++<depend>cv_bridge</depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
+ behaviortree_cpp: <?xml version="1.0" ?>
+ <package format="2">
+ <name>behaviortree_cpp</name>
+@@ -3703,171 +3919,1157 @@ demo_nodes_cpp_native: <?xml version="1.0" ?>
+ <test_depend>ament_cmake_pytest</test_depend>
+ <test_depend>ament_lint_auto</test_depend>
+ <test_depend>ament_lint_common</test_depend>
+-<test_depend>launch</test_depend>
+-<test_depend>launch_testing</test_depend>
+-<test_depend>launch_testing_ament_cmake</test_depend>
+-<test_depend>launch_testing_ros</test_depend>
++<test_depend>launch</test_depend>
++<test_depend>launch_testing</test_depend>
++<test_depend>launch_testing_ament_cmake</test_depend>
++<test_depend>launch_testing_ros</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++demo_nodes_py: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="2">
++<name>demo_nodes_py</name>
++<description>Python nodes which were previously in the ros2/examples repository but are now just used for demo purposes.</description>
++<maintainer email="michael@openrobotics.org">Michael Carroll</maintainer>
++<license>Apache License 2.0</license>
++<author>Mikael Arguedas</author>
++<author email="esteve@osrfoundation.org">Esteve Fernandez</author>
++<exec_depend>example_interfaces</exec_depend>
++<exec_depend>rclpy</exec_depend>
++<exec_depend>std_msgs</exec_depend>
++<test_depend>ament_copyright</test_depend>
++<test_depend>ament_flake8</test_depend>
++<test_depend>ament_pep257</test_depend>
++<test_depend>python3-pytest</test_depend>
++<export>
++<build_type>ament_python</build_type>
++</export>
++</package>
++-----
++depthimage_to_laserscan: <?xml version="1.0" ?>
++<package format="2">
++<name>depthimage_to_laserscan</name>
++<description>depthimage_to_laserscan</description>
++<author>Chad Rockey</author>
++<maintainer email="clalancette@openrobotics.org">Chris Lalancette</maintainer>
++<license>BSD</license>
++<url type="website">http://ros.org/wiki/depthimage_to_laserscan</url>
++<url type="bugtracker">https://github.com/ros-perception/depthimage_to_laserscan/issues</url>
++<url type="repository">https://github.com/ros-perception/depthimage_to_laserscan</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<depend>image_geometry</depend>
++<depend>libopencv-dev</depend>
++<depend>rclcpp</depend>
++<depend>sensor_msgs</depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++desktop: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="2">
++<name>desktop</name>
++<description>A package which extends 'ros_base' and includes high level packages like vizualization tools and demos.</description>
++<maintainer email="steven@openrobotics.org">Steven! Ragnarök</maintainer>
++<license>Apache License 2.0</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<exec_depend>ros_base</exec_depend>
++<exec_depend>angles</exec_depend>
++<exec_depend>depthimage_to_laserscan</exec_depend>
++<exec_depend>joy</exec_depend>
++<exec_depend>pcl_conversions</exec_depend>
++<exec_depend>rviz2</exec_depend>
++<exec_depend>rviz_default_plugins</exec_depend>
++<exec_depend>teleop_twist_joy</exec_depend>
++<exec_depend>teleop_twist_keyboard</exec_depend>
++<exec_depend>action_tutorials</exec_depend>
++<exec_depend>composition</exec_depend>
++<exec_depend>demo_nodes_cpp</exec_depend>
++<exec_depend>demo_nodes_cpp_native</exec_depend>
++<exec_depend>demo_nodes_py</exec_depend>
++<exec_depend>dummy_map_server</exec_depend>
++<exec_depend>dummy_robot_bringup</exec_depend>
++<exec_depend>dummy_sensors</exec_depend>
++<exec_depend>image_tools</exec_depend>
++<exec_depend>intra_process_demo</exec_depend>
++<exec_depend>lifecycle</exec_depend>
++<exec_depend>logging_demo</exec_depend>
++<exec_depend>pendulum_control</exec_depend>
++<exec_depend>pendulum_msgs</exec_depend>
++<exec_depend>quality_of_service_demo_cpp</exec_depend>
++<exec_depend>quality_of_service_demo_py</exec_depend>
++<exec_depend>topic_monitor</exec_depend>
++<exec_depend>tlsf</exec_depend>
++<exec_depend>tlsf_cpp</exec_depend>
++<exec_depend>examples_rclcpp_minimal_action_client</exec_depend>
++<exec_depend>examples_rclcpp_minimal_action_server</exec_depend>
++<exec_depend>examples_rclcpp_minimal_client</exec_depend>
++<exec_depend>examples_rclcpp_minimal_composition</exec_depend>
++<exec_depend>examples_rclcpp_minimal_publisher</exec_depend>
++<exec_depend>examples_rclcpp_minimal_service</exec_depend>
++<exec_depend>examples_rclcpp_minimal_subscriber</exec_depend>
++<exec_depend>examples_rclcpp_minimal_timer</exec_depend>
++<exec_depend>examples_rclpy_minimal_action_client</exec_depend>
++<exec_depend>examples_rclpy_minimal_action_server</exec_depend>
++<exec_depend>examples_rclpy_executors</exec_depend>
++<exec_depend>examples_rclpy_minimal_client</exec_depend>
++<exec_depend>examples_rclpy_minimal_publisher</exec_depend>
++<exec_depend>examples_rclpy_minimal_service</exec_depend>
++<exec_depend>examples_rclpy_minimal_subscriber</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++diagnostic_msgs: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="3">
++<name>diagnostic_msgs</name>
++<description>A package containing some diagnostics related message and service definitions.</description>
++<maintainer email="william@osrfoundation.org">William Woodall</maintainer>
++<license>Apache License 2.0</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<buildtool_depend>rosidl_default_generators</buildtool_depend>
++<build_depend>builtin_interfaces</build_depend>
++<build_depend>geometry_msgs</build_depend>
++<build_depend>std_msgs</build_depend>
++<exec_depend>builtin_interfaces</exec_depend>
++<exec_depend>geometry_msgs</exec_depend>
++<exec_depend>rosidl_default_runtime</exec_depend>
++<exec_depend>std_msgs</exec_depend>
++<test_depend>ament_lint_common</test_depend>
++<member_of_group>rosidl_interface_packages</member_of_group>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++dummy_map_server: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="2">
++<name>dummy_map_server</name>
++<description>dummy map server node</description>
++<maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
++<license>Apache License 2.0</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<build_depend>nav_msgs</build_depend>
++<build_depend>rclcpp</build_depend>
++<exec_depend>nav_msgs</exec_depend>
++<exec_depend>rclcpp</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++dummy_robot_bringup: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="2">
++<name>dummy_robot_bringup</name>
++<description>dummy robot bringup</description>
++<maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
++<license>Apache License 2.0</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<exec_depend>ament_index_python</exec_depend>
++<exec_depend>dummy_map_server</exec_depend>
++<exec_depend>dummy_sensors</exec_depend>
++<exec_depend>launch</exec_depend>
++<exec_depend>launch_ros</exec_depend>
++<exec_depend>robot_state_publisher</exec_depend>
++<exec_depend>ros2run</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++dummy_sensors: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="2">
++<name>dummy_sensors</name>
++<description>dummy sensor nodes</description>
++<maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
++<license>Apache License 2.0</license>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<build_depend>rclcpp</build_depend>
++<build_depend>sensor_msgs</build_depend>
++<exec_depend>rclcpp</exec_depend>
++<exec_depend>sensor_msgs</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_build: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_build</name>
++<description>Collection of cmake/make build tools primarily for ecl development itself,
++but also contains a few cmake modules useful outside of the ecl.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_build</url>
++<url type="repository">https://github.com/stonier/ecl_tools</url>
++<url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_command_line: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_command_line</name>
++<description>Embeds the TCLAP library inside the ecl. This is a very convenient command line parser in templatised c++.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_command_line</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_concepts: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_concepts</name>
++<description>Introduces a compile time concept checking mechanism that can be used most commonly to check for required functionality when passing template arguments.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_concepts</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_config: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_config</name>
++<description>These tools inspect and describe your system with macros,
++types and functions.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_config</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_license</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_console: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_console</name>
++<description>Color codes for ansii consoles.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_console</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_containers: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_containers</name>
++<description>The containers included here are intended to extend the stl containers. In all cases,
++these implementations are designed to implement c++ conveniences and safety where speed is not sacrificed. Also includes techniques for memory debugging of common problems such as buffer overruns.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_containers</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_formatters</build_depend>
++<build_depend>ecl_converters</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<build_depend>ecl_utilities</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<exec_depend>ecl_converters</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<exec_depend>ecl_utilities</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_converters: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_converters</name>
++<description>Some fast/convenient type converters,
++mostly for char strings or strings. These are not really fully fleshed out,
++alot of them could use the addition for the whole range of fundamental types (e.g. all integers,
++not just int,
++unsigned int). They will come as the need arises.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_converters</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<build_depend>ecl_concepts</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_concepts</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_converters_lite: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_converters_lite</name>
++<description>These are a very simple version of some of the functions in ecl_converters suitable for firmware development. That is,
++there is no use of new,
++templates or exceptions.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_converters_lite</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_config</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_core: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_core</name>
++<description>A set of tools and interfaces extending the capabilities of c++ to provide a lightweight,
++consistent interface with a focus for control programming.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://www.ros.org/wiki/ecl_core</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<exec_depend>ecl_command_line</exec_depend>
++<exec_depend>ecl_concepts</exec_depend>
++<exec_depend>ecl_containers</exec_depend>
++<exec_depend>ecl_converters</exec_depend>
++<exec_depend>ecl_core_apps</exec_depend>
++<exec_depend>ecl_devices</exec_depend>
++<exec_depend>ecl_eigen</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<exec_depend>ecl_geometry</exec_depend>
++<exec_depend>ecl_ipc</exec_depend>
++<exec_depend>ecl_linear_algebra</exec_depend>
++<exec_depend>ecl_math</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_sigslots</exec_depend>
++<exec_depend>ecl_statistics</exec_depend>
++<exec_depend>ecl_streams</exec_depend>
++<exec_depend>ecl_threads</exec_depend>
++<exec_depend>ecl_time</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<exec_depend>ecl_utilities</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_core_apps: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_core_apps</name>
++<description>This includes a suite of programs demo'ing various aspects of the ecl_core. It also includes various benchmarking and utility programs for use primarily with embedded systems.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_core_apps</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_linear_algebra</build_depend>
++<build_depend>ecl_command_line</build_depend>
++<build_depend>ecl_converters</build_depend>
++<build_depend>ecl_containers</build_depend>
++<build_depend>ecl_devices</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_formatters</build_depend>
++<build_depend>ecl_geometry</build_depend>
++<build_depend>ecl_ipc</build_depend>
++<build_depend>ecl_sigslots</build_depend>
++<build_depend>ecl_streams</build_depend>
++<build_depend>ecl_threads</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<build_depend>ecl_time_lite</build_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_linear_algebra</exec_depend>
++<exec_depend>ecl_command_line</exec_depend>
++<exec_depend>ecl_converters</exec_depend>
++<exec_depend>ecl_containers</exec_depend>
++<exec_depend>ecl_devices</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<exec_depend>ecl_geometry</exec_depend>
++<exec_depend>ecl_ipc</exec_depend>
++<exec_depend>ecl_sigslots</exec_depend>
++<exec_depend>ecl_streams</exec_depend>
++<exec_depend>ecl_threads</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<exec_depend>ecl_time_lite</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_devices: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_devices</name>
++<description>Provides an extensible and standardised framework for input-output devices.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_devices</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_containers</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<build_depend>ecl_threads</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<build_depend>ecl_utilities</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_containers</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_threads</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<exec_depend>ecl_utilities</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_eigen: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_eigen</name>
++<description>This provides an Eigen implementation for ecl's linear algebra.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_eigen</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>eigen</build_depend>
++<exec_depend>eigen</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_errors: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_errors</name>
++<description>This library provides lean and mean error mechanisms. It includes c style error functions as well as a few useful macros. For higher level mechanisms,
++refer to ecl_exceptions.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_errors</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_exceptions: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_exceptions</name>
++<description>Template based exceptions - these are simple and practical and avoid the proliferation of exception types. Although not syntatactically ideal,
++it is convenient and eminently practical.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_exceptions</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_filesystem: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_filesystem</name>
++<description>Cross platform filesystem utilities (until c++11 makes its way in).</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_filesystem</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_formatters: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_formatters</name>
++<description>The formatters here simply format various input types to a specified text format. They can be used with most streaming types (including both ecl and stl streams).</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_formatters</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_converters</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_converters</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_geometry: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_geometry</name>
++<description>Any tools relating to mathematical geometry. Primarily featuring polynomials and interpolations.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_geometry</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_containers</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_formatters</build_depend>
++<build_depend>ecl_linear_algebra</build_depend>
++<build_depend>ecl_math</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_containers</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<exec_depend>ecl_linear_algebra</exec_depend>
++<exec_depend>ecl_math</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_io: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_io</name>
++<description>Most implementations (windows,
++posix,
++...) have slightly different api for low level input-output functions. These are gathered here and re-represented with a cross platform set of functions.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_io</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_ipc: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_ipc</name>
++<description>Interprocess mechanisms vary greatly across platforms - sysv,
++posix,
++win32,
++there are more than a few. This package provides an infrastructure to allow for developing cross platform c++ wrappers around the lower level c api's that handle these mechanisms. These make it not only easier to utilise such mechanisms,
++but allow it to be done consistently across platforms.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_ipc</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_threads</build_depend>
++<build_depend>ecl_time_lite</build_depend>
++<build_depend>ecl_time</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_threads</exec_depend>
++<exec_depend>ecl_time_lite</exec_depend>
++<exec_depend>ecl_time</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_license: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_license</name>
++<description>Maintains the ecl licenses and also provides an install target for deploying licenses with the ecl libraries.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_license</url>
++<url type="repository">https://github.com/stonier/ecl_tools</url>
++<url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_linear_algebra: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_linear_algebra</name>
++<description>Ecl frontend to a linear matrix package (currently eigen).</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_linear_algebra</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_converters</build_depend>
++<build_depend>ecl_eigen</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_formatters</build_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_math</build_depend>
++<build_depend>sophus</build_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_converters</exec_depend>
++<exec_depend>ecl_eigen</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_math</exec_depend>
++<exec_depend>sophus</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_lite: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_lite</name>
++<description>Libraries and utilities for embedded and low-level linux development.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://www.ros.org/wiki/ecl_lite</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_converters_lite</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_io</exec_depend>
++<exec_depend>ecl_sigslots_lite</exec_depend>
++<exec_depend>ecl_time_lite</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_manipulators: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_manipulators</name>
++<description>Deploys various manipulation algorithms,
++currently just feedforward filters (interpolations).</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_manipulators</url>
++<url type="repository">https://github.com/stonier/ecl_manipulation</url>
++<url type="bugtracker">https://github.com/stonier/ecl_manipulation/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_geometry</build_depend>
++<build_depend>ecl_formatters</build_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_geometry</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_math: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_math</name>
++<description>This package provides simple support to cmath,
++filling in holes or redefining in a c++ formulation where desirable.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_math</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_mobile_robot: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_mobile_robot</name>
++<description>Contains transforms (e.g. differential drive inverse kinematics) for the various types of mobile robot platforms.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_mobile_robot</url>
++<url type="repository">https://github.com/stonier/ecl_navigation</url>
++<url type="bugtracker">https://github.com/stonier/ecl_navigation/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_geometry</build_depend>
++<build_depend>ecl_math</build_depend>
++<build_depend>ecl_formatters</build_depend>
++<build_depend>ecl_linear_algebra</build_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_geometry</exec_depend>
++<exec_depend>ecl_math</exec_depend>
++<exec_depend>ecl_formatters</exec_depend>
++<exec_depend>ecl_linear_algebra</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_mpl: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_mpl</name>
++<description>Metaprogramming tools move alot of runtime calculations to be shifted to compile time. This has only very elementary structures at this stage.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_mpl</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
+ <export>
+ <build_type>ament_cmake</build_type>
+ </export>
+ </package>
+ -----
+-demo_nodes_py: <?xml version="1.0" ?>
+-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++ecl_sigslots: <?xml version="1.0" ?>
+ <package format="2">
+-<name>demo_nodes_py</name>
+-<description>Python nodes which were previously in the ros2/examples repository but are now just used for demo purposes.</description>
+-<maintainer email="michael@openrobotics.org">Michael Carroll</maintainer>
+-<license>Apache License 2.0</license>
+-<author>Mikael Arguedas</author>
+-<author email="esteve@osrfoundation.org">Esteve Fernandez</author>
+-<exec_depend>example_interfaces</exec_depend>
+-<exec_depend>rclpy</exec_depend>
+-<exec_depend>std_msgs</exec_depend>
+-<test_depend>ament_copyright</test_depend>
+-<test_depend>ament_flake8</test_depend>
+-<test_depend>ament_pep257</test_depend>
+-<test_depend>python3-pytest</test_depend>
++<name>ecl_sigslots</name>
++<description>Provides a signal/slot mechanism (in the same vein as qt sigslots,
++boost::signals etc for intra-process communication. These include some improvements - they do not need a preprocessor,
++are fully type safe,
++allow for simple connections via a posix style string identifier and are multithread-safe.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://ros.org/wiki/ecl_sigslots</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_threads</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_threads</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
+ <export>
+-<build_type>ament_python</build_type>
++<build_type>ament_cmake</build_type>
+ </export>
+ </package>
+ -----
+-depthimage_to_laserscan: <?xml version="1.0" ?>
++ecl_sigslots_lite: <?xml version="1.0" ?>
+ <package format="2">
+-<name>depthimage_to_laserscan</name>
+-<description>depthimage_to_laserscan</description>
+-<author>Chad Rockey</author>
+-<maintainer email="clalancette@openrobotics.org">Chris Lalancette</maintainer>
++<name>ecl_sigslots_lite</name>
++<description>This avoids use of dynamic storage (malloc/new) and thread safety (mutexes) to provide a very simple sigslots implementation that can be used for *very* embedded development.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
+ <license>BSD</license>
+-<url type="website">http://ros.org/wiki/depthimage_to_laserscan</url>
+-<url type="bugtracker">https://github.com/ros-perception/depthimage_to_laserscan/issues</url>
+-<url type="repository">https://github.com/ros-perception/depthimage_to_laserscan</url>
++<url type="website">http://wiki.ros.org/ecl_sigslots_lite</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
+ <buildtool_depend>ament_cmake_ros</buildtool_depend>
+-<depend>image_geometry</depend>
+-<depend>libopencv-dev</depend>
+-<depend>rclcpp</depend>
+-<depend>sensor_msgs</depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_statistics: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_statistics</name>
++<description>Common statistical structures and algorithms for control systems.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_statistics</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_linear_algebra</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_linear_algebra</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
+ <test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
+ <export>
+ <build_type>ament_cmake</build_type>
+ </export>
+ </package>
+ -----
+-desktop: <?xml version="1.0" ?>
+-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++ecl_streams: <?xml version="1.0" ?>
+ <package format="2">
+-<name>desktop</name>
+-<description>A package which extends 'ros_base' and includes high level packages like vizualization tools and demos.</description>
+-<maintainer email="steven@openrobotics.org">Steven! Ragnarök</maintainer>
+-<license>Apache License 2.0</license>
+-<buildtool_depend>ament_cmake</buildtool_depend>
+-<exec_depend>ros_base</exec_depend>
+-<exec_depend>angles</exec_depend>
+-<exec_depend>depthimage_to_laserscan</exec_depend>
+-<exec_depend>joy</exec_depend>
+-<exec_depend>pcl_conversions</exec_depend>
+-<exec_depend>rviz2</exec_depend>
+-<exec_depend>rviz_default_plugins</exec_depend>
+-<exec_depend>teleop_twist_joy</exec_depend>
+-<exec_depend>teleop_twist_keyboard</exec_depend>
+-<exec_depend>action_tutorials</exec_depend>
+-<exec_depend>composition</exec_depend>
+-<exec_depend>demo_nodes_cpp</exec_depend>
+-<exec_depend>demo_nodes_cpp_native</exec_depend>
+-<exec_depend>demo_nodes_py</exec_depend>
+-<exec_depend>dummy_map_server</exec_depend>
+-<exec_depend>dummy_robot_bringup</exec_depend>
+-<exec_depend>dummy_sensors</exec_depend>
+-<exec_depend>image_tools</exec_depend>
+-<exec_depend>intra_process_demo</exec_depend>
+-<exec_depend>lifecycle</exec_depend>
+-<exec_depend>logging_demo</exec_depend>
+-<exec_depend>pendulum_control</exec_depend>
+-<exec_depend>pendulum_msgs</exec_depend>
+-<exec_depend>quality_of_service_demo_cpp</exec_depend>
+-<exec_depend>quality_of_service_demo_py</exec_depend>
+-<exec_depend>topic_monitor</exec_depend>
+-<exec_depend>tlsf</exec_depend>
+-<exec_depend>tlsf_cpp</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_action_client</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_action_server</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_client</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_composition</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_publisher</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_service</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_subscriber</exec_depend>
+-<exec_depend>examples_rclcpp_minimal_timer</exec_depend>
+-<exec_depend>examples_rclpy_minimal_action_client</exec_depend>
+-<exec_depend>examples_rclpy_minimal_action_server</exec_depend>
+-<exec_depend>examples_rclpy_executors</exec_depend>
+-<exec_depend>examples_rclpy_minimal_client</exec_depend>
+-<exec_depend>examples_rclpy_minimal_publisher</exec_depend>
+-<exec_depend>examples_rclpy_minimal_service</exec_depend>
+-<exec_depend>examples_rclpy_minimal_subscriber</exec_depend>
++<name>ecl_streams</name>
++<description>These are lightweight text streaming classes that connect to standardised ecl type devices.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_streams</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_concepts</build_depend>
++<build_depend>ecl_devices</build_depend>
++<build_depend>ecl_time</build_depend>
++<build_depend>ecl_converters</build_depend>
++<build_depend>ecl_type_traits</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_concepts</exec_depend>
++<exec_depend>ecl_devices</exec_depend>
++<exec_depend>ecl_time</exec_depend>
++<exec_depend>ecl_converters</exec_depend>
++<exec_depend>ecl_type_traits</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
++<test_depend>ament_lint_common</test_depend>
+ <export>
+ <build_type>ament_cmake</build_type>
+ </export>
+ </package>
+ -----
+-diagnostic_msgs: <?xml version="1.0" ?>
+-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+-<package format="3">
+-<name>diagnostic_msgs</name>
+-<description>A package containing some diagnostics related message and service definitions.</description>
+-<maintainer email="william@osrfoundation.org">William Woodall</maintainer>
+-<license>Apache License 2.0</license>
+-<buildtool_depend>ament_cmake</buildtool_depend>
+-<buildtool_depend>rosidl_default_generators</buildtool_depend>
+-<build_depend>builtin_interfaces</build_depend>
+-<build_depend>geometry_msgs</build_depend>
+-<build_depend>std_msgs</build_depend>
+-<exec_depend>builtin_interfaces</exec_depend>
+-<exec_depend>geometry_msgs</exec_depend>
+-<exec_depend>rosidl_default_runtime</exec_depend>
+-<exec_depend>std_msgs</exec_depend>
++ecl_threads: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_threads</name>
++<description>This package provides the c++ extensions for a variety of threaded programming tools. These are usually different on different platforms,
++so the architecture for a cross-platform framework is also implemented.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_threads</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_concepts</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_time</build_depend>
++<build_depend>ecl_utilities</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_concepts</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_time</exec_depend>
++<exec_depend>ecl_utilities</exec_depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>ament_lint_auto</test_depend>
+ <test_depend>ament_lint_common</test_depend>
+-<member_of_group>rosidl_interface_packages</member_of_group>
+ <export>
+ <build_type>ament_cmake</build_type>
+ </export>
+ </package>
+ -----
+-dummy_map_server: <?xml version="1.0" ?>
+-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++ecl_time: '<?xml version="1.0" ?>
+ <package format="2">
+-<name>dummy_map_server</name>
+-<description>dummy map server node</description>
+-<maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
+-<license>Apache License 2.0</license>
+-<buildtool_depend>ament_cmake</buildtool_depend>
+-<build_depend>nav_msgs</build_depend>
+-<build_depend>rclcpp</build_depend>
+-<exec_depend>nav_msgs</exec_depend>
+-<exec_depend>rclcpp</exec_depend>
++<name>ecl_time</name>
++<description>Timing utilities are very dependent on the system api provided for their use. This package provides a means for handling different timing models. Current support - posix rt : complete. - macosx : posix timers only,
++missing absolute timers. - win : none.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_time</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<build_depend>ecl_exceptions</build_depend>
++<build_depend>ecl_time_lite</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<exec_depend>ecl_exceptions</exec_depend>
++<exec_depend>ecl_time_lite</exec_depend>
+ <test_depend>ament_cmake_gtest</test_depend>
+ <test_depend>ament_lint_auto</test_depend>
+ <test_depend>ament_lint_common</test_depend>
+ <export>
+ <build_type>ament_cmake</build_type>
+ </export>
++</package>'
++-----
++ecl_time_lite: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_time_lite</name>
++<description>Provides a portable set of time functions that are especially useful for porting other code or being wrapped by higher level c++ classes.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_time_lite</url>
++<url type="repository">https://github.com/stonier/ecl_lite</url>
++<url type="bugtracker">https://github.com/stonier/ecl_lite/issues</url>
++<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_errors</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<exec_depend>ecl_config</exec_depend>
++<exec_depend>ecl_errors</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
+ </package>
+ -----
+-dummy_robot_bringup: <?xml version="1.0" ?>
+-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++ecl_tools: <?xml version="1.0" ?>
+ <package format="2">
+-<name>dummy_robot_bringup</name>
+-<description>dummy robot bringup</description>
+-<maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
+-<license>Apache License 2.0</license>
++<name>ecl_tools</name>
++<description>Tools and utilities for ecl development.</description>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://www.ros.org/wiki/ecl_tools</url>
++<url type="repository">https://github.com/stonier/ecl_tools</url>
++<url type="bugtracker">https://github.com/stonier/ecl_tools/issues</url>
+ <buildtool_depend>ament_cmake</buildtool_depend>
+-<exec_depend>ament_index_python</exec_depend>
+-<exec_depend>dummy_map_server</exec_depend>
+-<exec_depend>dummy_sensors</exec_depend>
+-<exec_depend>launch</exec_depend>
+-<exec_depend>launch_ros</exec_depend>
+-<exec_depend>robot_state_publisher</exec_depend>
+-<exec_depend>ros2run</exec_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_build</exec_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
++ecl_type_traits: <?xml version="1.0" ?>
++<package format="2">
++<name>ecl_type_traits</name>
++<description>Extends c++ type traits and implements a few more to boot.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_type_traits</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_config</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_config</exec_depend>
+ <test_depend>ament_cmake_gtest</test_depend>
+ <test_depend>ament_lint_auto</test_depend>
+ <test_depend>ament_lint_common</test_depend>
+@@ -3876,18 +5078,23 @@ dummy_robot_bringup: <?xml version="1.0" ?>
+ </export>
+ </package>
+ -----
+-dummy_sensors: <?xml version="1.0" ?>
+-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++ecl_utilities: <?xml version="1.0" ?>
+ <package format="2">
+-<name>dummy_sensors</name>
+-<description>dummy sensor nodes</description>
+-<maintainer email="karsten@osrfoundation.org">Karsten Knese</maintainer>
+-<license>Apache License 2.0</license>
+-<buildtool_depend>ament_cmake</buildtool_depend>
+-<build_depend>rclcpp</build_depend>
+-<build_depend>sensor_msgs</build_depend>
+-<exec_depend>rclcpp</exec_depend>
+-<exec_depend>sensor_msgs</exec_depend>
++<name>ecl_utilities</name>
++<description>Includes various supporting tools and utilities for c++ programming.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://wiki.ros.org/ecl_utilities</url>
++<url type="repository">https://github.com/stonier/ecl_core</url>
++<url type="bugtracker">https://github.com/stonier/ecl_core/issues</url>
++<author email="d.stonier@gmail.com">Daniel Stonier</author>--&gt;<buildtool_depend>ament_cmake_ros</buildtool_depend>
++<build_depend>ecl_license</build_depend>
++<build_depend>ecl_build</build_depend>
++<build_depend>ecl_mpl</build_depend>
++<build_depend>ecl_concepts</build_depend>
++<exec_depend>ecl_license</exec_depend>
++<exec_depend>ecl_mpl</exec_depend>
++<exec_depend>ecl_concepts</exec_depend>
+ <test_depend>ament_cmake_gtest</test_depend>
+ <test_depend>ament_lint_auto</test_depend>
+ <test_depend>ament_lint_common</test_depend>
+@@ -5362,6 +6569,58 @@ poco_vendor: "<?xml version=\"1.0\" ?>
+ </export>
+ </package>"
+ -----
++py_trees: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="3">
++<name>py_trees</name>
++<description>Pythonic implementation of behaviour trees.</description>
++<author>Daniel Stonier</author>
++<author>Michal Staniaszek</author>
++<author>Naveed Usmani</author>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://py-trees.readthedocs.io</url>
++<url type="repository">https://github.com/stonier/py_trees</url>
++<url type="bugtracker">https://github.com/stonier/py_trees/issues</url>
++<build_depend>python3-setuptools</build_depend>
++<doc_depend>python3-sphinx</doc_depend>
++<doc_depend>python3-sphinx-argparse</doc_depend>
++<doc_depend>python3-sphinx-rtd-theme</doc_depend>
++<doc_depend>python3-pydot</doc_depend>
++<exec_depend>python3-pydot</exec_depend>
++<test_depend>python3-nose</test_depend>
++<test_depend>python3-nose-yanc</test_depend>
++<export>
++<build_type>ament_python</build_type>
++</export>
++</package>
++-----
++py_trees_ros_interfaces: <?xml version="1.0" ?>
++<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
++<package format="3">
++<name>py_trees_ros_interfaces</name>
++<description>Interfaces used by py_trees_ros and py_trees_ros_tutorials.</description>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<license>BSD</license>
++<url type="website">http://ros.org/wiki/py_trees_ros_interfaces</url>
++<url type="repository">https://github.com/splintered-reality/py_trees_ros_interfaces</url>
++<url type="bugtracker">https://github.com/splintered-reality/py_trees_ros_interfaces/issues</url>
++<author>Daniel Stonier</author>
++<author>Michal Staniaszek</author>
++<author>Naveed Usmani</author>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<build_depend>rosidl_default_generators</build_depend>
++<depend>action_msgs</depend>
++<depend>geometry_msgs</depend>
++<depend>unique_identifier_msgs</depend>
++<exec_depend>rosidl_default_runtime</exec_depend>
++<test_depend>ament_lint_common</test_depend>
++<member_of_group>rosidl_interface_packages</member_of_group>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
+ python_cmake_module: <?xml version="1.0" ?>
+ <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+ <package format="2">
+@@ -6381,6 +7640,34 @@ ros1_bridge: <?xml version="1.0" ?>
+ <test_depend>launch_testing_ament_cmake</test_depend>
+ <test_depend>launch_testing_ros</test_depend>
+ <test_depend>ros2run</test_depend>
++<build_depend>action_msgs</build_depend>
++<exec_depend>action_msgs</exec_depend>
++<build_depend>actionlib_msgs</build_depend>
++<exec_depend>actionlib_msgs</exec_depend>
++<build_depend>diagnostic_msgs</build_depend>
++<exec_depend>diagnostic_msgs</exec_depend>
++<build_depend>example_interfaces</build_depend>
++<exec_depend>example_interfaces</exec_depend>
++<build_depend>gazebo_msgs</build_depend>
++<exec_depend>gazebo_msgs</exec_depend>
++<build_depend>geometry_msgs</build_depend>
++<exec_depend>geometry_msgs</exec_depend>
++<build_depend>nav_msgs</build_depend>
++<exec_depend>nav_msgs</exec_depend>
++<build_depend>sensor_msgs</build_depend>
++<exec_depend>sensor_msgs</exec_depend>
++<build_depend>shape_msgs</build_depend>
++<exec_depend>shape_msgs</exec_depend>
++<build_depend>std_srvs</build_depend>
++<exec_depend>std_srvs</exec_depend>
++<build_depend>stereo_msgs</build_depend>
++<exec_depend>stereo_msgs</exec_depend>
++<build_depend>tf2_msgs</build_depend>
++<exec_depend>tf2_msgs</exec_depend>
++<build_depend>trajectory_msgs</build_depend>
++<exec_depend>trajectory_msgs</exec_depend>
++<build_depend>visualization_msgs</build_depend>
++<exec_depend>visualization_msgs</exec_depend>
+ <group_depend>rosidl_interface_packages</group_depend>
+ <export>
+ <build_type>ament_cmake</build_type>
+@@ -6761,6 +8048,7 @@ ros_base: <?xml version="1.0" ?>
+ <exec_depend>tf2</exec_depend>
+ <exec_depend>tf2_eigen</exec_depend>
+ <exec_depend>tf2_geometry_msgs</exec_depend>
++<exec_depend>tf2_kdl</exec_depend>
+ <exec_depend>tf2_ros</exec_depend>
+ <exec_depend>kdl_parser</exec_depend>
+ <exec_depend>urdf</exec_depend>
+@@ -6798,6 +8086,8 @@ generate messages and other core ROS concepts.</description>
+ <exec_depend>rosidl_default_runtime</exec_depend>
+ <exec_depend>ros_environment</exec_depend>
+ <exec_depend>common_interfaces</exec_depend>
++<exec_depend>ros2action</exec_depend>
++<exec_depend>ros2component</exec_depend>
+ <exec_depend>ros2launch</exec_depend>
+ <exec_depend>ros2lifecycle</exec_depend>
+ <exec_depend>ros2msg</exec_depend>
+@@ -6810,6 +8100,7 @@ generate messages and other core ROS concepts.</description>
+ <exec_depend>ros2srv</exec_depend>
+ <exec_depend>ros2topic</exec_depend>
+ <exec_depend>sros2</exec_depend>
++<exec_depend>sros2_cmake</exec_depend>
+ <exec_depend>class_loader</exec_depend>
+ <exec_depend>pluginlib</exec_depend>
+ <export>
+@@ -8402,6 +9693,23 @@ shared_queues_vendor: <?xml version="1.0" ?>
+ </export>
+ </package>
+ -----
++sophus: <?xml version="1.0" ?>
++<package format="2">
++<name>sophus</name>
++<description>C++ implementation of Lie Groups using Eigen.</description>
++<url type="repository">https://github.com/strasdat/sophus</url>
++<url type="bugtracker">https://github.com/strasdat/sophus/issues</url>
++<maintainer email="d.stonier@gmail.com">Daniel Stonier</maintainer>
++<author>Hauke Strasdat</author>
++<license>MIT</license>
++<buildtool_depend>cmake</buildtool_depend>
++<build_depend>eigen</build_depend>
++<build_export_depend>eigen</build_export_depend>
++<export>
++<build_type>cmake</build_type>
++</export>
++</package>
++-----
+ sqlite3_vendor: <?xml version="1.0" ?>
+ <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+ <package format="2">
+@@ -8425,6 +9733,7 @@ sros2: <?xml version="1.0" ?>
+ <license>Apache License 2.0</license>
+ <author email="morgan@osrfoundation.org">Morgan Quigley</author>
+ <author>Mikael Arguedas</author>
++<depend>rclpy</depend>
+ <depend>ros2cli</depend>
+ <exec_depend>openssl</exec_depend>
+ <exec_depend>python3-lxml</exec_depend>
+@@ -8709,6 +10018,29 @@ tf2_geometry_msgs: <?xml version="1.0" ?>
+ </export>
+ </package>
+ -----
++tf2_kdl: <?xml version="1.0" ?>
++<package format="2">
++<name>tf2_kdl</name>
++<description>KDL binding for tf2</description>
++<maintainer email="tfoote@osrfoundation.org">Tully Foote</maintainer>
++<author>Wim Meeussen</author>
++<license>BSD</license>
++<url type="website">http://ros.org/wiki/tf2</url>
++<buildtool_depend>ament_cmake</buildtool_depend>
++<depend>builtin_interfaces</depend>
++<depend>eigen</depend>
++<depend>geometry_msgs</depend>
++<depend>orocos_kdl</depend>
++<depend>tf2</depend>
++<depend>tf2_ros</depend>
++<test_depend>ament_cmake_gtest</test_depend>
++<test_depend>rclcpp</test_depend>
++<test_depend>tf2_msgs</test_depend>
++<export>
++<build_type>ament_cmake</build_type>
++</export>
++</package>
++-----
+ tf2_msgs: <?xml version="1.0" ?>
+ <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+ <package format="3">
+diff --git a/files/dashing/newer-platform-components.list b/files/dashing/newer-platform-components.list
+index 385864b5..3afc8668 100644
+--- a/files/dashing/newer-platform-components.list
++++ b/files/dashing/newer-platform-components.list
+@@ -6,8 +6,8 @@ python-catkin-pkg;0.4.12-100;dh-python,python-setuptools (>= 0.6b3),python-all (
+ python-catkin-pkg-modules;0.4.12-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-catkin-tools;0.4.5-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+ python-osrf-pycommon;0.1.6-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
+-python-ros-buildfarm;2.0.1-100;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+-python-ros-buildfarm-modules;2.0.1-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
++python-ros-buildfarm;3.0.0-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-ros-buildfarm-modules;3.0.0-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-rosdep;0.15.2-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+ python-rosdistro;0.7.4-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-rosdistro-modules;0.7.4-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+@@ -15,7 +15,7 @@ python-rosinstall;0.7.8-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),d
+ python-rosinstall-generator;0.1.16-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-rospkg;1.1.9-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-rospkg-modules;1.1.9-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+-python-vcstool;0.1.40-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-vcstool;0.2.1-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-vcstools;0.1.40-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
+ python-wstool;0.1.17-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+ python3-bloom;0.8.0-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+@@ -25,7 +25,7 @@ python3-catkin-tools;0.4.5-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ python3-colcon-argcomplete;0.3.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-bash;0.3.2-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-bazel;0.1.0-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-colcon-cmake;0.2.11-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-cmake;0.2.13-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-common-extensions;0.2.0-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-core;0.3.22-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-defaults;0.2.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+@@ -33,7 +33,7 @@ python3-colcon-devtools;0.2.1-1;dh-python,python3-setuptools,python3-all,debhelp
+ python3-colcon-library-path;0.2.1-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-metadata;0.2.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-mixin;0.1.5-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-notification;0.2.7-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-notification;0.2.8-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-output;0.2.3-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-package-information;0.2.2-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-package-selection;0.2.4-1;python3-setuptools,python3-all,debhelper (>= 7)
+@@ -49,8 +49,8 @@ python3-crocker;0.0.1-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ python3-osrf-pycommon;0.1.6-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-px4sitl;0.0.2-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ python3-rocker;0.1.4-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-ros-buildfarm;2.0.1-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-ros-buildfarm-modules;2.0.1-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-ros-buildfarm;3.0.0-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-ros-buildfarm-modules;3.0.0-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-rosdep;0.15.2-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ python3-rosdistro;0.7.4-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-rosdistro-modules;0.7.4-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+@@ -58,7 +58,7 @@ python3-rosinstall;0.7.8-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ python3-rosinstall-generator;0.1.16-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-rospkg;1.1.9-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-rospkg-modules;1.1.9-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-vcstool;0.1.40-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-vcstool;0.2.1-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-vcstools;0.1.40-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-wstool;0.1.17-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ shiboken2;2.0.0.dev0-0~201712141347~rev1722~pkg76~ubuntu18.04.1;dpkg-dev (>= 1.15.7),debhelper (>= 9),cmake (>= 3.0),dh-python,llvm,clang,libclang-dev,qtbase5-dev (>= 5.7),libqt5xmlpatterns5-dev,libsparsehash-dev (>= 1.6-1.1~),libxml2-dev (>= 2.6.32),libxslt1-dev (>= 1.1.19),python-all-dev (>= 2.7),python-all-dbg (>= 2.7),python-numpy,python-numpy-dbg,python3-all-dev (>= 3.2),python3-all-dbg (>= 3.2),python3-numpy,python3-numpy-dbg,python-sphinx,python3-sphinx
+diff --git a/files/dashing/rosdep-resolve.yaml b/files/dashing/rosdep-resolve.yaml
+index c3f4422f..c27b2ca2 100644
+--- a/files/dashing/rosdep-resolve.yaml
++++ b/files/dashing/rosdep-resolve.yaml
+@@ -1,172 +1,2 @@
+ # dashing/rosdep-resolve.yaml
+-asio:
+-- asio@meta-oe
+-assimp:
+-- assimp@openembedded-core
+-boost:
+-- boost@openembedded-core
+-bzip2:
+-- bzip2@openembedded-core
+-clang-format:
+-- clang-format@meta-ros
+-cmake:
+-- cmake@openembedded-core
+-cppcheck:
+-- cppcheck@meta-ros
+-cppunit:
+-- cppunit@meta-oe
+-curl:
+-- curl@openembedded-core
+-dkms: []
+-eigen:
+-- libeigen@meta-oe
+-g++-static: []
+-gazebo9: []
+-git:
+-- git@openembedded-core
+-google-mock:
+-- gtest@meta-oe
+-gtest:
+-- gtest@meta-oe
+-gtk3:
+-- gtk+3@openembedded-core
+-libboost-program-options-dev:
+-- boost@openembedded-core
+-libcairo2-dev:
+-- cairo@openembedded-core
+-libceres-dev:
+-- ceres-solver@meta-oe
+-libconsole-bridge-dev:
+-- console-bridge@meta-ros
+-libfreetype6:
+-- freetype@openembedded-core
+-libfreetype6-dev:
+-- freetype@openembedded-core
+-libgazebo9-dev:
+-- libgazebo9@meta-ros
+-libgflags-dev:
+-- gflags@meta-oe
+-libglfw3-dev:
+-- glfw@meta-intel-realsense
+-libgoogle-glog-dev:
+-- glog@meta-oe
+-libgpgme-dev:
+-- gpgme@openembedded-core
+-libopencv-dev:
+-- opencv@meta-oe
+-libopensplice69:
+-- 'null'
+-libpcl-all:
+-- pcl@meta-ros
+-libpcl-all-dev:
+-- pcl@meta-ros
+-libpoco-dev:
+-- poco@meta-oe
+-libqt5-core:
+-- qtbase@meta-qt5
+-libqt5-gui:
+-- qtbase@meta-qt5
+-libqt5-opengl:
+-- qtbase@meta-qt5
+-libqt5-widgets:
+-- qtbase@meta-qt5
+-libsqlite3-dev:
+-- sqlite3@openembedded-core
+-libssl-dev:
+-- openssl@openembedded-core
+-libusb-1.0-dev:
+-- libusb1@openembedded-core
+-libx11-dev:
+-- libx11@openembedded-core
+-libxaw:
+-- libxaw@meta-oe
+-libxml2-utils:
+-- libxml2@openembedded-core
+-libxrandr:
+-- libxrandr@openembedded-core
+-libzmq3-dev:
+-- zeromq@meta-oe
+-linux-headers-generic:
+-- virtual/kernel@openembedded-core
+-log4cxx:
+-- log4cxx@meta-ros
+-lua5.2-dev:
+-- lua@meta-oe
+-lz4:
+-- lz4
+-opengl:
+-- mesa@openembedded-core
+-openssl:
+-- openssl@openembedded-core
+-pcre:
+-- libpcre@openembedded-core
+-pkg-config:
+-- pkgconfig@openembedded-core
+-protobuf-dev:
+-- protobuf@meta-oe
+-pydocstyle:
+-- ${PYTHON_PN}-pydocstyle@meta-ros
+-pyflakes3:
+-- ${PYTHON_PN}-pyflakes@meta-ros
+-python-sphinx:
+-- ${PYTHON_PN}-sphinx@meta-ros
+-python3-catkin-pkg-modules:
+-- python3-catkin-pkg@meta-ros
+-python3-dev:
+-- python3@openembedded-core
+-python3-empy:
+-- python3-empy@meta-ros
+-python3-flake8:
+-- python3-flake8@meta-ros
+-python3-lark-parser:
+-- python3-lark-parser@meta-ros
+-python3-lxml:
+-- python3-lxml@meta-python
+-python3-matplotlib:
+-- python3-matplotlib@meta-python
+-python3-mock:
+-- python3-mock@meta-ros
+-python3-nose:
+-- python3-nose@openembedded-core
+-python3-numpy:
+-- python3-numpy@openembedded-core
+-python3-opencv:
+-- opencv@meta-oe
+-python3-pep8:
+-- python3-pep8@meta-ros
+-python3-pkg-resources:
+-- python3-setuptools@openembedded-core
+-python3-psutil:
+-- python3-psutil@meta-python
+-python3-pydot:
+-- python3-pydot@meta-ros
+-python3-pygraphviz:
+-- python3-pygraphviz@meta-ros
+-python3-pytest:
+-- python3-pytest@meta-python
+-python3-qt5-bindings:
+-- python3-pyqt5@meta-qt5
+-python3-setuptools:
+-- python3-setuptools@openembedded-core
+-python3-yaml:
+-- python3-pyyaml@meta-python
+-qt5-qmake:
+-- qtbase@meta-qt5
+-qtbase5-dev:
+-- qtbase@meta-qt5
+-rti-connext-dds-5.3.1:
+-- 'null'
+-tango-icon-theme:
+-- 'null'
+-tinyxml:
+-- libtinyxml@meta-oe
+-tinyxml2:
+-- libtinyxml2@meta-oe
+-udev:
+-- udev@openembedded-core
+-uncrustify:
+-- uncrustify@meta-ros
+-yaml:
+-- libyaml@openembedded-core
+-zlib:
+-- zlib@openembedded-core
++{}
