@@ -3,6 +3,8 @@
 # Place the fixups necessary to make meta-webosose compatible with meta-ros version 2 here.
 
 # Undo blacklisting
+PNBLACKLIST[graphviz] ?= ""
+PNBLACKLIST[librsvg] ?= ""
 PNBLACKLIST[libfreenect] ?= ""
 PNBLACKLIST[freenect-camera] ?= ""
 PNBLACKLIST[freenect-launch] ?= ""
