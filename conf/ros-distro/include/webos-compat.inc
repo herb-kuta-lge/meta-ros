@@ -2,6 +2,9 @@
 #
 # Place the fixups necessary to make meta-webosose compatible with meta-ros version 2 here.
 
+# Currently, com.webos.service.rosbridge can only be built for ROS 2.
+VIRTUAL-RUNTIME_com.webos.service.rosbridge_ros1-distro = ""
+
 # Undo blacklisting
 PNBLACKLIST[libfreenect] ?= ""
 PNBLACKLIST[freenect-camera] ?= ""
