@@ -56,13 +56,14 @@ case $ROS_DISTRO in
 esac
 
 skip_keys_option=""
+ros1_lisp_packages="euslisp geneus genlisp roslisp actionlib_lisp cl_tf cl_tf2 cl_transforms cl_transforms_stamped cl_urdf cl_utils roslisp_common roslisp_utilities rosemacs ros_emacs_utils roslisp_repl slime_ros slime_wrapper"
 case $ROS_DISTRO in
     "kinetic")
-        skip_keys_option="--skip-keys catkin_virtualenv flatbuffers grpc nanomsg octovis"
+        skip_keys_option="--skip-keys catkin_virtualenv flatbuffers grpc nanomsg octovis $ros1_lisp_packages"
         ;;
 
     "melodic")
-        skip_keys_option="--skip-keys catkin_virtualenv flatbuffers iirob_filters grpc nanomsg octovis"
+        skip_keys_option="--skip-keys catkin_virtualenv flatbuffers iirob_filters grpc nanomsg octovis $ros1_lisp_packages"
         ;;
 
     "bouncy")
