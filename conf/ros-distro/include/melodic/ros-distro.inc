@@ -18,3 +18,41 @@ LAYERSERIES_COMPAT_ros-layer = "thud"
 # ROS_EXEC_DEPEND are also build tools. Manually add them here.
 ROS_SUPERFLORE_GENERATED_BUILDTOOLS += " \
 "
+
+# apr@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_apr = "apr"
+
+# lz4@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_lz4 = "lz4"
+
+# python@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_python = "python"
+
+# python-catkin-pkg@meta-ros
+ROS_UNRESOLVED_PLATFORM_PKG_python-catkin-pkg = "python-catkin-pkg"
+
+# python-pycrypto@meta-python
+ROS_UNRESOLVED_PLATFORM_PKG_python-crypto = "python-pycrypto"
+
+# python-gnupg@meta-ros
+ROS_UNRESOLVED_PLATFORM_PKG_python-gnupg = "python-gnupg"
+
+# XXX TEMP
+# NB. "rosbag" has a false build dependency on this
+# python-pil@meta-ros 5.1.0
+ROS_UNRESOLVED_PLATFORM_PKG_python-imaging = "python-pil"
+
+# python-nose@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_python-nose = "python-nose"
+
+# python-nnumpyose@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_python-numpy = "python-numpy"
+
+# python-rosdep@meta-ros
+ROS_UNRESOLVED_PLATFORM_PKG_python-rosdep = "python-rosdep"
+
+# python-rospkg@meta-ros
+ROS_UNRESOLVED_PLATFORM_PKG_python-rospkg = "python-rospkg"
+
+# python-pyyaml@meta-python
+ROS_UNRESOLVED_PLATFORM_PKG_python-yaml = "python-pyyaml"
