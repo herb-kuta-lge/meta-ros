@@ -22,6 +22,15 @@ ROS_SUPERFLORE_GENERATED_BUILDTOOLS += " \
 # apr@openembedded-core
 ROS_UNRESOLVED_PLATFORM_PKG_apr = "apr"
 
+# hddtemp@meta-oe
+ROS_UNRESOLVED_PLATFORM_PKG_hddtemp = "hddtemp"
+
+# urdfdom@meta-ros
+ROS_UNRESOLVED_PLATFORM_PKG_liburdfdom-dev = "urdfdom"
+
+# urdfdom-headers@meta-ros
+ROS_UNRESOLVED_PLATFORM_PKG_liburdfdom-headers-dev = "urdfdom-headers"
+
 # lz4@openembedded-core
 ROS_UNRESOLVED_PLATFORM_PKG_lz4 = "lz4"
 
@@ -42,17 +51,41 @@ ROS_UNRESOLVED_PLATFORM_PKG_python-gnupg = "python-gnupg"
 # python-pil@meta-ros 5.1.0
 ROS_UNRESOLVED_PLATFORM_PKG_python-imaging = "python-pil"
 
+# python-lxml@meta-python
+ROS_UNRESOLVED_PLATFORM_PKG_python-lxml = "python-lxml"
+
 # python-nose@openembedded-core
 ROS_UNRESOLVED_PLATFORM_PKG_python-nose = "python-nose"
 
 # python-nnumpyose@openembedded-core
 ROS_UNRESOLVED_PLATFORM_PKG_python-numpy = "python-numpy"
 
+# opencv@meta-oe
+ROS_UNRESOLVED_PLATFORM_PKG_python-opencv = "opencv"
+
+# python-psutil@meta-python
+ROS_UNRESOLVED_PLATFORM_PKG_python-psutil = "python-psutil"
+
+# python-setuptools@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_python-pkg-resources = "python-setuptools"
+
 # python-rosdep@meta-ros
 ROS_UNRESOLVED_PLATFORM_PKG_python-rosdep = "python-rosdep"
 
 # python-rospkg@meta-ros
 ROS_UNRESOLVED_PLATFORM_PKG_python-rospkg = "python-rospkg"
+
+# python-pyserial@meta-python
+ROS_UNRESOLVED_PLATFORM_PKG_python-serial = "python-pyserial"
+
+# sip@meta-oe
+ROS_UNRESOLVED_PLATFORM_PKG_python-sip = "sip"
+
+# util-linux@openembedded-core
+ROS_UNRESOLVED_PLATFORM_PKG_uuid = "util-linux"
+
+# wxpython@meta-oe (requires "opengl" in DISTRO_FEATURES)
+ROS_UNRESOLVED_PLATFORM_PKG_python-wxtools = "wxpython"
 
 # python-pyyaml@meta-python
 ROS_UNRESOLVED_PLATFORM_PKG_python-yaml = "python-pyyaml"
