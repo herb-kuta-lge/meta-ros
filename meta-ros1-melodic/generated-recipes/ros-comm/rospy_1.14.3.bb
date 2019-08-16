@@ -24,7 +24,6 @@ ROS_BUILDTOOL_DEPENDS = " \
 
 ROS_EXPORT_DEPENDS = " \
     genpy \
-    python-numpy \
     python-pyyaml \
     python-rospkg \
     roscpp \
@@ -38,7 +37,6 @@ ROS_BUILDTOOL_EXPORT_DEPENDS = ""
 
 ROS_EXEC_DEPENDS = " \
     genpy \
-    python-numpy \
     python-pyyaml \
     python-rospkg \
     roscpp \
