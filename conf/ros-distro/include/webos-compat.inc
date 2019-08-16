@@ -28,6 +28,10 @@ RDEPENDS_python3-ptest_remove_libc-glibc = " \
     locale-base-tr-tr.iso-8859-9 \
 "
 
+RPI_KERNEL_DEVICETREE_append = " \
+    bcm2710-rpi-3-b-plus.dtb \
+"
+
 # Undo blacklisting
 PNBLACKLIST[graphviz] ?= ""
 PNBLACKLIST[librsvg] ?= ""
