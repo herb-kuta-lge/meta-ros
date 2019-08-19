@@ -2,6 +2,9 @@
 #
 # Place the fixups necessary to make meta-webosose compatible with meta-ros version 2 here.
 
+# webOS OSE is requires "thud", so override what's set in include/ROS_DISTRO/ros-distro.inc .
+LAYERSERIES_COMPAT_ros-layer = "thud"
+
 # Currently, com.webos.service.rosbridge can only be built for ROS 2.
 VIRTUAL-RUNTIME_com.webos.service.rosbridge_ros1-distro = ""
 
