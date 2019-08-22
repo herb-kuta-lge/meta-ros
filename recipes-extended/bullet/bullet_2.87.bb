@@ -7,7 +7,9 @@ LICENSE = "Zlib"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=74f06ab3011994d1b43d71ecbb42a7cf"
 
 SRCREV = "6e4707df5fa1f9927109e89a7cd2a6d6a6ddd072"
-SRC_URI = "git://github.com/bulletphysics/bullet3;protocol=https"
+SRC_URI = "git://github.com/bulletphysics/bullet3;protocol=https \
+    file://0001-CMakeLists.txt-Use-FindPython2-instead-of-deprecated.patch \
+"
 S = "${WORKDIR}/git"
 
 inherit cmake
@@ -22,8 +24,3 @@ EXTRA_OECMAKE += "-DBUILD_SHARED_LIBS=ON -DINSTALL_LIBS=ON -DINSTALL_EXTRA_LIBS=
 
 CFLAGS += "-fsigned-char"
 CXXFLAGS += "-fsigned-char"
-
-do_configure_prepend() {
-    # Default CMake modules seem to work fine.
-    rm -rf ${S}/build3/cmake
-}
