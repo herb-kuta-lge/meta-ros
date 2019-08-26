@@ -41,6 +41,18 @@ RPI_KERNEL_DEVICETREE_3BPLUS_raspberrypi3-64 = "broadcom/bcm2710-rpi-3-b-plus.dt
 RPI_KERNEL_DEVICETREE_append_rpi = " \
     ${RPI_KERNEL_DEVICETREE_3BPLUS} \
 "
+RPI_KERNEL_DEVICETREE_remove_rpi = " \
+    bcm2708-rpi-0-w.dtb \
+"
+
+RPI_KERNEL_DEVICETREE_OVERLAYS_append_rpi = " \
+    overlays/vc4-fkms-v3d.dtbo \
+"
+RPI_KERNEL_DEVICETREE_OVERLAYS_remove_rpi = " \
+    overlays/lirc-rpi.dtbo \
+"
+
+VC4DTBO_raspberrypi3 = "vc4-fkms-v3d"
 
 # webos-rpi.inc _removes "kernel-modules" from MACHINE_EXTRA_RRECOMMENDS, and _remove happens last, so we can't add it back to
 # MACHINE_EXTRA_RRECOMMENDS.
