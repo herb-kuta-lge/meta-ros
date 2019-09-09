@@ -37,7 +37,10 @@ RDEPENDS_python3-ptest_remove_libc-glibc = " \
 "
 
 RPI_KERNEL_DEVICETREE_3BPLUS_raspberrypi3 = "bcm2710-rpi-3-b-plus.dtb"
-RPI_KERNEL_DEVICETREE_3BPLUS_raspberrypi3-64 = "broadcom/bcm2710-rpi-3-b-plus.dtb"
+# raspberrypi3-64 already includes broadcom/bcm2710-rpi-3-b-plus.dtb because it's not overriden in meta-webos-raspberrypi
+# and it cannot be included twice, because then do_image_rpi_sdimg would fail, see:
+# https://github.com/agherzan/meta-raspberrypi/pull/463
+RPI_KERNEL_DEVICETREE_3BPLUS_raspberrypi3-64 = ""
 RPI_KERNEL_DEVICETREE_append_rpi = " \
     ${RPI_KERNEL_DEVICETREE_3BPLUS} \
 "
