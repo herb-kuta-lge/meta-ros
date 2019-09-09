@@ -18,3 +18,8 @@ LAYERSERIES_COMPAT_ros-layer = "thud"
 # ROS_EXEC_DEPEND are also build tools. Manually add them here.
 ROS_SUPERFLORE_GENERATED_BUILDTOOLS += " \
 "
+
+ROS_UNRESOLVED_PLATFORM_PKG_joystick = "joystick"
+ROS_UNRESOLVED_PLATFORM_PKG_libblas-dev = "openblas"
+ROS_UNRESOLVED_PLATFORM_PKG_liblapack-dev = "lapack"
+ROS_UNRESOLVED_PLATFORM_PKG_suitesparse = "suitesparse"
