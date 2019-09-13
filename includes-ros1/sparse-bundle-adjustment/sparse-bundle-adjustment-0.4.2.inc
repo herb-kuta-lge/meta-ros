@@ -7,3 +7,7 @@ ROS_EXEC_DEPENDS_remove = "suitesparse"
 ROS_BUILD_DEPENDS += "suitesparse-cxsparse suitesparse-cholmod"
 ROS_EXPORT_DEPENDS += "suitesparse-cxsparse suitesparse-cholmod"
 ROS_EXEC_DEPENDS += "suitesparse-cxsparse suitesparse-cholmod"
+
+# this component doesn't need libblas at all
+ROS_UNRESOLVED_PLATFORM_PKG_libblas-dev = ""
+#ROS_EXEC_DEPENDS_remove = "${ROS_UNRESOLVED_PLATFORM_PKG_libblas-dev}"
