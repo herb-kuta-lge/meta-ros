@@ -8,10 +8,6 @@ TURTLEBOT3_PACKAGES_ADDITIONAL_SLAM_METHODS ??= " \
     slam-karto \
 "
 
-# XXX "cartographer" doesn't build; including "slam-karto" give this error in do_rootfs():
-#   nothing provides openblas needed by sparse-bundle-adjustment-0.4.2-r0.cortexa7t2hf-neon-vfpv4
-TURTLEBOT3_PACKAGES_ADDITIONAL_SLAM_METHODS = ""
-
 # From http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages, without rqt-image-view.
 # XXX Need platform packages for rosserial-arduino
 TURTLEBOT3_PACKAGES_REMOTE_PC = " \
