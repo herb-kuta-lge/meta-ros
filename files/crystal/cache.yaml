@@ -1,4 +1,4 @@
-# crystal/cache.yaml 20190905 e935fad77b913d9697b4b5770dbc6695a6c13d33
+# crystal/cache.yaml 20190905 20190905180934 e935fad77b913d9697b4b5770dbc6695a6c13d33
 distribution_file:
 - release_platforms:
     ubuntu: [bionic]
