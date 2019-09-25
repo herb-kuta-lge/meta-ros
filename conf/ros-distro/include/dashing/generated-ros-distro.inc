@@ -7,7 +7,7 @@
 # resets it to "0").
 ROS_DISTRO_METADATA_VERSION_REVISION = "0"
 
-ROS_SUPERFLORE_PROGRAM_VERSION = "0.3.0+hk4"
+ROS_SUPERFLORE_PROGRAM_VERSION = "0.3.0+hk6"
 ROS_SUPERFLORE_GENERATION_SCHEME = "1"
 
 ROS_DISTRO_TYPE = "ros2"
@@ -22,7 +22,7 @@ ROS_SUPERFLORE_GENERATION_NOT_POSSIBLE = ""
 
 # Number of commits that will be returned by "git log files/ROS_DISTRO-cache.yaml" when the generated files are committed. This is
 # used for the fourth version field of DISTRO_VERSION.
-ROS_NUM_CACHE_YAML_COMMITS = "1"
+ROS_NUM_CACHE_YAML_COMMITS = "3"
 
 # Iterated values of ROS_DISTRO-cache.distribution_file.release_platforms.<LINUX-DISTRO>.[ <NAME> ... ] .
 ROS_DISTRO_RELEASE_PLATFORMS = " \
@@ -983,7 +983,6 @@ ROS_SUPERFLORE_GENERATED_BUILDTOOLS = " \
 ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
     ${PYTHON_PN}-pydocstyle \
     ${PYTHON_PN}-pyflakes \
-    ${PYTHON_PN}-sphinx \
     ${ROS_UNRESOLVED_PLATFORM_PKG_clang-format} \
     ${ROS_UNRESOLVED_PLATFORM_PKG_libgazebo9-dev} \
     ${ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69-native} \
@@ -1035,6 +1034,7 @@ ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
     pkgconfig-native \
     poco \
     protobuf \
+    python-sphinx \
     python3-catkin-pkg \
     python3-catkin-pkg-native \
     python3-empy \
@@ -1211,3 +1211,6 @@ ROS_UNRESOLVED_PLATFORM_PKG_uncrustify = "UNRESOLVED-uncrustify"
 # From the release announcement or the last field of the "release-ROS_DISTRO-YYYYMMDD" tag for the release in
 # https://github.com/ros2/ros2/releases. Prior to the first release of a ROS_DISTRO, it is set to "".
 ROS_DISTRO_RELEASE_DATE = "20190531"
+
+# The commit of rosdistro/dashing/distribution.yaml from which the recipes were generated.
+ROS_SUPERFLORE_GENERATION_COMMIT = "fe62bfdf4c0970f7e2bb2ace3ec0a27bba3873e8"

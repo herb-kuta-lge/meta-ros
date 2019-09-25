@@ -109,7 +109,7 @@ pydocstyle:
 pyflakes3:
 - ${PYTHON_PN}-pyflakes@meta-ros
 python-sphinx:
-- ${PYTHON_PN}-sphinx@meta-ros
+- python-sphinx@meta-ros
 python3-catkin-pkg-modules:
 - python3-catkin-pkg@meta-ros
 python3-dev:

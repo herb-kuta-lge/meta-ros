@@ -1,305 +1,198 @@
 dashing/superflore-change-summary.txt
 -----
-A  conf/ros-distro/include/dashing/generated-ros-distro.inc
-A  conf/ros-distro/include/dashing/generated-superflore-datetime.inc
-A  files/dashing/cache.diffme
-A  files/dashing/cache.yaml
-A  files/dashing/newer-platform-components.list
-A  files/dashing/rosdep-resolve.yaml
-A  generated-recipes-dashing/ament-cmake-ros/ament-cmake-ros_0.7.0-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-auto_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-core_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-export-definitions_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-export-dependencies_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-export-include-directories_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-export-interfaces_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-export-libraries_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-export-link-flags_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-gmock_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-gtest_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-include-directories_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-libraries_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-nose_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-pytest_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-python_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-target-dependencies_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake-test_0.7.3-1.bb
-A  generated-recipes-dashing/ament-cmake/ament-cmake_0.7.3-1.bb
-A  generated-recipes-dashing/ament-index/ament-index-cpp_0.7.0-1.bb
-A  generated-recipes-dashing/ament-index/ament-index-python_0.7.0-1.bb
-A  generated-recipes-dashing/ament-lint/ament-clang-format_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-clang-format_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-copyright_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-cppcheck_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-cpplint_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-flake8_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-lint-cmake_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-pclint_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-pep257_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-pep8_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-pyflakes_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-uncrustify_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cmake-xmllint_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-copyright_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cppcheck_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-cpplint_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-flake8_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-lint-auto_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-lint-cmake_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-lint-common_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-pclint_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-pep257_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-pep8_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-pyflakes_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-uncrustify_0.7.3-1.bb
-A  generated-recipes-dashing/ament-lint/ament-xmllint_0.7.3-1.bb
-A  generated-recipes-dashing/ament-package/ament-package_0.7.0.bb
-A  generated-recipes-dashing/angles/angles_1.12.1-1.bb
-A  generated-recipes-dashing/apriltag/apriltag_3.1.0-2.bb
-A  generated-recipes-dashing/behaviortree-cpp-v3/behaviortree-cpp-v3_3.0.9-1.bb
-A  generated-recipes-dashing/behaviortree-cpp/behaviortree-cpp_2.5.2-1.bb
-A  generated-recipes-dashing/cartographer/cartographer_1.0.0-1.bb
-A  generated-recipes-dashing/class-loader/class-loader_1.3.1-1.bb
-A  generated-recipes-dashing/common-interfaces/actionlib-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/common-interfaces_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/diagnostic-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/geometry-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/nav-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/sensor-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/shape-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/std-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/std-srvs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/stereo-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/trajectory-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/common-interfaces/visualization-msgs_0.7.0-1.bb
-A  generated-recipes-dashing/console-bridge-vendor/console-bridge-vendor_1.2.0-1.bb
-A  generated-recipes-dashing/demos/action-tutorials_0.7.6-1.bb
-A  generated-recipes-dashing/demos/composition_0.7.6-1.bb
-A  generated-recipes-dashing/demos/demo-nodes-cpp-rosnative_0.7.6-1.bb
-A  generated-recipes-dashing/demos/demo-nodes-cpp_0.7.6-1.bb
-A  generated-recipes-dashing/demos/demo-nodes-py_0.7.6-1.bb
-A  generated-recipes-dashing/demos/dummy-map-server_0.7.6-1.bb
-A  generated-recipes-dashing/demos/dummy-robot-bringup_0.7.6-1.bb
-A  generated-recipes-dashing/demos/dummy-sensors_0.7.6-1.bb
-A  generated-recipes-dashing/demos/image-tools_0.7.6-1.bb
-A  generated-recipes-dashing/demos/intra-process-demo_0.7.6-1.bb
-A  generated-recipes-dashing/demos/lifecycle_0.7.6-1.bb
-A  generated-recipes-dashing/demos/logging-demo_0.7.6-1.bb
-A  generated-recipes-dashing/demos/pendulum-control_0.7.6-1.bb
-A  generated-recipes-dashing/demos/pendulum-msgs_0.7.6-1.bb
-A  generated-recipes-dashing/demos/quality-of-service-demo-cpp_0.7.6-1.bb
-A  generated-recipes-dashing/demos/quality-of-service-demo-py_0.7.6-1.bb
-A  generated-recipes-dashing/demos/topic-monitor_0.7.6-1.bb
-A  generated-recipes-dashing/depthimage-to-laserscan/depthimage-to-laserscan_2.2.1-1.bb
-A  generated-recipes-dashing/example-interfaces/example-interfaces_0.7.1-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-action-client_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-action-server_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-client_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-composition_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-publisher_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-service_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-subscriber_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclcpp-minimal-timer_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-executors_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-minimal-action-client_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-minimal-action-server_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-minimal-client_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-minimal-publisher_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-minimal-service_0.7.3-1.bb
-A  generated-recipes-dashing/examples/examples-rclpy-minimal-subscriber_0.7.3-1.bb
-A  generated-recipes-dashing/fastcdr/fastcdr_1.0.9-2.bb
-A  generated-recipes-dashing/fastrtps/fastrtps_1.8.0-2.bb
-A  generated-recipes-dashing/fmi-adapter-ros2/fmi-adapter-examples_0.1.5-1.bb
-A  generated-recipes-dashing/fmi-adapter-ros2/fmi-adapter_0.1.5-1.bb
-A  generated-recipes-dashing/gazebo-ros-pkgs/gazebo-msgs_3.3.1-1.bb
-A  generated-recipes-dashing/gazebo-ros-pkgs/gazebo-plugins_3.3.1-1.bb
-A  generated-recipes-dashing/gazebo-ros-pkgs/gazebo-ros-pkgs_3.3.1-1.bb
-A  generated-recipes-dashing/gazebo-ros-pkgs/gazebo-ros_3.3.1-1.bb
-A  generated-recipes-dashing/gazebo-ros-pkgs/gazebo-rosdev_3.3.1-1.bb
-A  generated-recipes-dashing/geometry2/tf2-eigen_0.11.3-1.bb
-A  generated-recipes-dashing/geometry2/tf2-geometry-msgs_0.11.3-1.bb
-A  generated-recipes-dashing/geometry2/tf2-msgs_0.11.3-1.bb
-A  generated-recipes-dashing/geometry2/tf2-ros_0.11.3-1.bb
-A  generated-recipes-dashing/geometry2/tf2-sensor-msgs_0.11.3-1.bb
-A  generated-recipes-dashing/geometry2/tf2_0.11.3-1.bb
-A  generated-recipes-dashing/googletest/gmock-vendor_1.8.9000-1.bb
-A  generated-recipes-dashing/googletest/gtest-vendor_1.8.9000-1.bb
-A  generated-recipes-dashing/image-common/camera-calibration-parsers_2.1.1-1.bb
-A  generated-recipes-dashing/image-common/camera-info-manager_2.1.1-1.bb
-A  generated-recipes-dashing/image-common/image-transport_2.1.1-1.bb
-A  generated-recipes-dashing/joystick-drivers/joy_2.3.2-1.bb
-A  generated-recipes-dashing/kdl-parser/kdl-parser_2.2.0-1.bb
-A  generated-recipes-dashing/laser-geometry/laser-geometry_2.0.0.bb
-A  generated-recipes-dashing/launch-ros/launch-ros_0.8.4-1.bb
-A  generated-recipes-dashing/launch-ros/launch-testing-ros_0.8.4-1.bb
-A  generated-recipes-dashing/launch-ros/ros2launch_0.8.4-1.bb
-A  generated-recipes-dashing/launch/launch-testing-ament-cmake_0.8.3-1.bb
-A  generated-recipes-dashing/launch/launch-testing_0.8.3-1.bb
-A  generated-recipes-dashing/launch/launch_0.8.3-1.bb
-A  generated-recipes-dashing/librealsense/librealsense2_2.16.5-1.bb
-A  generated-recipes-dashing/libyaml-vendor/libyaml-vendor_1.0.0-1.bb
-A  generated-recipes-dashing/message-filters/message-filters_3.1.2-1.bb
-A  generated-recipes-dashing/navigation-msgs/map-msgs_2.0.1.bb
-A  generated-recipes-dashing/nmea-msgs/nmea-msgs_2.0.0-1.bb
-A  generated-recipes-dashing/object-msgs/object-msgs_0.4.0-1.bb
-A  generated-recipes-dashing/ompl/ompl_1.4.2-1.bb
-A  generated-recipes-dashing/orocos-kinematics-dynamics/orocos-kdl_3.2.0-1.bb
-A  generated-recipes-dashing/osrf-pycommon/osrf-pycommon_0.1.7-1.bb
-A  generated-recipes-dashing/osrf-testing-tools-cpp/osrf-testing-tools-cpp_1.2.1-1.bb
-A  generated-recipes-dashing/osrf-testing-tools-cpp/test-osrf-testing-tools-cpp_1.2.1-1.bb
-A  generated-recipes-dashing/pcl-conversions/pcl-conversions_2.0.0-1.bb
-A  generated-recipes-dashing/pluginlib/pluginlib_2.3.1-1.bb
-A  generated-recipes-dashing/poco-vendor/poco-vendor_1.2.0-1.bb
-A  generated-recipes-dashing/python-qt-binding/python-qt-binding_1.0.1-1.bb
-A  generated-recipes-dashing/qt-gui-core/qt-dotgraph_1.0.5-1.bb
-A  generated-recipes-dashing/qt-gui-core/qt-gui-app_1.0.5-1.bb
-A  generated-recipes-dashing/qt-gui-core/qt-gui-core_1.0.5-1.bb
-A  generated-recipes-dashing/qt-gui-core/qt-gui-cpp_1.0.5-1.bb
-A  generated-recipes-dashing/qt-gui-core/qt-gui-py-common_1.0.5-1.bb
-A  generated-recipes-dashing/qt-gui-core/qt-gui_1.0.5-1.bb
-A  generated-recipes-dashing/rcl-interfaces/action-msgs_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-interfaces/builtin-interfaces_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-interfaces/composition-interfaces_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-interfaces/lifecycle-msgs_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-interfaces/rcl-interfaces_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-interfaces/rosgraph-msgs_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-interfaces/test-msgs_0.7.4-1.bb
-A  generated-recipes-dashing/rcl-logging/rcl-logging-log4cxx_0.2.1-1.bb
-A  generated-recipes-dashing/rcl-logging/rcl-logging-noop_0.2.1-1.bb
-A  generated-recipes-dashing/rcl/rcl-action_0.7.4-1.bb
-A  generated-recipes-dashing/rcl/rcl-lifecycle_0.7.4-1.bb
-A  generated-recipes-dashing/rcl/rcl-yaml-param-parser_0.7.4-1.bb
-A  generated-recipes-dashing/rcl/rcl_0.7.4-1.bb
-A  generated-recipes-dashing/rclcpp/rclcpp-action_0.7.5-1.bb
-A  generated-recipes-dashing/rclcpp/rclcpp-components_0.7.5-1.bb
-A  generated-recipes-dashing/rclcpp/rclcpp-lifecycle_0.7.5-1.bb
-A  generated-recipes-dashing/rclcpp/rclcpp_0.7.5-1.bb
-A  generated-recipes-dashing/rclpy/rclpy_0.7.3-1.bb
-A  generated-recipes-dashing/rcpputils/rcpputils_0.1.0-1.bb
-A  generated-recipes-dashing/rcutils/rcutils_0.7.3-1.bb
-A  generated-recipes-dashing/realtime-support/rttest_0.7.1-1.bb
-A  generated-recipes-dashing/realtime-support/tlsf-cpp_0.7.1-1.bb
-A  generated-recipes-dashing/resource-retriever/libcurl-vendor_2.1.0-2.bb
-A  generated-recipes-dashing/resource-retriever/resource-retriever_2.1.0-2.bb
-A  generated-recipes-dashing/rmw-connext/rmw-connext-cpp_0.7.2-1.bb
-A  generated-recipes-dashing/rmw-connext/rmw-connext-shared-cpp_0.7.2-1.bb
-A  generated-recipes-dashing/rmw-fastrtps/rmw-fastrtps-cpp_0.7.3-1.bb
-A  generated-recipes-dashing/rmw-fastrtps/rmw-fastrtps-dynamic-cpp_0.7.3-1.bb
-A  generated-recipes-dashing/rmw-fastrtps/rmw-fastrtps-shared-cpp_0.7.3-1.bb
-A  generated-recipes-dashing/rmw-implementation/rmw-implementation_0.7.1-2.bb
-A  generated-recipes-dashing/rmw-opensplice/rmw-opensplice-cpp_0.7.1-1.bb
-A  generated-recipes-dashing/rmw/rmw-implementation-cmake_0.7.1-1.bb
-A  generated-recipes-dashing/rmw/rmw_0.7.1-1.bb
-A  generated-recipes-dashing/robot-state-publisher/robot-state-publisher_2.2.2-1.bb
-A  generated-recipes-dashing/ros-environment/ros-environment_2.3.0-1.bb
-A  generated-recipes-dashing/ros-testing/ros-testing_0.1.0-1.bb
-A  generated-recipes-dashing/ros-testing/ros2test_0.1.0-1.bb
-A  generated-recipes-dashing/ros-workspace/ros-workspace_0.7.1-1.bb
-A  generated-recipes-dashing/ros1-bridge/ros1-bridge_0.7.2-3.bb
-A  generated-recipes-dashing/ros2-intel-realsense/realsense-camera-msgs_2.0.4-2.bb
-A  generated-recipes-dashing/ros2-intel-realsense/realsense-ros2-camera_2.0.4-2.bb
-A  generated-recipes-dashing/ros2-object-analytics/object-analytics-msgs_0.5.4-2.bb
-A  generated-recipes-dashing/ros2-object-analytics/object-analytics-node_0.5.4-2.bb
-A  generated-recipes-dashing/ros2-object-analytics/object-analytics-rviz_0.5.4-2.bb
-A  generated-recipes-dashing/ros2cli/ros2action_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2cli_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2component_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2lifecycle_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2msg_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2multicast_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2node_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2param_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2pkg_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2run_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2service_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2srv_0.7.4-1.bb
-A  generated-recipes-dashing/ros2cli/ros2topic_0.7.4-1.bb
-A  generated-recipes-dashing/rosbag2-bag-v2/ros1-rosbag-storage-vendor_0.0.6-2.bb
-A  generated-recipes-dashing/rosbag2-bag-v2/rosbag2-bag-v2-plugins_0.0.6-2.bb
-A  generated-recipes-dashing/rosbag2/ros2bag_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2-converter-default-plugins_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2-storage-default-plugins_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2-storage_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2-test-common_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2-tests_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2-transport_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/rosbag2_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/shared-queues-vendor_0.1.2-1.bb
-A  generated-recipes-dashing/rosbag2/sqlite3-vendor_0.1.2-1.bb
-A  generated-recipes-dashing/rosidl-dds/rosidl-generator-dds-idl_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-defaults/rosidl-default-generators_0.7.0-1.bb
-A  generated-recipes-dashing/rosidl-defaults/rosidl-default-runtime_0.7.0-1.bb
-A  generated-recipes-dashing/rosidl-python/python-cmake-module_0.7.6-1.bb
-A  generated-recipes-dashing/rosidl-python/rosidl-generator-py_0.7.6-1.bb
-A  generated-recipes-dashing/rosidl-python/rosidl-runtime-py_0.7.6-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-connext/connext-cmake-module_0.7.2-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-connext/rosidl-typesupport-connext-c_0.7.2-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-connext/rosidl-typesupport-connext-cpp_0.7.2-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-fastrtps/fastrtps-cmake-module_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-c_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-fastrtps/rosidl-typesupport-fastrtps-cpp_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-opensplice/opensplice-cmake-module_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-c_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport-opensplice/rosidl-typesupport-opensplice-cpp_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport/rosidl-typesupport-c_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl-typesupport/rosidl-typesupport-cpp_0.7.1-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-adapter_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-cmake_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-generator-c_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-generator-cpp_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-parser_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-typesupport-interface_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-typesupport-introspection-c_0.7.3-1.bb
-A  generated-recipes-dashing/rosidl/rosidl-typesupport-introspection-cpp_0.7.3-1.bb
-A  generated-recipes-dashing/rqt-action/rqt-action_1.0.1-1.bb
-A  generated-recipes-dashing/rqt-console/rqt-console_1.0.1-1.bb
-A  generated-recipes-dashing/rqt-graph/rqt-graph_1.0.1-1.bb
-A  generated-recipes-dashing/rqt-image-view/rqt-image-view_1.0.2-1.bb
-A  generated-recipes-dashing/rqt-msg/rqt-msg_1.0.2-1.bb
-A  generated-recipes-dashing/rqt-plot/rqt-plot_1.0.5-1.bb
-A  generated-recipes-dashing/rqt-publisher/rqt-publisher_1.0.5-1.bb
-A  generated-recipes-dashing/rqt-py-console/rqt-py-console_1.0.0-1.bb
-A  generated-recipes-dashing/rqt-service-caller/rqt-service-caller_1.0.3-1.bb
-A  generated-recipes-dashing/rqt-shell/rqt-shell_1.0.0-1.bb
-A  generated-recipes-dashing/rqt-srv/rqt-srv_1.0.1-1.bb
-A  generated-recipes-dashing/rqt-top/rqt-top_1.0.0-1.bb
-A  generated-recipes-dashing/rqt-topic/rqt-topic_1.0.0-1.bb
-A  generated-recipes-dashing/rqt/rqt-gui-cpp_1.0.4-1.bb
-A  generated-recipes-dashing/rqt/rqt-gui-py_1.0.4-1.bb
-A  generated-recipes-dashing/rqt/rqt-gui_1.0.4-1.bb
-A  generated-recipes-dashing/rqt/rqt-py-common_1.0.4-1.bb
-A  generated-recipes-dashing/rqt/rqt_1.0.4-1.bb
-A  generated-recipes-dashing/rviz/rviz-assimp-vendor_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz-common_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz-default-plugins_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz-ogre-vendor_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz-rendering-tests_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz-rendering_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz-visual-testing-framework_6.1.1-1.bb
-A  generated-recipes-dashing/rviz/rviz2_6.1.1-1.bb
-A  generated-recipes-dashing/sros2/sros2-cmake_0.7.0-1.bb
-A  generated-recipes-dashing/sros2/sros2_0.7.0-1.bb
-A  generated-recipes-dashing/system-modes/system-modes-examples_0.1.4-1.bb
-A  generated-recipes-dashing/system-modes/system-modes_0.1.4-1.bb
-A  generated-recipes-dashing/teleop-twist-joy/teleop-twist-joy_2.2.0-1.bb
-A  generated-recipes-dashing/teleop-twist-keyboard/teleop-twist-keyboard_2.3.0-1.bb
-A  generated-recipes-dashing/test-interface-files/test-interface-files_0.7.1-1.bb
-A  generated-recipes-dashing/tinydir-vendor/tinydir-vendor_1.1.0-1.bb
-A  generated-recipes-dashing/tinyxml-vendor/tinyxml-vendor_0.7.0-1.bb
-A  generated-recipes-dashing/tinyxml2-vendor/tinyxml2-vendor_0.6.1-1.bb
-A  generated-recipes-dashing/tlsf/tlsf_0.5.0-1.bb
-A  generated-recipes-dashing/uncrustify-vendor/uncrustify-vendor_1.2.0-1.bb
-A  generated-recipes-dashing/unique-identifier-msgs/unique-identifier-msgs_2.1.0-1.bb
-A  generated-recipes-dashing/urdf/urdf_2.2.0-1.bb
-A  generated-recipes-dashing/urdfdom-headers/urdfdom-headers_1.0.4-1.bb
-A  generated-recipes-dashing/urdfdom/urdfdom_2.2.0-1.bb
-A  generated-recipes-dashing/variants/desktop_0.7.0-1.bb
-A  generated-recipes-dashing/variants/ros-base_0.7.0-1.bb
-A  generated-recipes-dashing/variants/ros-core_0.7.0-1.bb
-A  generated-recipes-dashing/vision-opencv/cv-bridge_2.1.2-1.bb
-A  generated-recipes-dashing/vision-opencv/image-geometry_2.1.2-1.bb
-A  generated-recipes-dashing/vision-opencv/vision-opencv_2.1.2-1.bb
-A  generated-recipes-dashing/yaml-cpp-vendor/yaml-cpp-vendor_6.0.1-1.bb
+ M conf/ros-distro/include/dashing/generated-ros-distro.inc
+ M conf/ros-distro/include/dashing/generated-superflore-datetime.inc
+ M files/dashing/cache.diffme
+ M files/dashing/newer-platform-components.list
+ M files/dashing/rosdep-resolve.yaml
+M  generated-recipes-dashing/cartographer/cartographer_1.0.0-1.bb
+R  generated-recipes-dashing/yaml-cpp-vendor/yaml-cpp-vendor_5.0.0.bb -> generated-recipes-dashing/yaml-cpp-vendor/yaml-cpp-vendor_6.0.1-1.bb
 -----
-
+diff --git a/conf/ros-distro/include/dashing/generated-ros-distro.inc b/conf/ros-distro/include/dashing/generated-ros-distro.inc
+index ebee4797f..a6ae21480 100644
+--- a/conf/ros-distro/include/dashing/generated-ros-distro.inc
++++ b/conf/ros-distro/include/dashing/generated-ros-distro.inc
+@@ -7,7 +7,7 @@
+ # resets it to "0").
+ ROS_DISTRO_METADATA_VERSION_REVISION = "0"
+ 
+-ROS_SUPERFLORE_PROGRAM_VERSION = "0.3.0+hk4"
++ROS_SUPERFLORE_PROGRAM_VERSION = "0.3.0+hk6"
+ ROS_SUPERFLORE_GENERATION_SCHEME = "1"
+ 
+ ROS_DISTRO_TYPE = "ros2"
+@@ -22,7 +22,7 @@ ROS_SUPERFLORE_GENERATION_NOT_POSSIBLE = ""
+ 
+ # Number of commits that will be returned by "git log files/ROS_DISTRO-cache.yaml" when the generated files are committed. This is
+ # used for the fourth version field of DISTRO_VERSION.
+-ROS_NUM_CACHE_YAML_COMMITS = "1"
++ROS_NUM_CACHE_YAML_COMMITS = "3"
+ 
+ # Iterated values of ROS_DISTRO-cache.distribution_file.release_platforms.<LINUX-DISTRO>.[ <NAME> ... ] .
+ ROS_DISTRO_RELEASE_PLATFORMS = " \
+@@ -983,7 +983,6 @@ ROS_SUPERFLORE_GENERATED_BUILDTOOLS = " \
+ ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
+     ${PYTHON_PN}-pydocstyle \
+     ${PYTHON_PN}-pyflakes \
+-    ${PYTHON_PN}-sphinx \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_clang-format} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_libgazebo9-dev} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69-native} \
+@@ -1035,6 +1034,7 @@ ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
+     pkgconfig-native \
+     poco \
+     protobuf \
++    python-sphinx \
+     python3-catkin-pkg \
+     python3-catkin-pkg-native \
+     python3-empy \
+@@ -1207,7 +1207,3 @@ ROS_UNRESOLVED_PLATFORM_PKG_rti-connext-dds-5.3.1 = "UNRESOLVED-rti-connext-dds-
+ ROS_UNRESOLVED_PLATFORM_PKG_rti-connext-dds-5.3.1-native = "UNRESOLVED-rti-connext-dds-5.3.1-native"
+ ROS_UNRESOLVED_PLATFORM_PKG_tango-icon-theme = "UNRESOLVED-tango-icon-theme"
+ ROS_UNRESOLVED_PLATFORM_PKG_uncrustify = "UNRESOLVED-uncrustify"
+-
+-# From the release announcement or the last field of the "release-ROS_DISTRO-YYYYMMDD" tag for the release in
+-# https://github.com/ros2/ros2/releases. Prior to the first release of a ROS_DISTRO, it is set to "".
+-ROS_DISTRO_RELEASE_DATE = "20190531"
+diff --git a/conf/ros-distro/include/dashing/generated-superflore-datetime.inc b/conf/ros-distro/include/dashing/generated-superflore-datetime.inc
+index 298dd3cf3..e29bd9708 100644
+--- a/conf/ros-distro/include/dashing/generated-superflore-datetime.inc
++++ b/conf/ros-distro/include/dashing/generated-superflore-datetime.inc
+@@ -4,6 +4,6 @@
+ # Copyright 2019 Open Source Robotics Foundation
+ 
+ 
+-# The start time, in UTC, of the last superflore run that resulted in a change to the generated files. The date portion is used as
+-# the third version field of ROS_DISTRO_METADATA_VERSION prior to the first release of a ROS_DISTRO.
+-ROS_SUPERFLORE_GENERATION_DATETIME = "20190607222522"
++# The time, in UTC, associated with the last superflore run that resulted in a change to the generated files. The date portion is
++# used as the third version field of ROS_DISTRO_METADATA_VERSION prior to the first release of a ROS_DISTRO.
++ROS_SUPERFLORE_GENERATION_DATETIME = "20190925194420"
 -----
+diff --git a/files/dashing/cache.diffme b/files/dashing/cache.diffme
+index 7a26ea7a0..35037fd7c 100644
+--- a/files/dashing/cache.diffme
++++ b/files/dashing/cache.diffme
+@@ -1,4 +1,5 @@
+-# dashing/cache.diffme 20190607222522 20190531
++# dashing/cache.diffme
++# dashing/cache.yaml 20190531 20190607012959 fe62bfdf4c0970f7e2bb2ace3ec0a27bba3873e8
+ distribution_file:
+ - release_platforms:
+ -----
+diff --git a/files/dashing/newer-platform-components.list b/files/dashing/newer-platform-components.list
+index 385864b57..7480bda7d 100644
+--- a/files/dashing/newer-platform-components.list
++++ b/files/dashing/newer-platform-components.list
+@@ -2,63 +2,63 @@
+ libopensplice69;6.9.181126+osrf1-1~bionic;cmake,build-essential,debhelper (>= 7.0.50~),gawk,flex,bison,perl
+ pyside2;2.0.0+dev-0~201712291010~rev1791~pkg76~ubuntu18.04.1;dpkg-dev (>= 1.15.6),debhelper (>= 9),dh-python,cmake (>= 2.8.4+dfsg.1-3~),llvm,clang,libclang-dev,python-all-dev,python-all-dbg,python3-all-dev,python3-all-dbg,qtbase5-dev | qtbase5-gles-dev,qtbase5-private-dev | qtbase5-private-gles-dev,libqt5charts5-dev,qtmultimedia5-dev,libqt5opengl5-dev | libqt5opengl5-gles-dev,mesa-common-dev [armhf],qtscript5-private-dev | qtscript5-dev,libqt5texttospeech5-dev,qttools5-private-dev | qttools5-dev,qttools5-dev-tools,qtdeclarative5-dev,qtdeclarative5-private-dev,libqt5webchannel5-dev,qtwebengine5-private-dev | qtwebengine5-dev,libqt5websockets5-dev,libqt5svg5-private-dev | libqt5svg5-dev,libqt5xmlpatterns5-private-dev | libqt5xmlpatterns5-dev,libqt5x11extras5-dev,shiboken2,shiboken2-dbg,libshiboken2-dev,libgraphviz-dev,libqt5sql5-sqlite,dbus,xvfb,libgl1-mesa-dri,xauth
+ python-bloom;0.8.0-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+-python-catkin-pkg;0.4.12-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+-python-catkin-pkg-modules;0.4.12-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-catkin-pkg;0.4.13-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-catkin-pkg-modules;0.4.13-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-catkin-tools;0.4.5-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+-python-osrf-pycommon;0.1.6-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
+-python-ros-buildfarm;2.0.1-100;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+-python-ros-buildfarm-modules;2.0.1-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
+-python-rosdep;0.15.2-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
++python-osrf-pycommon;0.1.8-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
++python-ros-buildfarm;3.0.0-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-ros-buildfarm-modules;3.0.0-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-rosdep;0.16.1-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+ python-rosdistro;0.7.4-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-rosdistro-modules;0.7.4-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+ python-rosinstall;0.7.8-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+-python-rosinstall-generator;0.1.16-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+-python-rospkg;1.1.9-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+-python-rospkg-modules;1.1.9-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+-python-vcstool;0.1.40-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
+-python-vcstools;0.1.40-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
++python-rosinstall-generator;0.1.17-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-rospkg;1.1.10-100;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-rospkg-modules;1.1.10-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-vcstool;0.2.3-1;dh-python,python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 9)
++python-vcstools;0.1.42-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7)
+ python-wstool;0.1.17-1;python-setuptools (>= 0.6b3),python-all (>= 2.6.6-3),debhelper (>= 7.4.3)
+ python3-bloom;0.8.0-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-catkin-pkg;0.4.12-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-catkin-pkg-modules;0.4.12-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-catkin-pkg;0.4.13-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-catkin-pkg-modules;0.4.13-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-catkin-tools;0.4.5-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-colcon-argcomplete;0.3.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-bash;0.3.2-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-colcon-argcomplete;0.3.3-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-bash;0.4.0-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-bazel;0.1.0-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-colcon-cmake;0.2.11-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-cmake;0.2.13-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-common-extensions;0.2.0-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-core;0.3.22-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-colcon-core;0.4.0-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-defaults;0.2.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-devtools;0.2.1-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-library-path;0.2.1-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-metadata;0.2.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-mixin;0.1.5-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-notification;0.2.7-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-output;0.2.3-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-colcon-package-information;0.2.2-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-colcon-package-selection;0.2.4-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-notification;0.2.9-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-output;0.2.5-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-colcon-package-information;0.2.3-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-package-selection;0.2.5-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-parallel-executor;0.2.4-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-pkg-config;0.1.0-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-colcon-powershell;0.3.4-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-colcon-python-setup-py;0.2.1-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-python-setup-py;0.2.2-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-colcon-recursive-crawl;0.2.0-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-ros;0.3.10-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-test-result;0.3.3-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-colcon-zsh;0.3.2-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-colcon-ros;0.3.13-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-test-result;0.3.7-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-colcon-zsh;0.4.0-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-crocker;0.0.1-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-osrf-pycommon;0.1.6-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-osrf-pycommon;0.1.8-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-px4sitl;0.0.2-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-rocker;0.1.4-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-ros-buildfarm;2.0.1-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-ros-buildfarm-modules;2.0.1-1;python3-setuptools,python3-all,debhelper (>= 7)
+-python3-rosdep;0.15.2-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
++python3-rocker;0.1.8-100;python3-setuptools,python3-all,debhelper (>= 7.4.3)
++python3-ros-buildfarm;3.0.0-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-ros-buildfarm-modules;3.0.0-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-rosdep;0.16.1-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ python3-rosdistro;0.7.4-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-rosdistro-modules;0.7.4-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+ python3-rosinstall;0.7.8-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+-python3-rosinstall-generator;0.1.16-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-rospkg;1.1.9-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-rospkg-modules;1.1.9-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-vcstool;0.1.40-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
+-python3-vcstools;0.1.40-1;python3-setuptools,python3-all,debhelper (>= 7)
++python3-rosinstall-generator;0.1.17-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-rospkg;1.1.10-100;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-rospkg-modules;1.1.10-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-vcstool;0.2.3-1;dh-python,python3-setuptools,python3-all,debhelper (>= 9)
++python3-vcstools;0.1.42-1;python3-setuptools,python3-all,debhelper (>= 7)
+ python3-wstool;0.1.17-1;python3-setuptools,python3-all,debhelper (>= 7.4.3)
+ shiboken2;2.0.0.dev0-0~201712141347~rev1722~pkg76~ubuntu18.04.1;dpkg-dev (>= 1.15.7),debhelper (>= 9),cmake (>= 3.0),dh-python,llvm,clang,libclang-dev,qtbase5-dev (>= 5.7),libqt5xmlpatterns5-dev,libsparsehash-dev (>= 1.6-1.1~),libxml2-dev (>= 2.6.32),libxslt1-dev (>= 1.1.19),python-all-dev (>= 2.7),python-all-dbg (>= 2.7),python-numpy,python-numpy-dbg,python3-all-dev (>= 3.2),python3-all-dbg (>= 3.2),python3-numpy,python3-numpy-dbg,python-sphinx,python3-sphinx
+diff --git a/files/dashing/rosdep-resolve.yaml b/files/dashing/rosdep-resolve.yaml
+index f50affd5a..f9fba9b47 100644
+--- a/files/dashing/rosdep-resolve.yaml
++++ b/files/dashing/rosdep-resolve.yaml
+@@ -109,7 +109,7 @@ pydocstyle:
+ pyflakes3:
+ - ${PYTHON_PN}-pyflakes@meta-ros
+ python-sphinx:
+-- ${PYTHON_PN}-sphinx@meta-ros
++- python-sphinx@meta-ros
+ python3-catkin-pkg-modules:
+ - python3-catkin-pkg@meta-ros
+ python3-dev:
