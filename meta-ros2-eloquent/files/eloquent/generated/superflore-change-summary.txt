@@ -1,30 +1,131 @@
 eloquent/superflore-change-summary.txt
 -----
  M meta-ros2-eloquent/conf/ros-distro/include/eloquent/generated/ros-distro.inc
+ M meta-ros2-eloquent/files/eloquent/generated/rosdep-resolve.yaml
+A  meta-ros2-eloquent/generated-recipes/ros2-tracing/ros2trace_0.2.10-1.bb
+A  meta-ros2-eloquent/generated-recipes/ros2-tracing/tracetools-launch_0.2.10-1.bb
+A  meta-ros2-eloquent/generated-recipes/ros2-tracing/tracetools-read_0.2.10-1.bb
+A  meta-ros2-eloquent/generated-recipes/ros2-tracing/tracetools-test_0.2.10-1.bb
+A  meta-ros2-eloquent/generated-recipes/ros2-tracing/tracetools-trace_0.2.10-1.bb
+A  meta-ros2-eloquent/generated-recipes/ros2-tracing/tracetools_0.2.10-1.bb
 -----
 diff --git a/meta-ros2-eloquent/conf/ros-distro/include/eloquent/generated/ros-distro.inc b/meta-ros2-eloquent/conf/ros-distro/include/eloquent/generated/ros-distro.inc
-index c768d2b37..b6e5d3f1f 100644
+index 9e24b55bc..71434874e 100644
 --- a/meta-ros2-eloquent/conf/ros-distro/include/eloquent/generated/ros-distro.inc
 +++ b/meta-ros2-eloquent/conf/ros-distro/include/eloquent/generated/ros-distro.inc
-@@ -1145,7 +1145,7 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
+@@ -19,14 +19,8 @@ ROS_SUPERFLORE_GENERATION_SKIP_LIST = ""
  
- # Packages found in the <buildtool_depend> and <buildtool_export_depend> items, ie, ones for which a -native is built. Does not
- # include those found in the ROS_EXEC_DEPENDS values in the recipes of build tools.
--ROS_SUPERFLORE_GENERATED_BUILDTOOLS = " \
-+ROS_SUPERFLORE_GENERATED_BUILDTOOLS_ELOQUENT = " \
-     ${ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69-native} \
-     ${ROS_UNRESOLVED_PLATFORM_PKG_rti-connext-dds-5.3.1-native} \
-     ament-clang-format-native \
-@@ -1223,6 +1223,8 @@ ROS_SUPERFLORE_GENERATED_BUILDTOOLS = " \
-     rosidl-typesupport-opensplice-cpp-native \
+ # Superflore was unable to generate recipes for these packages, eg, because their repositories are not on GitHub.
+ ROS_SUPERFLORE_GENERATION_NOT_POSSIBLE = " \
+-    ros2trace \
+     ros2trace_analysis \
+-    tracetools \
+     tracetools_analysis \
+-    tracetools_launch \
+-    tracetools_read \
+-    tracetools_test \
+-    tracetools_trace \
  "
  
-+ROS_SUPERFLORE_GENERATED_BUILDTOOLS_append ="${ROS_SUPERFLORE_GENERATED_BUILDTOOLS_ELOQUENT}"
-+
- ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
-     ${PYTHON_PN}-pydocstyle \
-     ${PYTHON_PN}-pyflakes \
-@@ -1499,10 +1501,3 @@ ROS_UNRESOLVED_PLATFORM_PKG_rti-connext-dds-5.3.1-native = "UNRESOLVED-rti-conne
+ # Number of commits that will be returned by "git log files/ROS_DISTRO-cache.yaml" when the generated files are committed. This is
+@@ -306,6 +300,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
+     ros2srv \
+     ros2test \
+     ros2topic \
++    ros2trace \
+     rosbag2 \
+     rosbag2-bag-v2-plugins \
+     rosbag2-converter-default-plugins \
+@@ -398,6 +393,11 @@ ROS_SUPERFLORE_GENERATED_RECIPES = " \
+     tlsf \
+     tlsf-cpp \
+     topic-monitor \
++    tracetools \
++    tracetools-launch \
++    tracetools-read \
++    tracetools-test \
++    tracetools-trace \
+     trajectory-msgs \
+     turtlesim \
+     uncrustify-vendor \
+@@ -679,6 +679,7 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
+                           ros2cli/ros2srv_0.8.6-1 \
+                       ros-testing/ros2test_0.2.0-1 \
+                           ros2cli/ros2topic_0.8.6-1 \
++                     ros2-tracing/ros2trace_0.2.10-1 \
+                           rosbag2/rosbag2_0.2.4-1 \
+                    rosbag2-bag-v2/rosbag2-bag-v2-plugins_0.0.7-1 \
+                           rosbag2/rosbag2-converter-default-plugins_0.2.4-1 \
+@@ -771,6 +772,11 @@ ROS_SUPERFLORE_GENERATED_RECIPE_BASENAMES_WITH_COMPONENT = " \
+                              tlsf/tlsf_0.5.0-1 \
+                  realtime-support/tlsf-cpp_0.8.2-1 \
+                             demos/topic-monitor_0.8.4-1 \
++                     ros2-tracing/tracetools_0.2.10-1 \
++                     ros2-tracing/tracetools-launch_0.2.10-1 \
++                     ros2-tracing/tracetools-read_0.2.10-1 \
++                     ros2-tracing/tracetools-test_0.2.10-1 \
++                     ros2-tracing/tracetools-trace_0.2.10-1 \
+                 common-interfaces/trajectory-msgs_0.8.1-1 \
+                         turtlesim/turtlesim_1.1.0-1 \
+                 uncrustify-vendor/uncrustify-vendor_1.3.0-1 \
+@@ -1044,6 +1050,7 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
+     ros2srv \
+     ros2test \
+     ros2topic \
++    ros2trace \
+     rosbag2 \
+     rosbag2-bag-v2-plugins \
+     rosbag2-storage \
+@@ -1130,6 +1137,9 @@ ROS_SUPERFLORE_GENERATED_WORLD_PACKAGES = " \
+     tlsf \
+     tlsf-cpp \
+     topic-monitor \
++    tracetools \
++    tracetools-test \
++    tracetools-trace \
+     trajectory-msgs \
+     turtlesim \
+     uncrustify-vendor \
+@@ -1235,8 +1245,10 @@ ROS_SUPERFLORE_GENERATED_PLATFORM_PACKAGE_DEPENDENCIES = " \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69-native} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_pyqt5-dev-tools} \
++    ${ROS_UNRESOLVED_PLATFORM_PKG_python3-babeltrace} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_python3-cryptography} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_python3-ifcfg} \
++    ${ROS_UNRESOLVED_PLATFORM_PKG_python3-lttng} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_python3-mypy} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_python3-netifaces} \
+     ${ROS_UNRESOLVED_PLATFORM_PKG_python3-pyqt5.qtwebengine} \
+@@ -1345,6 +1357,8 @@ ROS_SUPERFLORE_GENERATED_TESTS = " \
+     rviz-rendering-tests \
+     rviz-visual-testing-framework \
+     test-msgs \
++    tracetools-launch \
++    tracetools-read \
+ "
+ 
+ ROS_SUPERFLORE_GENERATED_RECIPES_FOR_COMPONENTS = " \
+@@ -1427,6 +1441,7 @@ ROS_SUPERFLORE_GENERATED_RECIPES_FOR_COMPONENTS = " \
+     ros-testing \
+     ros-workspace \
+     ros1-bridge \
++    ros2-tracing \
+     ros2cli \
+     rosbag2 \
+     rosbag2-bag-v2 \
+@@ -1488,8 +1503,10 @@ ROS_UNRESOLVED_PLATFORM_PKG_libgazebo9-dev = "UNRESOLVED-libgazebo9-dev"
+ ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69 = "UNRESOLVED-libopensplice69"
+ ROS_UNRESOLVED_PLATFORM_PKG_libopensplice69-native = "UNRESOLVED-libopensplice69-native"
+ ROS_UNRESOLVED_PLATFORM_PKG_pyqt5-dev-tools = "UNRESOLVED-pyqt5-dev-tools"
++ROS_UNRESOLVED_PLATFORM_PKG_python3-babeltrace = "UNRESOLVED-python3-babeltrace"
+ ROS_UNRESOLVED_PLATFORM_PKG_python3-cryptography = "UNRESOLVED-python3-cryptography"
+ ROS_UNRESOLVED_PLATFORM_PKG_python3-ifcfg = "UNRESOLVED-python3-ifcfg"
++ROS_UNRESOLVED_PLATFORM_PKG_python3-lttng = "UNRESOLVED-python3-lttng"
+ ROS_UNRESOLVED_PLATFORM_PKG_python3-mypy = "UNRESOLVED-python3-mypy"
+ ROS_UNRESOLVED_PLATFORM_PKG_python3-netifaces = "UNRESOLVED-python3-netifaces"
+ ROS_UNRESOLVED_PLATFORM_PKG_python3-pyqt5.qtwebengine = "UNRESOLVED-python3-pyqt5.qtwebengine"
+@@ -1501,10 +1518,3 @@ ROS_UNRESOLVED_PLATFORM_PKG_rti-connext-dds-5.3.1-native = "UNRESOLVED-rti-conne
  ROS_UNRESOLVED_PLATFORM_PKG_spdlog = "UNRESOLVED-spdlog"
  ROS_UNRESOLVED_PLATFORM_PKG_tango-icon-theme = "UNRESOLVED-tango-icon-theme"
  ROS_UNRESOLVED_PLATFORM_PKG_uncrustify = "UNRESOLVED-uncrustify"
@@ -36,4 +137,25 @@ index c768d2b37..b6e5d3f1f 100644
 -# The commit of ros/rosdistro/eloquent/distribution.yaml from which the recipes were generated.
 -ROS_SUPERFLORE_GENERATION_COMMIT = "053fd48b1fd414f00b1c968f6e1f7e3668252be3"
 -----
-
+diff --git a/meta-ros2-eloquent/files/eloquent/generated/rosdep-resolve.yaml b/meta-ros2-eloquent/files/eloquent/generated/rosdep-resolve.yaml
+index 1467002b8..3f0c82373 100644
+--- a/meta-ros2-eloquent/files/eloquent/generated/rosdep-resolve.yaml
++++ b/meta-ros2-eloquent/files/eloquent/generated/rosdep-resolve.yaml
+@@ -107,6 +107,8 @@ pyqt5-dev-tools:
+ - ${ROS_UNRESOLVED_PLATFORM_PKG_pyqt5-dev-tools}
+ python-sphinx:
+ - python-sphinx@meta-ros
++python3-babeltrace:
++- ${ROS_UNRESOLVED_PLATFORM_PKG_python3-babeltrace}
+ python3-catkin-pkg-modules:
+ - python3-catkin-pkg@meta-ros
+ python3-cryptography:
+@@ -121,6 +123,8 @@ python3-ifcfg:
+ - ${ROS_UNRESOLVED_PLATFORM_PKG_python3-ifcfg}
+ python3-lark-parser:
+ - python3-lark-parser@meta-ros
++python3-lttng:
++- ${ROS_UNRESOLVED_PLATFORM_PKG_python3-lttng}
+ python3-lxml:
+ - python3-lxml@meta-python
+ python3-matplotlib:
