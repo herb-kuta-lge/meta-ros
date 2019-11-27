@@ -17,7 +17,7 @@ McfFileVersion = 2
 # Value for DISTRO
 Distribution = 'webos'
 
-webOSOSEBuildNumber = '91'
+webOSOSEBuildNumber = '93'
 
 # Supported MACHINE-s
 Machines = ['raspberrypi3', 'qemux86']
@@ -46,8 +46,7 @@ Layers = [
 ('meta-python',               13, 'git://github.com/openembedded/meta-openembedded.git',    {}, {}),
 ('meta-filesystems',          14, 'git://github.com/openembedded/meta-openembedded.git',    {}, {}),
 
-('meta-qt5-compat',           19, 'git://github.com/webosose/meta-webosose.git',            {}, {}),
-('meta-qt5',                  20, 'git://github.com/meta-qt5/meta-qt5.git',                 {'branch': 'krogoth', 'commit': 'dcfcb58'}, {}),
+('meta-qt5',                  20, 'git://github.com/meta-qt5/meta-qt5.git',                 {'branch': 'warrior', 'commit': '2a5f9415'}, {}),
 
 ('meta-ros-backports-warrior',34, MetaRos_RepoURL,                                          {'branch': MetaRos_Branch}, {}),
 ('meta-ros-common',           35, MetaRos_RepoURL,                                          {}, {}),
