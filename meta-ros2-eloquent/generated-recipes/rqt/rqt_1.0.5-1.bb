@@ -47,7 +47,6 @@ SRC_URI = "git://github.com/ros2-gbp/rqt-release;${ROS_BRANCH};protocol=https"
 SRCREV = "0eeadbdaddd79f2065de560d49cd1e48d91e8127"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rqt', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}

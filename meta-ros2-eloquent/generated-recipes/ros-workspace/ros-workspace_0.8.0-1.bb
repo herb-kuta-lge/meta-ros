@@ -46,7 +46,6 @@ SRC_URI = "git://github.com/ros2-gbp/ros_workspace-release;${ROS_BRANCH};protoco
 SRCREV = "be0f45a295700f7b6dfb474c049c71e5911deb81"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('ros-workspace', d)}"
 ROS_BUILD_TYPE = "cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

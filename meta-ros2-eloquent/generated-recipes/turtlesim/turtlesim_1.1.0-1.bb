@@ -69,7 +69,6 @@ SRC_URI = "git://github.com/ros2-gbp/ros_tutorials-release;${ROS_BRANCH};protoco
 SRCREV = "96c5eeb051824c632b98f208bf2d1699c951cd27"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('turtlesim', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

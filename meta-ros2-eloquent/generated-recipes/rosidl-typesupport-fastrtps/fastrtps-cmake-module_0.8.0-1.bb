@@ -47,7 +47,6 @@ SRC_URI = "git://github.com/ros2-gbp/rosidl_typesupport_fastrtps-release;${ROS_B
 SRCREV = "8e0d559623400e5f208c6643b39ed5970de30d29"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rosidl-typesupport-fastrtps', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

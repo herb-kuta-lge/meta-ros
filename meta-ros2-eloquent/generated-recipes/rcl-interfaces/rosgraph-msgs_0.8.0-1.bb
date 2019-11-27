@@ -51,7 +51,6 @@ SRC_URI = "git://github.com/ros2-gbp/rcl_interfaces-release;${ROS_BRANCH};protoc
 SRCREV = "cb33a098bd34be7441e0ccdca4833291a7ddcc80"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rcl-interfaces', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

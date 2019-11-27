@@ -56,7 +56,6 @@ SRC_URI = "git://github.com/ros2-gbp/rosbag2_bag_v2-release;${ROS_BRANCH};protoc
 SRCREV = "38f89cf78228c20b1a1b8a13eb588ee8af89ac17"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rosbag2-bag-v2', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

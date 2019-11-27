@@ -47,7 +47,6 @@ SRC_URI = "git://github.com/ros2-gbp/vision_opencv-release;${ROS_BRANCH};protoco
 SRCREV = "53b6bcc82663cc3efb2b4421bf09e76a8ef60f05"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('vision-opencv', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

@@ -46,7 +46,6 @@ SRC_URI = "git://github.com/ros2-gbp/ament_cmake_ros-release;${ROS_BRANCH};proto
 SRCREV = "3d06a69c5b1223ebc084f86abe2ef3bea10d0832"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('ament-cmake-ros', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}

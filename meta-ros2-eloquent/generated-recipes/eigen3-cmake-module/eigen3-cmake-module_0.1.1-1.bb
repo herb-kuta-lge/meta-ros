@@ -47,7 +47,6 @@ SRC_URI = "git://github.com/ros2-gbp/eigen3_cmake_module-release;${ROS_BRANCH};p
 SRCREV = "e3e4382f2334e467482c56caf28886a1c1265363"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('eigen3-cmake-module', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

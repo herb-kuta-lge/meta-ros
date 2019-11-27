@@ -56,7 +56,6 @@ SRC_URI = "git://github.com/ros2-gbp/rosidl_defaults-release;${ROS_BRANCH};proto
 SRCREV = "a334fe39e4c25eea17fd0e61bed59f1c9737084d"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rosidl-defaults', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

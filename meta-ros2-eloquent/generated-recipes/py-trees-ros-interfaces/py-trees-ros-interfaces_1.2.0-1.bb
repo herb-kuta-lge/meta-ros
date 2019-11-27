@@ -63,7 +63,6 @@ SRC_URI = "git://github.com/stonier/py_trees_ros_interfaces-release;${ROS_BRANCH
 SRCREV = "94ec0467e7c3fcc7f320a884ba931b540e789b1a"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('py-trees-ros-interfaces', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

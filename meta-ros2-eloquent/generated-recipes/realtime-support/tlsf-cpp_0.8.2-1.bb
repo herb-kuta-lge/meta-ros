@@ -61,7 +61,6 @@ SRC_URI = "git://github.com/ros2-gbp/realtime_support-release;${ROS_BRANCH};prot
 SRCREV = "12f9c7f6e02f16a1f8508282f3a153d69bdfa630"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('realtime-support', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

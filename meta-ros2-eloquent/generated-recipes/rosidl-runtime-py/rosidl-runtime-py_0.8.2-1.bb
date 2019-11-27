@@ -55,7 +55,6 @@ SRC_URI = "git://github.com/ros2-gbp/rosidl_runtime_py-release;${ROS_BRANCH};pro
 SRCREV = "c325ff0b45636d9d89410ac3a663872e9dd5418c"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rosidl-runtime-py', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}

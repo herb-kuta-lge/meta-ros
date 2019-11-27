@@ -48,7 +48,6 @@ SRC_URI = "git://github.com/ros2-gbp/examples-release;${ROS_BRANCH};protocol=htt
 SRCREV = "f89bf5b5c4f00bab860cbb085210168e79227662"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('examples', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

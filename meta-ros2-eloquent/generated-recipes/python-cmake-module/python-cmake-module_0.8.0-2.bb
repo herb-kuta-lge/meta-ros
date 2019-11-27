@@ -49,7 +49,6 @@ SRC_URI = "git://github.com/ros2-gbp/python_cmake_module-release;${ROS_BRANCH};p
 SRCREV = "4f86e3e5c46267dcb01063bab22b7d71ee33bc6a"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('python-cmake-module', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

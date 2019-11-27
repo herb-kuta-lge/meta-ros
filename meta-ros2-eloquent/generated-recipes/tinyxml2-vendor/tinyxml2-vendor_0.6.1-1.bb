@@ -49,7 +49,6 @@ SRC_URI = "git://github.com/ros2-gbp/tinyxml2_vendor-release;${ROS_BRANCH};proto
 SRCREV = "61504f9630ab1701bf7a44e1afbdf07905292973"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('tinyxml2-vendor', d)}"
 ROS_BUILD_TYPE = "cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

@@ -43,7 +43,6 @@ SRC_URI = "git://github.com/ros2-gbp/test_interface_files-release;${ROS_BRANCH};
 SRCREV = "33b306bc2309635870d28faa69ff57daae36537a"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('test-interface-files', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

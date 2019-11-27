@@ -57,7 +57,6 @@ SRC_URI = "git://github.com/yujinrobot-release/ecl_core-release;${ROS_BRANCH};pr
 SRCREV = "d250777b79b3d3356c8ef94a823b7719fee2da21"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('ecl-core', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

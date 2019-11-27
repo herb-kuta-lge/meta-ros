@@ -48,7 +48,6 @@ SRC_URI = "git://github.com/ros2-gbp/common_interfaces-release;${ROS_BRANCH};pro
 SRCREV = "3b6dfc9aff3ce6ba13aec37e8705e6885e0ccdf2"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('common-interfaces', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

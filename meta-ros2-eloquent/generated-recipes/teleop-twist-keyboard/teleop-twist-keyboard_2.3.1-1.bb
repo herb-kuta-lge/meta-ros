@@ -49,7 +49,6 @@ SRC_URI = "git://github.com/ros2-gbp/teleop_twist_keyboard-release;${ROS_BRANCH}
 SRCREV = "0e4c1eac46953c3ad6631ce79f34d5e0362debae"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('teleop-twist-keyboard', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}

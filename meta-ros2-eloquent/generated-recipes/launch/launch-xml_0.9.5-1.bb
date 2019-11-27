@@ -52,7 +52,6 @@ SRC_URI = "git://github.com/ros2-gbp/launch-release;${ROS_BRANCH};protocol=https
 SRCREV = "dcca63c422778b91a79c9615af2ab730f652e796"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('launch', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}

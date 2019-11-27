@@ -43,7 +43,6 @@ SRC_URI = "git://github.com/boschresearch/fmilibrary_vendor-release;${ROS_BRANCH
 SRCREV = "abc96ae0246d661f2e0c40ea1e8a1e194cc8dee1"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('fmilibrary-vendor', d)}"
 ROS_BUILD_TYPE = "catkin"
 
 inherit ros_${ROS_BUILD_TYPE}

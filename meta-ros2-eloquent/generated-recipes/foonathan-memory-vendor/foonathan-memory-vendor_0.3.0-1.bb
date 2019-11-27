@@ -46,7 +46,6 @@ SRC_URI = "git://github.com/ros2-gbp/foonathan_memory_vendor-release;${ROS_BRANC
 SRCREV = "d17c0e9a3a5b8008d861c7b47a65bd97788610bb"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('foonathan-memory-vendor', d)}"
 ROS_BUILD_TYPE = "cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

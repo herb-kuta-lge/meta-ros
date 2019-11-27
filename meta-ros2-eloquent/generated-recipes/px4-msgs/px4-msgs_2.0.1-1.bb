@@ -57,7 +57,6 @@ SRC_URI = "git://github.com/PX4/px4_msgs2-release;${ROS_BRANCH};protocol=https"
 SRCREV = "90c4ef48901db3fed25102bf4562751722e974df"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('px4-msgs', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

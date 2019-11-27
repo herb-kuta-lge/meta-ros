@@ -55,7 +55,6 @@ SRC_URI = "git://github.com/ros-industrial-release/ros_canopen-release;${ROS_BRA
 SRCREV = "f2ff3b01a30f7df21cd1ff1f5b2cbe2f8cafe1b9"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('ros-canopen', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

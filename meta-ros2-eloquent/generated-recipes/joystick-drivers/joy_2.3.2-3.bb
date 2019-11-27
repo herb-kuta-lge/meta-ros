@@ -53,7 +53,6 @@ SRC_URI = "git://github.com/ros2-gbp/joystick_drivers-release;${ROS_BRANCH};prot
 SRCREV = "0b129ab91c8e881e4ef4c08461b95333a26c32ea"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('joystick-drivers', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

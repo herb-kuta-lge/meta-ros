@@ -50,7 +50,6 @@ SRC_URI = "git://github.com/ros2-gbp/rqt_top-release;${ROS_BRANCH};protocol=http
 SRCREV = "70b16ca6164717a29af4f1aa0986d83804b15169"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('rqt-top', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

@@ -48,7 +48,6 @@ SRC_URI = "git://github.com/ros2-gbp/eigen_stl_containers-release;${ROS_BRANCH};
 SRCREV = "24f52a9157b3008ae470fd738244ea53a73d1813"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('eigen-stl-containers', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

@@ -71,7 +71,6 @@ SRC_URI = "git://github.com/ros2-gbp/interactive_markers-release;${ROS_BRANCH};p
 SRCREV = "94b27c875e4db8e176d2ac34ed9b043b497072ae"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('interactive-markers', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

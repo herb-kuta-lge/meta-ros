@@ -50,7 +50,6 @@ SRC_URI = "git://github.com/ros2-gbp/launch-release;${ROS_BRANCH};protocol=https
 SRCREV = "3f18bafa64fac30bbc5a2a16082cb1377af7801c"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('launch', d)}"
 ROS_BUILD_TYPE = "ament_cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

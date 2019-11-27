@@ -53,7 +53,6 @@ SRC_URI = "git://github.com/stonier/py_trees_ros_viewer-release;${ROS_BRANCH};pr
 SRCREV = "03c2cc29808a187c12cad19a051521afef7185a2"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('py-trees-ros-viewer', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}

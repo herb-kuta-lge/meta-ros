@@ -57,7 +57,6 @@ SRC_URI = "git://github.com/ros2-gbp/poco_vendor-release;${ROS_BRANCH};protocol=
 SRCREV = "1550957093910a5f0952de8beb047c622a606501"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('poco-vendor', d)}"
 ROS_BUILD_TYPE = "cmake"
 
 inherit ros_${ROS_BUILD_TYPE}

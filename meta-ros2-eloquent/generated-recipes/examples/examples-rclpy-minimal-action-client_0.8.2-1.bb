@@ -50,7 +50,6 @@ SRC_URI = "git://github.com/ros2-gbp/examples-release;${ROS_BRANCH};protocol=htt
 SRCREV = "8c2c3b24c3e3942da8832b6eb1cce681ccb00c3f"
 S = "${WORKDIR}/git"
 
-ROS_COMPONENT_TYPE = "${@ros_distro__get_component_type('examples', d)}"
 ROS_BUILD_TYPE = "ament_python"
 
 inherit ros_${ROS_BUILD_TYPE}
