@@ -1,6 +1,6 @@
 # OpenEmbedded Build Instructions
 
-Revision: 14 Published: 2019-11-19
+Revision: 15 Published: UNPUBLISHED
 
 These instructions are for building ROS 2 **crystal** and **dashing**, and the "core" portion of ROS 1 **melodic** using
 OpenEmbedded **thud** (Yocto 2.6.x) on a 64-bit build machine running Ubuntu **bionic** (18.04). There is also support for
@@ -27,31 +27,33 @@ Additional information on `meta-ros` can be found in
     ```
 
 2. Setup **bitbake** and OE-Core using a separate disk for the build artifacts (~100GB required if the working files are kept).
- **NOTE:** If you have previously done this using the `[morty-draft]` branch, please start again from scratch.
+   **NOTE:** This can only be done in a new directory. To update an existing project, see **Usage Notes** below.
 
     ``` sh
     mkdir "<NEW-PROJECT-DIR>"
     cd "<NEW-PROJECT-DIR>"
 
-    # The final branch for OpenEmbedded "thud" is not yet available. In the meantime, use a rebaseable draft of the branch.
-    git clone -b thud-draft git@github.com:ros/meta-ros
-    mkdir conf
-    cp meta-ros/files/*.mcf conf/.
+    # The final branches for "build" and OpenEmbedded "thud" are not yet available. In the meantime, use rebaseable drafts of
+    # them.
+    git clone -b build-draft --single-branch git@github.com:ros/meta-ros build
 
     # Clone the OpenEmbedded metadata layers and generate conf/bblayers.conf . Select a configuration based on the OE-Core DISTRO
-    # (ros1, ros2, or webos) and ROS distro (melodic, crystal or dashing) that you wish to build:
-    # cfg=ros1-melodic.mcf
-    # cfg=webos-melodic.mcf
-    # cfg=ros2-crystal.mcf
-    # cfg=webos-crystal.mcf
-    # cfg=ros2-dashing.mcf
-    # cfg=webos-dashing.mcf
-     meta-ros/scripts/mcf -f conf/$cfg
+    # (ros1, ros2, or webos), ROS distro (melodic, crystal or dashing), and OpenEmbedded release (thud) that you wish to build:
+    #
+    # distro=ros1
+    # distro=ros2
+    # distro=webos
+    #
+    # ros_distro=melodic
+    # ros_distro=crystal
+    # ros_distro=dashing
+    #
+    # oe_release=thud
 
-    # oe-init-build-env defaults to using "./build" as the build directory. Bitbake expects to find the "conf" subdirectory under
-    # the build directory, so create a symlink there to where we've created it.
-    mkdir build
-    ln -snf ../conf build/.
+    mkdir conf
+    cfg=$distro-$ros_distro-$oe_release.mcf
+    cp build/files/$cfg conf/.
+    build/scripts/mcf -f conf/$cfg
 
     # Set up the shell environment for this build and create a conf/local.conf . We expect all of the variables below to be unset.
     unset BDIR BITBAKEDIR BUILDDIR OECORELAYERCONF OECORELOCALCONF OECORENOTESCONF OEROOT TEMPLATECONF
@@ -84,6 +86,7 @@ Additional information on `meta-ros` can be found in
     # MACHINE = "qemux86"
     # MACHINE = "raspberrypi3"
 
+    # Because of a bug in OpenEmbedded, <ABSOLUTE-PATH-TO-DIRECTORY-ON-SEPARATE-DISK> can not be a symlink.
     ROS_COMMON_ARTIFACTS = "<ABSOLUTE-PATH-TO-DIRECTORY-ON-SEPARATE-DISK>"
 
     # Set the directories where downloads, shared-state, and the output from the build are placed to be on the separate disk.
@@ -105,9 +108,9 @@ Additional information on `meta-ros` can be found in
 
     # Any other additions to the file go here.
 
-    # EXTRA_IMAGE_FEATURES is just one of the are many settings that can be placed in this file. You can find them all by
-    # searching https://www.yoctoproject.org/docs/2.6.2/mega-manual/mega-manual.html#ref-variables-glossary for "local.conf"
-    # (but note the comment above that DISTRO is not set in this file).
+    # EXTRA_IMAGE_FEATURES is just one of the many settings that can be placed in this file. You can find them all by searching
+    # https://www.yoctoproject.org/docs/2.6.2/mega-manual/mega-manual.html#ref-variables-glossary for "local.conf" (but note the
+    # comment above that DISTRO is not set in this file).
 
     # Uncomment to allow "root" to ssh into the device. Not needed for images with webOS OSE because it implicitly adds this
     # feature.
@@ -354,7 +357,39 @@ appears, restart **turtlebot3_bringup** and try again.
 
 ## Usage Notes
 
-- If you previously had been building from the now deleted `[morty-draft]` branch, please start again from scratch.
+- If a `meta-ros/scripts/mcf` file exists in your project, it is using an older `meta-ros` with layer version 2. Please start again
+  from scratch in a new project directory following the instructions in the **Build Environment Setup** section. To allow you to
+  transition, a branch `[legacy-v2-draft]` was created before the start of the layer version 3 implementation in `[thud-draft]`.
+- The `*.mcf` files do not pin the commits of `meta-ros` or `meta-ros-webos`; to update them to their current heads, issue:
+
+  ``` sh
+  # Select the configuration you are building:
+  #
+  # distro=ros1
+  # distro=ros2
+  # distro=webos
+  #
+  # ros_distro=melodic
+  # ros_distro=crystal
+  # ros_distro=dashing
+  #
+  # oe_release=thud
+  cfg=$distro-$ros_distro-$oe_release.mcf
+  build/scripts/mcf -f conf/$cfg
+  ```
+
+  The commits of the other repos are pinned. You can see if there have been any changes to the pins (or anything else) by issuing:
+
+  ``` sh
+  cd build
+  git pull --rebase
+  cd -
+  diff build/files/$cfg conf/$cfg
+  # If there are changes and you have not modified conf/$cfg, copy them over:
+  cp build/files/$cfg conf/.
+  # Otherwise, merge them, eg, using: meld build/files/$cfg conf/$cfg
+  ```
+
 - The images are placed in `TMPDIR/deploy/images/MACHINE`. We've found [**balenaEtcher**](https://www.balena.io/etcher/) to be an
   excellent tool for flashing them to SD cards.
 - These images default to being non-production: the `root` account has no password.
@@ -380,25 +415,6 @@ appears, restart **turtlebot3_bringup** and try again.
   under `USBROOT/webos-device-config/v1`. If present, it will be run from there by the **webos-device-config** service upon first
   boot. The service also copies it to `/var/palm/webos-device-config/rc.local`, where upon subsequent boots, it will be run by
   `/etc/rc.local`. An example `rc.local` script can be found under `meta-ros/files/examples/webos-device-config/v1`.
-- The *.mcf files do not pin the commit of `meta-ros`; to update it to its current head, issue:
-
-  ``` sh
-  # Select the configuration you are building:
-  # cfg=ros2-crystal.mcf
-  # cfg=webos-crystal.mcf
-  # cfg=ros2-dashing.mcf
-  # cfg=webos-dashing.mcf
-  # cfg=ros1-melodic.mcf
-  # cfg=webos-melodic.mcf
-  meta-ros/scripts/mcf -f conf/$cfg
-
-  # If there happens to be a new version of $cfg in meta-ros, update conf/$cfg and rerun:
-  diff meta-ros/files/$cfg conf/. || {
-    cp meta-ros/files/$cfg conf/.
-    meta-ros/scripts/mcf -f conf/$cfg
-  }
-  ```
-
 - WiFi does not work "out-of-the-box" on the `core-image-ros-*` images.
 - WiFi does not work when running webOS OSE images on the B+ model of the Raspberry Pi 3. The symptom is that
   **Network Configuration** spins forever waiting for the list of SSIDs to appear.
@@ -434,6 +450,14 @@ The other two SLAM methods available in ROS 1 **melodic**, `cartographer` and `k
   executable.
 
 ## Change Log
+
+### Revision 15
+- Force push to `[thud-draft]` to publish part 1 of the implementation of layer version 3 of `meta-ros`. If you have been building
+  from the `[thud-draft]` branch, please start again from scratch as soon as you can. To allow you to transition, a branch
+  `[legacy-v2-draft]` has been created from the previous `[thud-draft]`. Its files will not be changed.
+- Update the XXX instructions for the changes lv3 XXX.
+- Add a note that `ROS_COMMON_ARTIFACTS` can not be a symlink.
+- As `[morty-draft]` was removed long ago, drop the references to it.
 
 ### Revision 14
 - Clarify various portions of the build instructions so as to be clearer for those unfamiliar with OpenEmbedded.
