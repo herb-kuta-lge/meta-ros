@@ -85,6 +85,10 @@ Additional information on `meta-ros` can be found in
     # The list of supported values of MACHINE is found in the Machines[] array in the .mcf file for the selected configuration.
     MACHINE = "<SUPPORTED-MACHINE>"
 
+    # Remove if DISTRO is not "webos". If not using mcf, replace ${MCF_WEBOS_BUILD_NUMBER} with the build number of webOS OSE
+    # being used.
+    WEBOS_DISTRO_VERSION_TYPE_append = ".${MCF_WEBOS_BUILD_NUMBER}"
+
     # Because of a bug in OpenEmbedded, <ABSOLUTE-PATH-TO-DIRECTORY-ON-SEPARATE-DISK> can not be a symlink.
     ROS_COMMON_ARTIFACTS = "<ABSOLUTE-PATH-TO-DIRECTORY-ON-SEPARATE-DISK>"
 
