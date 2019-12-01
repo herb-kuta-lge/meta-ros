@@ -86,7 +86,11 @@ Additional information on `meta-ros` can be found in
     # The list of supported values of MACHINE is found in the Machines[] array in the .mcf file for the selected configuration.
     MACHINE = "<SUPPORTED-MACHINE>"
 
-    # Remove if DISTRO is not "webos". If not using mcf, replace ${MCF_WEBOS_BUILD_NUMBER} with the build number of webOS OSE
+    # Can remove if DISTRO is "webos". If not using mcf, replace ${MCF_OPENEMBEDDED_VERSION} with the version of OpenEmbedded
+    # being used. See the comments in files/ros*.mcf for its format.
+    ROS_DISTRO_VERSION_APPEND = "+${MCF_OPENEMBEDDED_VERSION}"
+
+    # Can remove if DISTRO is not "webos". If not using mcf, replace ${MCF_WEBOS_BUILD_NUMBER} with the build number of webOS OSE
     # being used.
     ROS_WEBOS_DISTRO_VERSION_APPEND = ".${MCF_WEBOS_BUILD_NUMBER}"
 
