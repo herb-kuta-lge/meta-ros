@@ -1,3 +1,5 @@
+# Branch `[master]`
+
 # UNDER CONSTRUCTION!
 
 The original implementation of `meta-ros` for ROS 1 Indigo Igloo
@@ -14,9 +16,9 @@ branch.
 The original implementation has been retained in the
 [`legacy`](https://github.com/ros/meta-ros/tree/legacy) branch.
 
-As of 2020-01-07, this branch can be used to build the December 2019 releases of
-ROS 2 **crystal**, **dashing**, and **eloquent**, and the portion of ROS 1
-**melodic** required for the TurtleBot 3, using OpenEmbedded **thud** on Ubuntu
-**bionic**. Multiple sublayers must be used. See
+As of 2020-02-09, this branch can be used to build the December 2019 releases of
+ROS 2  **dashing**, and **eloquent**, and the portion of ROS 1 **melodic**
+required for the TurtleBot 3, using the not yet released OpenEmbedded
+**dunfell** on Ubuntu **bionic**. Multiple sublayers must be used. See
 [here](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions)
 for instructions.
