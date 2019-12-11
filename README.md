@@ -5,8 +5,8 @@ specify the `--rebase` option when pulling.
 
 As of 2019-12-XXX, this branch can be used to build ROS 2 **crystal**,
 **dashing**, and **eloquent**, and the portion of ROS 1 **melodic** required for
-the TurtleBot 3, using OpenEmbedded **thud** on Ubuntu **bionic**.  Multiple
-sublayers must be used. See
+the TurtleBot 3, using OpenEmbedded **thud** or **warrior** on Ubuntu
+**bionic**.  Multiple sublayers must be used. See
 [here](https://github.com/ros/meta-ros/wiki/OpenEmbedded-Build-Instructions)
 for instructions.
 
