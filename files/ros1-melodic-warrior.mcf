@@ -53,7 +53,7 @@ Layers = [
 ('meta-ros1',                 36, MetaRos_RepoURL,                                          {}, {}),
 ('meta-ros1-melodic',         37, MetaRos_RepoURL,                                          {}, {}),
 
-('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi.git',        {'branch': 'warrior', 'commit': '5cb49f4'}, {}),
+('meta-raspberrypi',          50, 'git://git.yoctoproject.org/meta-raspberrypi.git',        {'branch': 'warrior', 'commit': '2f0fa9a'}, {}),
 ]
 
 # BblayersConfExtraLines is a list of strings to be appended to the generated
